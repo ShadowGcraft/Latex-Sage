@@ -103,7 +103,7 @@
 
 \begin{document} 
 
-\pagecolor{gray!45}
+\pagecolor{brown!50}
 
 \setlength{\parindent}{0pt}
 
@@ -113,10 +113,10 @@
 \section{Quelques considérations préliminaires}
 
 Quelques considérations préliminaires sur le calcul de certaines primitives telles que celles des fonctions 
- $x \mapsto \arccos(x) $,  $x \mapsto \arcsin(x) $ ou bien $x \mapsto \arctan(x) $ une astuce est indispensable. Elle consiste à procéder à une intégration par parties. En effet, n'ayant aucune idée des primitives, il est raisonnable de changer leurs rôles respectifs et de considérer, non plus la fonction initiale, mais sa dérivée.
+ $x \mapsto \arccos(x) $,  $x \mapsto \arcsin(x) $ ou bien $x \mapsto \arctan(x) $ une astuce est indispensable. Elle consiste à procéder à une intégration par parties. En effet, n'ayant aucune idée de ces primitives, il est raisonnable de changer leurs rôles respectifs et de considérer, non plus la fonction initiale, mais sa dérivée.
  
  
-Le premier objectif est donc de vérifier si celles-ci existent est sont calculables.
+Le premier objectif est donc de vérifier si celles-ci existent et sont calculables.
 
 \section{La fonction  $x \mapsto \arccos(x) $.}
 
@@ -143,6 +143,17 @@ Finalement, $(\arccos(x))' = \frac{-1}{\sin(\arccos(x))} =  \frac{-1}{\sqrt{1- x
 \end{sageblock}
 
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
+
+%\sageplot[angle=45, width=.5\textwidth][png]{plot1}
+
+\begin{center}
+\sageplot[width=.5\textwidth]{plot(f(x), x, -1, 1)} \\
+%\sageplot{plot(g(x), x, -1, 1)}
+\end{center}
+
+
+%\sageplot[angle=45, width=.5\textwidth]{plot(f(x), x, -1, 1)} \\
+%\sageplot{plot(g(x), x, -1, 1)}
 
 
 On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \mapsto \arccos(x) $.
@@ -173,8 +184,9 @@ Finalement $\int \arccos(x) \, dx = x \times \arccos(x) - \sqrt{1- x^2} + Cste $
 
 La primitive de $\sage{f(x)} = \sage{F(x)} $.
 
-
-
+\begin{center}
+\sageplot[width=.5\textwidth]{plot(F(x), x, 0, pi)}
+\end{center}
 
 
 \section{La fonction  $x \mapsto \arcsin(x) $.}
@@ -198,12 +210,25 @@ La primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 
 %Je pose que $u(x)$  est égal à la fonction $\arctan(x)$ et $v'(x)$ est égal $1$ et le calcul devient accessible lorsque j'aurai la connaissance de la dérivée  $\arctan(x)$ et du calcul d'une primitive de la fonction $ x \mapsto \frac{x}{1+x^2}$ 
+\section{Essais Sage}
 
+\begin{sagecommandline}
+  sage: factor(x^2 + 2*x + 1)
+#  (x + 999)^2
+\end{sagecommandline}
 
+\begin{sagecommandline}
+sage: h = cos(x)^6 + sin(x)^6 + 3 * sin(x)^2 * cos(x)^2; h
+sin(x)^6 + cos(x)^6 + 3*sin(x)^2*cos(x)^2
+La même après avoir configuré les affichages en latex:
 
+#sage: %display latex
+sage: h
+Simplifions-la:
 
-
-
+sage: h.simplify_trig()
+1
+\end{sagecommandline}
 
 
 

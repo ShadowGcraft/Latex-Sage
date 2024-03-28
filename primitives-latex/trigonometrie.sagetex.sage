@@ -20,22 +20,56 @@ try:
  _st_.inline(1, latex(g(x)))
 except:
  _st_.goboom(145)
-_st_.current_tex_line = 169
+try:
+ _st_.current_tex_line = 150
+ _st_.plot(0, format='notprovided', _p_=plot(f(x), x, -1, 1))
+except:
+ _st_.goboom(150)
+_st_.current_tex_line = 180
 _st_.blockbegin()
 try:
      f(x) = acos(x)
      F(x) = integrate(f(x),x)
 except:
- _st_.goboom(172)
+ _st_.goboom(183)
 _st_.blockend()
 try:
- _st_.current_tex_line = 174
+ _st_.current_tex_line = 185
  _st_.inline(2, latex(f(x)))
 except:
- _st_.goboom(174)
+ _st_.goboom(185)
 try:
- _st_.current_tex_line = 174
+ _st_.current_tex_line = 185
  _st_.inline(3, latex(F(x)))
 except:
- _st_.goboom(174)
+ _st_.goboom(185)
+try:
+ _st_.current_tex_line = 188
+ _st_.plot(1, format='notprovided', _p_=plot(F(x), x, 0, pi))
+except:
+ _st_.goboom(188)
+try:
+ _st_.current_tex_line = 215
+ _st_.commandline(0, r"""
+  sage: factor(x^2 + 2*x + 1)
+#  (x + 999)^2
+""", globals(), locals(), True)
+except:
+ _st_.goboom(218)
+try:
+ _st_.current_tex_line = 220
+ _st_.commandline(1, r"""
+sage: h = cos(x)^6 + sin(x)^6 + 3 * sin(x)^2 * cos(x)^2; h
+sin(x)^6 + cos(x)^6 + 3*sin(x)^2*cos(x)^2
+La même après avoir configuré les affichages en latex:
+
+#sage: %display latex
+sage: h
+Simplifions-la:
+
+sage: h.simplify_trig()
+1
+""", globals(), locals(), True)
+except:
+ _st_.goboom(231)
 _st_.endofdoc()

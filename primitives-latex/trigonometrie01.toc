@@ -1,0 +1,54 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,cos}}(x) $.}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,cos}}(x) $.}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,cos}}(x) $.}{3}{}%
+\contentsline {section}{\numberline {2}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,sin}}(x) $.}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,sin}}(x) $.}{4}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Vérification avec Sage}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,sin}}(x) $.}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Calcul de $\DOTSI \intop \ilimits@ \frac {x}{\sqrt {1- x^2}} \, dx $.}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Vérification avec Sage}{5}{}%
+\contentsline {section}{\numberline {3}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,tan}}(x) $.}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,tan}}(x) $.}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,tan}}(x) $.}{6}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Calcul de $\DOTSI \intop \ilimits@ \frac {x}{1+ x^2} \, dx $.}{6}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Vérification avec Sage}{6}{}%
+\contentsline {section}{\numberline {4}La fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{7}{}%
+\contentsline {subsection}{\numberline {4.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{7}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Première Méthode}{7}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Seconde Méthode}{7}{}%
+\contentsline {subsubsection}{\numberline {4.1.3}Vérification avec Sage}{7}{}%
+\contentsline {subsection}{\numberline {4.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{8}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Calcul de $\DOTSI \intop \ilimits@ \frac {x}{x} \, dx $.}{8}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Vérification avec Sage}{8}{}%
+\contentsline {section}{\numberline {5}La fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{8}{}%
+\contentsline {subsection}{\numberline {5.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{9}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Vérification avec Sage}{9}{}%
+\contentsline {subsection}{\numberline {5.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{9}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Vérification avec Sage}{9}{}%
+\contentsline {section}{\numberline {6}La fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{9}{}%
+\contentsline {subsection}{\numberline {6.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{9}{}%
+\contentsline {subsubsection}{\numberline {6.1.1}Vérification avec Sage}{10}{}%
+\contentsline {subsection}{\numberline {6.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{10}{}%
+\contentsline {subsubsection}{\numberline {6.2.1}Vérification avec Sage}{10}{}%
+\contentsline {section}{\numberline {7}La fonction $x \DOTSB \mapstochar \rightarrow \ch (x)$.}{10}{}%
+\contentsline {subsection}{\numberline {7.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \ch (x)$.}{10}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}Vérification avec Sage}{11}{}%
+\contentsline {subsection}{\numberline {7.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \ch (x)$.}{11}{}%
+\contentsline {subsubsection}{\numberline {7.2.1}Vérification avec Sage}{11}{}%
+\contentsline {section}{\numberline {8}La fonction $x \DOTSB \mapstochar \rightarrow \sh (x)$.}{11}{}%
+\contentsline {subsection}{\numberline {8.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \sh (x)$.}{11}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}Vérification avec Sage}{12}{}%
+\contentsline {subsection}{\numberline {8.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \sh (x)$.}{12}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}Vérification avec Sage}{12}{}%
+\contentsline {section}{\numberline {9}Calcul de quelques primitives.}{12}{}%
+\contentsline {subsection}{\numberline {9.1}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2 + 1} } $ }{12}{}%
+\contentsline {subsubsection}{\numberline {9.1.1}Vérification avec Sage}{12}{}%
+\contentsline {subsection}{\numberline {9.2}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ x + 1} } $ }{12}{}%
+\contentsline {subsubsection}{\numberline {9.2.1}Vérification avec Sage}{12}{}%
+\contentsline {subsection}{\numberline {9.3}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ \alpha ^2} } $ }{12}{}%
+\contentsline {subsubsection}{\numberline {9.3.1}Vérification avec Sage}{12}{}%
+\contentsline {subsubsection}{\numberline {9.3.2}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ a^2} } $ par un changement de variable puis par l'emploi d'une variable auxiliaire}{12}{}%
+\contentsline {subsubsection}{\numberline {9.3.3}Vérification avec Sage}{12}{}%
+\contentsline {subsection}{\numberline {9.4}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \sqrt {x^2 + 1} $ }{12}{}%
+\contentsline {subsubsection}{\numberline {9.4.1}Vérification avec Sage}{12}{}%

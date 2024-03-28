@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.18)  19 MAR 2024 08:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.27)  28 MAR 2024 12:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**trigonometrie.tex
-(./trigonometrie.tex
+**trigonometrie01.tex
+(./trigonometrie01.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/extarticle.cls
@@ -332,6 +332,9 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen188
 \Gin@req@width=\dimen189
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/shorttoc/shorttoc.sty
+Package: shorttoc 2002/08/20 v1.3 Short table of contents (JPFD)
+)
 (/usr/local/texlive/texmf-local/tex/latex/local/sagetex.sty
 Package: sagetex 2021/10/16 v3.6 embedding Sage into LaTeX documents
 
@@ -396,7 +399,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \c@ST@cmdline=\count309
 \sagetexindent=\skip61
 
-(./trigonometrie.sagetex.sout)
+(./trigonometrie01.sagetex.sout)
 \sagecommandlineskip=\skip62
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -404,25 +407,25 @@ File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box63
 )
-(./trigonometrie.aux)
-\openout1 = `trigonometrie.aux'.
+(./trigonometrie01.aux)
+\openout1 = `trigonometrie01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Info: Redefining \degres on input line 104.
-LaTeX Info: Redefining \up on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Info: Redefining \degres on input line 109.
+LaTeX Info: Redefining \up on input line 109.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -482,88 +485,70 @@ e
 
 \c@lstlisting=\count317
 \ST@sf=\write5
-\openout5 = `trigonometrie.sagetex.sage'.
+\openout5 = `trigonometrie01.sagetex.sage'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 116
+LaTeX Font Info:    Trying to load font information for U+msa on input line 125
 .
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 116
+LaTeX Font Info:    Trying to load font information for U+msb on input line 125
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+(./trigonometrie01.toc [1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}])
+\tf@toc=\write6
+\openout6 = `trigonometrie01.toc'.
+
+ [2]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-40.
+59.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-<sage-plots-for-trigonometrie.tex/plot-0.pdf, id=18, 452.72893pt x 338.37286pt>
-
-File: sage-plots-for-trigonometrie.tex/plot-0.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie.tex/plot-0.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie.tex/plot-0.pdf  used on i
-nput line 150.
-(pdftex.def)             Requested size: 241.84843pt x 180.76178pt.
-<sage-plots-for-trigonometrie.tex/plot-1.pdf, id=19, 453.62183pt x 338.6628pt>
-File: sage-plots-for-trigonometrie.tex/plot-1.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie.tex/plot-1.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie.tex/plot-1.pdf  used on i
-nput line 188.
-(pdftex.def)             Requested size: 241.84843pt x 180.5601pt.
- [2 <./sage-plots-for-trigonometrie.tex/plot-0.pdf>]
-\ST@df=\write6
-\openout6 = `trigonometrie_doctest.sage'.
-
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/03/11 1.10a listings language file
-)
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 218.
-
-(./trigonometrie.sagetex.scmd) (./trigonometrie.sagetex.scmd)
-(./trigonometrie.sagetex.scmd) (./trigonometrie.sagetex.scmd)
-(./trigonometrie.sagetex.scmd) [3 <./sage-plots-for-trigonometrie.tex/plot-1.pd
-f>] (./trigonometrie.sagetex.scmd) (./trigonometrie.sagetex.scmd)
+) [3] [4] [5]
+[6] [7] [8] [9] [10]
 *********************************************************************
-[4] (./trigonometrie.aux)
+[11] [12] (./trigonometrie01.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9066 strings out of 474104
- 138634 string characters out of 5743467
- 1974493 words of memory out of 5000000
- 31294 multiletter control sequences out of 15000+600000
- 571019 words of font info for 73 fonts, out of 8000000 for 9000
+ 8681 strings out of 474104
+ 134923 string characters out of 5743467
+ 1937493 words of memory out of 5000000
+ 30912 multiletter control sequences out of 15000+600000
+ 575668 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,83p,436b,1492s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,65p,424b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on trigonometrie.pdf (4 pages, 180552 bytes).
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/te
+xlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/
+2024/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
+Output written on trigonometrie01.pdf (12 pages, 247870 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 129 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

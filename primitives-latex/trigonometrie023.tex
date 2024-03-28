@@ -163,11 +163,8 @@ La restriction de la fonction $x \mapsto \ln(x) $ à l'intervalle $[0,\pi]$ est 
 \subsection{Dérivée de la fonction $x \mapsto \cos(x)$.}
 
 \begin{align*}
-\lim_{h\to 0} \frac{\cos(x+h)-cos(x)}{h} = &\lim_{h\to 0} \frac{\cos(x)\cos(h)-\sin(x)\sin(h)-cos(x)}{h} \\ =& \lim_{h\to 0} \frac{\cos(x)(\cos(h)-1)}{h}-\frac{\sin(x)\sin(h)}{h}\\  =& -\sin{x}
+\lim_{h\to 0} \frac{\cos(x+h)-cos(x)}{h} = &\lim_{h\to 0} \frac{\cos(x)\cos(h)-\sin(x)\sin(h)-cos(x)}{h} \\ =& \lim_{h\to 0} \frac{\cos(x)(\cos(h)-1)}{h}-\frac{\sin(x)\sin(h)}{h}\\  =&  \cos(x) \times \lim_{h\to 0}\frac{\cos(h)-1}{h}- \sin(x) \times \lim_{h\to 0} \frac{\sin(h)}{h}\\  =& -\sin{x}
 \end{align*}
-
-\subsubsection{Vérification avec Sage}
-
 
 \subsection{Calcul de la primitive de la fonction  $x \mapsto \cos(x)$.}
 
@@ -181,10 +178,9 @@ La restriction de la fonction $x \mapsto \ln(x) $ à l'intervalle $[0,\pi]$ est 
 
 
 \begin{align*}
-\lim_{h\to 0} \frac{\sin(x+h)-sin(x)}{h} =& \lim_{h\to 0} \frac{\cos(x)\sin(h)-\cos(x)\sin(h)-\sin(x)}{h} \\= & \lim_{h\to 0} \frac{\sin(x)(\cos(h)-1)}{h}-\frac{\cos(x)\sin(h)}{h} \\=& \cos{x}
+\lim_{h\to 0} \frac{\sin(x+h)-sin(x)}{h} =& \lim_{h\to 0} \frac{\cos(x)\sin(h)-\cos(x)\sin(h)-\sin(x)}{h} \\= & \lim_{h\to 0} \frac{\sin(x)(\cos(h)-1)}{h}-\frac{\cos(x)\sin(h)}{h} \\=&\sin(x) \times  \lim_{h\to 0} \frac{\cos(h)-1}{h}-\cos(x) \times \frac{\sin(h)}{h} \\= \cos{x}
 \end{align*}
 
-\subsubsection{Vérification avec Sage}
 
 \subsection{Calcul de la primitive de la fonction  $x \mapsto \sin(x)$.}
 
@@ -199,10 +195,8 @@ La restriction de la fonction $x \mapsto \ln(x) $ à l'intervalle $[0,\pi]$ est 
 
 
 \begin{align*}
-(\tan(x))' = & \left(\frac{\sin(x)}{\cos(x)}\right)' \\ = &
+(\tan(x))' = & \left(\frac{\sin(x)}{\cos(x)}\right)' \\ = & \frac{\cos(x) \times \cos(x)+\sin(x)\times \sin(x)}{\cos(x)^2}  \\ = & \frac{1}{\cos(x)^2} = 1 + \tan(x)^2
 \end{align*}
-
-\subsubsection{Vérification avec Sage}
 
 \subsection{Calcul de la primitive de la fonction  $x \mapsto \tan(x)$.}
 

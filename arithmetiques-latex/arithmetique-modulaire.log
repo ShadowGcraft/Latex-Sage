@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.21)  2 APR 2024 18:03
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.27)  2 APR 2024 18:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **arithmetique-modulaire.tex
 (./arithmetique-modulaire.tex
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
+L3 programming layer <2024-03-14>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/size14.clo
@@ -347,17 +347,17 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-02-20 L3 programming layer (loader) 
+Package: expl3 2024-03-14 L3 programming layer (loader) 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2024-02-20 L3 backend support: XeTeX
+File: l3backend-xetex.def 2024-03-14 L3 backend support: XeTeX
 \g__graphics_track_int=\count292
 \l__pdf_internal_box=\box60
 \g__pdf_backend_object_int=\count293
 \g__pdf_backend_annotation_int=\count294
 \g__pdf_backend_link_int=\count295
 ))
-Package: xparse 2024-02-18 L3 Experimental document command parser
+Package: xparse 2024-03-14 L3 Experimental document command parser
 )
 Package: fontspec 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
 
@@ -550,14 +550,14 @@ ne 192.
  [3] (./arithmetique-modulaire.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
+L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8467 strings out of 474773
- 184689 string characters out of 5757724
- 1928839 words of memory out of 5000000
- 30508 multiletter control sequences out of 15000+600000
+ 8463 strings out of 474761
+ 184588 string characters out of 5757509
+ 1929145 words of memory out of 5000000
+ 30516 multiletter control sequences out of 15000+600000
  563827 words of font info for 68 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,5n,93p,337b,317s stack positions out of 10000i,1000n,20000p,200000b,200000s

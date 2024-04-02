@@ -83,7 +83,7 @@
 \renewcommand{\Im}{\mathop{\mathfrak{I}\mathrm{m}}}
 \renewcommand{\Re}{\mathop{\mathfrak{R}\mathrm{m}}}
 
-
+ 
 
 
 \DeclareMathOperator{\sh}{sh}
@@ -94,51 +94,54 @@
 
 \begin{document} 
 
-\pagecolor{gray}
+
 
 \setlength{\parindent}{0pt}
 
 
 %\bf \Huge
 
-\textcolor{white}{\section*{Exercice~1}}
+\section*{Notations.}
 
-\textcolor{white}{Soit $n\geqslant 2$. Calculer :
+On note $\wedge$ le pgcd et $\vee$ le ppcm, par ailleurs on préfère la notation $a\equiv b \pmod{n}$ pour exprimer que $a$ est congru à $b$ modulo $n$.
+
+\section*{Exercice~1.}
+
+Soit $n\geqslant 2$. Calculer :
 \begin{enumerate}
-\item $n \vee (2n+1)$
 \item $n \wedge (2n+1)$
-\item $(n-1)\vee(2n+1)$
+\item $n \vee (2n+1)$
 \item $(n-1)\wedge(2n+1)$
+\item $(n-1)\vee(2n+1)$
 \end{enumerate}
-}
-
-\textcolor{white}{\subsection*{Solution de l'exercice~1}}
-
-\textcolor{white}{Quelques explications pour écrire les textes d'arithmétique modulaire.}
-
-\begin{tabular}{lll}
-\verb|$a\equiv b \pmod{n}$| & $a\equiv b \pmod{n}$ \\
-\verb|$a\equiv b \mod{n}$|  & $a\equiv b \mod{n}$ \\
-\verb|$a\equiv b \pod{n}$|  & $a\equiv b \pod{n}$ \\
-\verb|$a\equiv b \bmod{n}$| & $a\equiv b \bmod{n}$ & (wrong) 
-\end{tabular}
 
 
-\textcolor{white}{\section*{Exercice~2}}
-
-\textcolor{white}{Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b \wedge c =1$.\\ Montrer que $a \wedge b = a \wedge c = b \wedge =1$.}
-
-\textcolor{white}{\subsection*{Solution de l'exercice~2}}
-
-
-
-\textcolor{white}{\section*{Exercice~3}}
-
-\textcolor{white}{Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b =1$.\\ Montrer que $a$ et $ b$ ne sont pas de même parité.\\
-\textsl{Indication. On pourra utiliser des congruences modulo 4.}}
+\subsection*{Solution, proposée par le manuel, de l'exercice~1.}
+\begin{enumerate}
+\item $n \wedge (2n+1)$ ?\\
+La division euclidienne de $2n+1$ par $n$ s'exprime par l'égalité $2n+1= 2\times n +1$, c'est-à-dire $2n+1-2n=1$ d'où on conclut que les entiers $(2n+1)$ et $n$ sont premiers entre eux.
+\item $n \vee (2n+1)$ ?\\
+Comme le pgcd de $(2n+1)$ et $n$ vaut $1$, alors le ppcm de $(2n+1)$ et $n$ est le produit $(2n+1) \times n$.
+\item $(n-1)\wedge(2n+1)$
+\item $(n-1)\vee(2n+1)$
+\end{enumerate}
 
 
-\textcolor{white}{\subsection*{Solution de l'exercice~3}}
+\section*{Exercice~2.}
+
+Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b \wedge c =1$.\\ Montrer que $a \wedge b = a \wedge c = b \wedge =1$.
+
+\subsection*{Solution de l'exercice~2.}
+
+
+
+\section*{Exercice~3.}
+
+Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b =1$.\\ Montrer que $a$ et $ b$ ne sont pas de même parité.\\
+\textsl{Indication. On pourra utiliser des congruences modulo 4.}
+
+
+\subsection*{Solution de l'exercice~3.}
 
 
 

@@ -1,0 +1,212 @@
+% !TEX parameter = xelatex --shell-escape -synctex=1 -interaction=nonstopmode
+
+%\documentclass[a4paper,12pt]{smfart}
+
+%\documentclass[a4paper,11pt]{book}
+%\documentclass[a4paper,landscape,20pt]{extarticle} %% landscape ou bien portrait (par défault)
+\documentclass[a4paper,14pt]{extarticle} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
+%\documentclass[a4paper,11pt]{report}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%\usepackage{amsmath,amssymb,amsfonts,url,xspace,smfthm}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,url,xspace}
+\usepackage[mathscr]{eucal}
+
+%\usepackage{exscale}
+
+\usepackage{diagbox}
+
+\usepackage{fancybox}
+
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% - les theoremes
+\newtheorem{definition}{D\'efinition}
+\newtheorem{theoreme}{Th\'eor\`eme}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemme}{Lemme}
+\newtheorem{corollaire}{Corollaire}
+\newtheorem{propriete}{Propri\'et\'e}
+\newtheorem{axiome}{Axiome}
+\newcommand{\initialisecompteurs}{
+       \setcounter{definition}{0}%
+       \setcounter{theoreme}{0}%
+       \setcounter{proposition}{0}%
+       \setcounter{lemme}{0}%
+       \setcounter{corollaire}{0}%
+       \setcounter{propriete}{0}%
+       \setcounter{axiome}{0}%
+       \setcounter{section}{0}%
+       \setcounter{subsection}{0}%
+       \setcounter{subsubsection}{0}%
+}
+
+
+\usepackage[left=2.cm,right=2.cm,top=2.cm,bottom=2cm,bindingoffset=0cm, headsep=0cm,headheight=0cm]{geometry}
+
+%\usepackage{qrcode}
+%\usepackage[draft,forget]{qrcode}
+%\usepackage{rmsmacros} 
+\usepackage{graphicx}
+%\usepackage{hyperref}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage{tabvar}
+%\usepackage[tight]{shorttoc}
+%\newcommand{\sommaire}{\shorttoc{Sommaire}{1}}
+
+\graphicspath{ {./images/} }
+\everymath{\displaystyle}
+\usepackage{fontspec}  % fontspec et xunicode sont facultatifs
+\setmainfont[Ligatures=TeX]{Helvetica}   % Police romaine, utilisée dans le corps du document
+%\setmainfont[Ligatures=TeX]{Luciole}   % Police romaine, utilisée dans le corps du document
+
+
+
+\def\eclaire{\mathbb}
+
+\def\R{\ensuremath{\eclaire R}}
+\def\N{\ensuremath{\eclaire N}}
+\def\C{\ensuremath{\eclaire C}}
+\def\Z{\ensuremath{\eclaire Z}}
+\def\Q{\ensuremath{\eclaire Q}}
+
+%\newcommand{\sh}{\mathop{\mathrm{sh}}\nolimits}
+\renewcommand{\sinh}{\mathop{\mathrm{sh}}}
+\renewcommand{\cosh}{\mathop{\mathrm{ch}}}
+\renewcommand{\tanh}{\mathop{\mathrm{th}}}
+\renewcommand{\arcsin}{\mathop{\mathrm{Arc\,sin}}}
+\renewcommand{\arccos}{\mathop{\mathrm{Arc\,cos}}}
+\renewcommand{\arctan}{\mathop{\mathrm{Arc\,tan}}}
+\renewcommand{\Im}{\mathop{\mathfrak{I}\mathrm{m}}}
+\renewcommand{\Re}{\mathop{\mathfrak{R}\mathrm{m}}}
+
+ 
+
+
+\DeclareMathOperator{\sh}{sh}
+\DeclareMathOperator{\ch}{ch}
+
+
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document} 
+
+
+
+\setlength{\parindent}{0pt}
+
+
+%\bf \Huge
+
+\section*{Notations.}
+
+On note $\wedge$ le pgcd et $\vee$ le ppcm, par ailleurs on préfère la notation $a\equiv b \pmod{n}$ pour exprimer que $a$ est congru à $b$ modulo $n$.
+
+\section*{Exercice~1.}
+
+Soit $n\geqslant 2$. Calculer :
+\begin{enumerate}
+\item $n \wedge (2n+1)$
+\item $n \vee (2n+1)$
+\item $(n-1)\wedge(2n+1)$
+\item $(n-1)\vee(2n+1)$
+\end{enumerate}
+
+\subsection*{Ma solution}
+
+\subsubsection*{$n \wedge (2n+1)$ ?}
+
+Comme le reste de la division euclidienne entre les deux nombres vaut $1$, alors  $n \wedge (2n+1)$ = 1
+
+
+
+\subsubsection*{$n \vee (2n+1)$ ?}
+
+Comme $n \wedge (2n+1) = 1$ alors $n \vee (2n+1) = n \times (2n+1)$
+
+
+
+\subsubsection*{$(n-1)\wedge(2n+1)$ ?}
+
+La division euclidienne de $(2n+1)$ par $(n-1)$ vaut 3. Donc $(n-1)\wedge(2n+1) = 3$
+
+
+
+\subsubsection*{$(n-1)\vee(2n+1)$ ?}
+
+On a trois cas qui se présente à nous. \\
+
+\begin{enumerate}
+\item  Lorsque $n \equiv 1 \pmod{3}$, on a $(n-1)$ et $(2n+1) \equiv 0 \pmod{3}$. \\ Donc $(n-1)\vee(2n+1)$ vaut $(n-1) \times (2n+1)$
+\item Lorsque $n \equiv 2 \pmod{3}$, on a $(n-1) \equiv 1 \pmod{3}$ et $(2n+1) \equiv 2 \pmod{3}$. \\ Donc $(n-1)\vee(2n+1)$ vaut $\frac{(n-1) \times (2n+1)}{3}$
+\item Lorsque $n \equiv 0 \pmod{3}$, on a $(n-1) \equiv 2 \pmod{3}$ et $(2n+1) \equiv 1 \pmod{3}$. \\ Donc $(n-1)\vee(2n+1)$ vaut $\frac{(n-1) \times (2n+1)}{3}$
+\end{enumerate}
+
+
+\subsection*{Solution, proposée par le manuel, de l'exercice~1.}
+\begin{enumerate}
+
+\item $n \wedge (2n+1)$ ? \\
+La division euclidienne de $2n+1$ par $n$ s'exprime par l'égalité $2n+1= 2\times n +1$, c'est-à-dire $2n+1-2n=1$ d'où on conclut que les entiers $(2n+1)$ et $n$ sont premiers entre eux.
+
+\item $n \vee (2n+1)$ ?\\
+Comme le pgcd de $(2n+1)$ et $n$ vaut $1$, alors le ppcm de $(2n+1)$ et $n$ est le produit $(2n+1) \times n$.
+
+\item $(n-1)\wedge(2n+1)$ ? \\
+La division euclidienne de $2n+1$ par $n-1$ s'exprime par l'égalité $2n+1= 2\times (n-1) +3 $,  d'où on conclut que le pgcd de $(n-1)$ et $(2n+1)$ est un diviseur de $3$, donc est égal à $3$ ou bien $1$.
+
+\begin{itemize}
+
+\item Dans le cas où $n \not\equiv 1 \pmod{3}$ 
+ implique $n-1 \not\equiv 0 \pmod{3}$ c'est-à-dire $n-1$ n'est pas divisible par $3$  et donc $(n-1)\wedge(2n+1)=1$.
+ 
+\item Dans le cas où $n \equiv 1 \pmod{3}$, on a alors $2n+1\equiv 2\times 1+1 \equiv 3  \pmod{3}$ c'est-à-dire $2n+1\equiv 0 \pmod{3}$, donc 3 divise $2n+1$.\\
+$n \equiv 1 \pmod{3}$ implique $n-1 \equiv 0 \pmod{3}$ c'est-à-dire 3 divise $n-1$  et donc $(n-1)\wedge(2n+1)=3$.
+\end{itemize}
+
+
+\item $(n-1)\vee(2n+1)$ ?\\
+Les calculs des pgcd ci-dessus permettent de trouver aisément les ppcm. En conclusion on a :
+\begin{description}
+\item[$\bullet$] si $n \equiv 1 \pmod{3}$, alors $(n-1)\vee(2n+1) = \frac{(n-1)(2n+1)}{3} $;
+\item[$\bullet$] si $n \not\equiv 1 \pmod{3}$, alors $(n-1)\vee(2n+1) = (n-1)(2n+1)$. 
+\end{description}
+
+
+\end{enumerate}
+
+\section*{Exercice~2.}
+
+Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b \wedge c =1$.\\ Montrer que $a \wedge b = a \wedge c = b \wedge =1$.
+
+\subsection*{Solution de l'exercice~2.}
+
+
+
+\section*{Exercice~3.}
+
+Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b =1$.\\ Montrer que $a$ et $ b$ ne sont pas de même parité.\\
+\textsl{Indication. On pourra utiliser des congruences modulo 4.}
+
+
+\subsection*{Solution de l'exercice~3.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

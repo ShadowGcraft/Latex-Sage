@@ -1,0 +1,158 @@
+% !TEX parameter = xelatex --shell-escape -synctex=1 -interaction=nonstopmode
+
+%\documentclass[a4paper,12pt]{smfart}
+
+%\documentclass[a4paper,11pt]{book}
+%\documentclass[a4paper,landscape,20pt]{extarticle} %% landscape ou bien portrait (par défault)
+\documentclass[a4paper,14pt]{extarticle} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
+%\documentclass[a4paper,11pt]{report}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%\usepackage{amsmath,amssymb,amsfonts,url,xspace,smfthm}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,url,xspace}
+\usepackage[mathscr]{eucal}
+
+%\usepackage{exscale}
+
+\usepackage{diagbox}
+
+\usepackage{fancybox}
+
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% - les theoremes
+\newtheorem{definition}{D\'efinition}
+\newtheorem{theoreme}{Th\'eor\`eme}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemme}{Lemme}
+\newtheorem{corollaire}{Corollaire}
+\newtheorem{propriete}{Propri\'et\'e}
+\newtheorem{axiome}{Axiome}
+\newcommand{\initialisecompteurs}{
+       \setcounter{definition}{0}%
+       \setcounter{theoreme}{0}%
+       \setcounter{proposition}{0}%
+       \setcounter{lemme}{0}%
+       \setcounter{corollaire}{0}%
+       \setcounter{propriete}{0}%
+       \setcounter{axiome}{0}%
+       \setcounter{section}{0}%
+       \setcounter{subsection}{0}%
+       \setcounter{subsubsection}{0}%
+}
+
+
+\usepackage[left=2.cm,right=2.cm,top=2.cm,bottom=2cm,bindingoffset=0cm, headsep=0cm,headheight=0cm]{geometry}
+
+%\usepackage{qrcode}
+%\usepackage[draft,forget]{qrcode}
+%\usepackage{rmsmacros} 
+\usepackage{graphicx}
+%\usepackage{hyperref}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage{tabvar}
+%\usepackage[tight]{shorttoc}
+%\newcommand{\sommaire}{\shorttoc{Sommaire}{1}}
+
+\graphicspath{ {./images/} }
+\everymath{\displaystyle}
+\usepackage{fontspec}  % fontspec et xunicode sont facultatifs
+\setmainfont[Ligatures=TeX]{Helvetica}   % Police romaine, utilisée dans le corps du document
+%\setmainfont[Ligatures=TeX]{Luciole}   % Police romaine, utilisée dans le corps du document
+
+
+
+\def\eclaire{\mathbb}
+
+\def\R{\ensuremath{\eclaire R}}
+\def\N{\ensuremath{\eclaire N}}
+\def\C{\ensuremath{\eclaire C}}
+\def\Z{\ensuremath{\eclaire Z}}
+\def\Q{\ensuremath{\eclaire Q}}
+
+%\newcommand{\sh}{\mathop{\mathrm{sh}}\nolimits}
+\renewcommand{\sinh}{\mathop{\mathrm{sh}}}
+\renewcommand{\cosh}{\mathop{\mathrm{ch}}}
+\renewcommand{\tanh}{\mathop{\mathrm{th}}}
+\renewcommand{\arcsin}{\mathop{\mathrm{Arc\,sin}}}
+\renewcommand{\arccos}{\mathop{\mathrm{Arc\,cos}}}
+\renewcommand{\arctan}{\mathop{\mathrm{Arc\,tan}}}
+\renewcommand{\Im}{\mathop{\mathfrak{I}\mathrm{m}}}
+\renewcommand{\Re}{\mathop{\mathfrak{R}\mathrm{m}}}
+
+
+
+
+\DeclareMathOperator{\sh}{sh}
+\DeclareMathOperator{\ch}{ch}
+
+
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document} 
+
+\pagecolor{gray}
+
+\setlength{\parindent}{0pt}
+
+
+%\bf \Huge
+
+\textcolor{white}{\section*{Exercice~1}}
+
+\textcolor{white}{Soit $n\geqslant 2$. Calculer :
+\begin{enumerate}
+\item $n \vee (2n+1)$
+\item $n \wedge (2n+1)$
+\item $(n-1)\vee(2n+1)$
+\item $(n-1)\wedge(2n+1)$
+\end{enumerate}
+}
+
+\textcolor{white}{\subsection*{Solution de l'exercice~1}}
+
+\textcolor{white}{Quelques explications pour écrire les textes d'arithmétique modulaire.}
+
+\begin{tabular}{lll}
+\verb|$a\equiv b \pmod{n}$| & $a\equiv b \pmod{n}$ \\
+\verb|$a\equiv b \mod{n}$|  & $a\equiv b \mod{n}$ \\
+\verb|$a\equiv b \pod{n}$|  & $a\equiv b \pod{n}$ \\
+\verb|$a\equiv b \bmod{n}$| & $a\equiv b \bmod{n}$ & (wrong) 
+\end{tabular}
+
+
+\textcolor{white}{\section*{Exercice~2}}
+
+\textcolor{white}{Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b \wedge c =1$.\\ Montrer que $a \wedge b = a \wedge c = b \wedge =1$.}
+
+\textcolor{white}{\subsection*{Solution de l'exercice~2}}
+
+
+
+\textcolor{white}{\section*{Exercice~3}}
+
+\textcolor{white}{Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b =1$.\\ Montrer que $a$ et $ b$ ne sont pas de même parité.\\
+\textsl{Indication. On pourra utiliser des congruences modulo 4.}}
+
+
+\textcolor{white}{\subsection*{Solution de l'exercice~3}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

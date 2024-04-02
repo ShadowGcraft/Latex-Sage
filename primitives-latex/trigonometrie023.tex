@@ -169,7 +169,13 @@ La restriction de la fonction $x \mapsto \ln(x) $ à l'intervalle $[0,\pi]$ est 
 \subsection{Calcul de la primitive de la fonction  $x \mapsto \cos(x)$.}
 
 
-\subsubsection{Vérification avec Sage}
+\begin{sageblock}
+    f(x) = cos(x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
+
 
 
 \section{La fonction  $x \mapsto \sin(x)$.}
@@ -185,7 +191,13 @@ La restriction de la fonction $x \mapsto \ln(x) $ à l'intervalle $[0,\pi]$ est 
 \subsection{Calcul de la primitive de la fonction  $x \mapsto \sin(x)$.}
 
 
-\subsubsection{Vérification avec Sage}
+\begin{sageblock}
+    f(x) = sin(x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
+
 
 
 
@@ -198,10 +210,30 @@ La restriction de la fonction $x \mapsto \ln(x) $ à l'intervalle $[0,\pi]$ est 
 (\tan(x))' = & \left(\frac{\sin(x)}{\cos(x)}\right)' \\ = & \frac{\cos(x) \times \cos(x)+\sin(x)\times \sin(x)}{\cos(x)^2}  \\ = & \frac{1}{\cos(x)^2} = 1 + \tan(x)^2
 \end{align*}
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \tan(x)$.}
-
-
 \subsubsection{Vérification avec Sage}
+
+
+\begin{sageblock}
+    f(x) = tan(x)
+    g(x) = diff(f(x),x,1)
+\end{sageblock}
+
+La dérivée de $\sage{f(x)} = \sage{g(x)} $.
+
+Le graphe de $\sage{f(x)} $.
+
+
+
+\subsection{Calcul de la primitive de la fonction  $x \mapsto \tan(x)$ avec Sage.}
+
+
+\begin{sageblock}
+    f(x) = tan(x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
+
 
 
 
@@ -322,8 +354,6 @@ On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \m
 \subsection{Calcul de la primitive de la fonction  $x \mapsto \arcsin(x) $.}
 
 
-
-
 Je pose que $u(x)$  est égal à la fonction $\arcsin(x)$ et $v'(x)$ est égal $1$  d'où $u'(x)$  est égal à la fonction $ \frac{1}{\sqrt{1- x^2}} $ et $v(x)$ est égal $x$.
 
 Alors on a $\int \arcsin(x) \, dx = x \times \arcsin(x) -\int \frac{1}{\sqrt{1- x^2}} \times x \, dx $.
@@ -405,9 +435,6 @@ Alors on a $\int \arctan(x) \, dx = x \times \arctan(x) -\int \frac{1}{1+x^2} \t
 
 
 
-
-
-
 \subsubsection{Calcul de $\int \frac{x}{1+ x^2} \, dx $.}
 
 $\int \frac{x}{1+ x^2} \, dx = \frac{1}{2} \int \frac{d(1+x^2)}{1+ x^2} $.
@@ -464,7 +491,6 @@ nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\c
 
 
 \subsection{Calcul de la primitive de la fonction  $x \mapsto \sinh(x)$.}
-
 
 
 \subsubsection{Vérification avec Sage}
@@ -552,7 +578,7 @@ Le graphe de $\sage{f(x)} $.
 
 
 \begin{center}
-\sageplot[width=.5\textwidth]{plot(f(x), x, -1, 1)} \\
+\sageplot[width=.5\textwidth]{plot(f(x), x, 1, 5)} \\
 %\sageplot{plot(g(x), x, -1, 1)}
 \end{center}
 
@@ -597,7 +623,7 @@ Le graphe de $\sage{f(x)} $.
 
 
 \begin{center}
-\sageplot[width=.5\textwidth]{plot(f(x), x, -1, 1)} \\
+\sageplot[width=.5\textwidth]{plot(f(x), x, -5, 5)} \\
 %\sageplot{plot(g(x), x, -1, 1)}
 \end{center}
 
@@ -607,9 +633,7 @@ Le graphe de $\sage{f(x)} $.
 
 
 
-
 \section{La fonction  $x \mapsto \arg \tanh(x)$.}
-
 
 
 

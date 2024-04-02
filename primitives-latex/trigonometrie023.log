@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.27)  28 MAR 2024 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.21)  2 APR 2024 12:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **trigonometrie023.tex
 (./trigonometrie023.tex
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-03-14>
+L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/extreport.cls
 Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/size14.clo
@@ -406,18 +406,18 @@ LaTeX Info: Redefining \UseVerb on input line 1229.
 \lst@maxwidth=\dimen193
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/03/11 1.10a (Carsten Heinz)
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 \c@lstnumber=\count306
 \lst@skipnumbers=\count307
 \lst@framebox=\box62
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/03/11 1.10a listings configuration
+File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
-Package: listings 2024/03/11 1.10a (Carsten Heinz)
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
@@ -446,7 +446,7 @@ LaTeX Font Info:    Trying to load font information for T1+ccr on input line 11
 File: t1ccr.fd 1999/11/22 v1.0a (WaS)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box63
 )
@@ -638,13 +638,13 @@ Package pdftex.def Info: sage-plots-for-trigonometrie023.tex/plot-5.pdf  used o
 n input line 626.
 (pdftex.def)             Requested size: 241.84843pt x 180.42279pt.
  [14 <./sage-plots-for-trigonometrie023.tex/plot-5.pdf>]
-<sage-plots-for-trigonometrie023.tex/plot-6.pdf, id=140, 453.43965pt x 339.6689
+<sage-plots-for-trigonometrie023.tex/plot-6.pdf, id=140, 453.25659pt x 339.6689
 9pt>
 File: sage-plots-for-trigonometrie023.tex/plot-6.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie023.tex/plot-6.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie023.tex/plot-6.pdf  used o
 n input line 673.
-(pdftex.def)             Requested size: 241.84843pt x 181.16394pt.
+(pdftex.def)             Requested size: 241.84843pt x 181.24168pt.
  [15 <./sage-plots-for-trigonometrie023.tex/plot-6.pdf>]
 Chapitre 3.
 [16
@@ -658,19 +658,19 @@ Overfull \vbox (80.18396pt too high) has occurred while \output is active []
 
 
 [18]
-<sage-plots-for-trigonometrie023.tex/plot-7.pdf, id=164, 454.34406pt x 338.8374
-pt>
+<sage-plots-for-trigonometrie023.tex/plot-7.pdf, id=164, 454.24512pt x 339.6689
+9pt>
 File: sage-plots-for-trigonometrie023.tex/plot-7.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie023.tex/plot-7.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie023.tex/plot-7.pdf  used o
 n input line 758.
-(pdftex.def)             Requested size: 241.84843pt x 180.36884pt.
+(pdftex.def)             Requested size: 241.84843pt x 180.84778pt.
  [19 <./sage-plots-for-trigonometrie023.tex/plot-7.pdf>]
 *********************************************************************
 [20] (./trigonometrie023.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-03-14>
+L3 programming layer <2024-02-20>
  ***********
 
 
@@ -682,10 +682,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8939 strings out of 474104
- 142073 string characters out of 5743467
- 1940493 words of memory out of 5000000
- 31138 multiletter control sequences out of 15000+600000
+ 8943 strings out of 474116
+ 142174 string characters out of 5743682
+ 1940187 words of memory out of 5000000
+ 31130 multiletter control sequences out of 15000+600000
  580570 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,10n,65p,425b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -698,7 +698,7 @@ pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm1
 sbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sform
 10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1440
 .pfb>
-Output written on trigonometrie023.pdf (25 pages, 146829 bytes).
+Output written on trigonometrie023.pdf (25 pages, 146790 bytes).
 PDF statistics:
  222 PDF objects out of 1000 (max. 8388607)
  122 compressed objects within 2 object streams

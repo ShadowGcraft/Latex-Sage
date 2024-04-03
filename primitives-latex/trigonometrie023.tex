@@ -134,7 +134,6 @@
 
 %\bf \Huge
 
-
 \title{Les primitives et les dérivées.}
 \date{}
 
@@ -208,7 +207,7 @@ Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + Cste $ définie à une consta
 
 
 \begin{align*}
-(\tan(x))' = & \left(\frac{\sin(x)}{\cos(x)}\right)' \\ = & \frac{\cos(x) \times \cos(x)+\sin(x)\times \sin(x)}{\cos(x)^2}  \\ = & \frac{1}{\cos(x)^2} = 1 + \tan(x)^2
+\tan(x)' = & \left(\frac{\sin(x)}{\cos(x)}\right)' \\ = & \frac{\cos(x) \times \cos(x)+\sin(x)\times \sin(x)}{\cos(x)^2}  \\ = & \frac{1}{\cos(x)^2} = 1 + \tan(x)^2
 \end{align*}
 
 \subsubsection{Vérification avec Sage}
@@ -221,8 +220,13 @@ Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + Cste $ définie à une consta
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
 
-\subsection{Calcul de Une primitive de la fonction  $x \mapsto \tan(x)$ avec Sage.}
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \tan(x)$.}
 
+On a $\tan(x)=\frac{\sin(x)}{\cos(x)}$, alors $\int \tan(x) \, dx =\int \frac{\sin(x)}{\cos(x)}\, dx$.\\
+Je pose $u(x)=\cos(x)$ donc $u'(x)= -\sin(x) \,dx$ et par ce changement de variable on a $\int \tan(x) \, dx = \int \frac{\sin(x)}{\cos(x)}\, dx  = -\int \frac{u'}{u} = -\ln|u|  = \ln\left(\frac{1}{|u|}\right)  = \ln\left(\frac{1}{|\cos(x)|}\right) +Cste$.
+
+
+\subsubsection*{Vérification avec Sage}
 
 \begin{sageblock}
     f(x) = tan(x)
@@ -231,6 +235,7 @@ La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
 Une primitive de $\sage{f(x)}$ est la fonction définie à une constante près $x \mapsto \sage{F(x)} + Cste $.
 
+La fonction $x\mapsto \sec$ est la fonction paire $x\mapsto \frac{1}{\cos(x)}$ périodique de période $2\pi$ définie sur $\R-\{ \frac{\pi}{2}+k\pi, k\in\Z\}$. On retrouve bien le résultat précédent.
 
 
 \section{La fonction  $x \mapsto \arccos(x) $.}
@@ -265,13 +270,9 @@ La dérivée de la fonction $\sage{f(x)}$ est la fonction $x \mapsto \sage{g(x)}
 Les représentations graphiques de $x \mapsto \sage{f(x)} $ et de $x\mapsto \cos(x)$.
 \end{center}
 
-
-
 On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \mapsto \arccos(x) $.
 
 \subsection{Calcul de la primitive de la fonction  $x \mapsto \arccos(x) $.}
-
-
 
 
 Je pose que $u(x)$  est égal à la fonction $\arccos(x)$ et $v'(x)$ est égal $1$  d'où $u'(x)$  est égal à la fonction $ \frac{-1}{\sqrt{1- x^2}} $ et $v(x)$ est égal $x$.
@@ -301,7 +302,6 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + Cste$.
 La restriction de la fonction $x \mapsto \sin(x) $ à l'intervalle $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ est une bijection de $\left[-\frac{\pi}{2},\frac{\pi}{2}\right] \rightarrow [-1,1]$ . Il existe donc une fonction réciproque à la fonction $x \mapsto \sin(x) $ que l'on nomme $x \mapsto \arcsin(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $]-1,1[$.
 
 \subsection{Calcul de la dérivée de la fonction $x \mapsto \arcsin(x) $.}
-
 
 
 Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. On a $\sin(\arcsin(x))=x$, par conséquent la dérivée de cette expression s'exprime par $ \cos(\arcsin(x)) \times \arcsin(x) ' = 1$, d'où $\arcsin(x) ' = \frac{1}{\cos(\arcsin(x))} $.

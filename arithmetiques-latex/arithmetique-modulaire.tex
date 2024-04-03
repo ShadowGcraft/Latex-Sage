@@ -59,9 +59,18 @@
 
 \graphicspath{ {./images/} }
 \everymath{\displaystyle}
-\usepackage{fontspec}  % fontspec et xunicode sont facultatifs
-\setmainfont[Ligatures=TeX]{Helvetica}   % Police romaine, utilisée dans le corps du document
-%\setmainfont[Ligatures=TeX]{Luciole}   % Police romaine, utilisée dans le corps du document
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Sélection des fontes
+%\usepackage{fontspec}  % fontspec et xunicode sont facultatifs
+%\setmainfont[Ligatures=TeX]{Helvetica}   % Police romaine, utilisée dans le corps du document
+%\setmainfont[Ligatures=TeX]{Lucida Grande}   % Police romaine, utilisée dans le corps du document
+
+\usepackage{ccfonts} 
+\usepackage[euler-digits]{eulervm} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -103,7 +112,7 @@
 
 \section*{Notations.}
 
-On note $\wedge$ le pgcd et $\vee$ le ppcm, par ailleurs on préfère la notation $a\equiv b \pmod{n}$ pour exprimer que $a$ est congru à $b$ modulo $n$.
+On note $\wedge$ le pgcd et $\vee$ le ppcm, par ailleurs on préfère la notation $a\equiv b \pmod{n}$ pour exprimer que $a$ est congru à $b$ modulo~$n$.
 
 \section*{Exercice~1.}
 
@@ -182,18 +191,24 @@ Les calculs des pgcd ci-dessus permettent de trouver aisément les ppcm. En conc
 
 Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b \wedge c =1$.\\ Montrer que $a \wedge b = a \wedge c = b \wedge =1$.
 
-\subsection*{Solution de l'exercice~2.}
+\subsection*{Ma solution}
 
-
+\subsection*{Solution, proposée par le manuel, de l'exercice~2.}
+Raisonnons par l'absurde et supposons $ a \wedge b =1$. Alors, il existe un nombre premier $p$ qui divise $a$ et $b$. Il divise donc $a^2+b^2=c^2$. D'après le corolaire {\textsl{"Un nombre premier divise un produit si, et seulement s'il divise l'un de ses facteurs."}}, $p$ divise $c$ donc $p$ divise $ a \wedge b \wedge c =1$, ce qui constitue une absurdité.\\
+On démontre de même que $ a \wedge c = b \wedge c =1$.
 
 \section*{Exercice~3.}
 
 Soit $(a,b,c) \in (\N*)^3$ tel que $a^2+b^2=c^2$ et $ a \wedge b =1$.\\ Montrer que $a$ et $ b$ ne sont pas de même parité.\\
 \textsl{Indication. On pourra utiliser des congruences modulo 4.}
 
+\subsection*{Ma solution}
 
-\subsection*{Solution de l'exercice~3.}
 
+\subsection*{Solution, proposée par le manuel, de l'exercice~3.}
+Tout d'abord, $a$ et $b$ ne sont pas tous les deux pairs sinon $2$ divise $ a \wedge b =1$. \\
+Raisonnement par l'absurde et supposons que $a$ et $b$ soient tous les deux impairs. Alors on peut trouver $k \in \Z$ tel que $a=2k+1$, puis $a^2 =4k^2+4k+1$ donc $a^2 \equiv 1 \mod{4}$ et de même, $b^2 \equiv 1 \mod{4}$. Par somme, $c^2 \equiv 2 \mod{4}$, or un carré est congru à $à$ ou à $1$ modulo~$4$. \\ 
+Conclusion: $a$ et $b$ sont de parités différentes.
 
 
 

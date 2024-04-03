@@ -115,6 +115,16 @@
 % Only one command is required to use Sage within the LaTeX source:
 \usepackage{sagetex}
 
+
+
+
+\newcommand{\limh}[1]{\lim\limits_{h\to 0} \frac{#1(x+h)-#1(x)}{h}}
+
+
+
+
+
+
 \begin{document} 
 
 %\pagecolor{gray!45}
@@ -155,7 +165,7 @@ On passe des formules de trigonométrie aux formules de trigonométries hyperbol
 
 \section{La fonction  $x \mapsto \cos(x)$.}
 
-La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est une bijection de $[0,\pi] \rightarrow [-1,+1]$ . Il existe donc une fonction réciproque à la fonction $x \mapsto \cos(x) $ que l'on nomme $x \mapsto \Arccos(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $]-inf,+inf[$.
+La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est une bijection de $[0,\pi] \rightarrow [-1,+1]$ . Il existe donc une fonction réciproque à la fonction $x \mapsto \cos(x) $ que l'on nomme $x \mapsto \arccos(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $]-inf,+inf[$.
 
 
 
@@ -166,7 +176,7 @@ La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est
 \lim_{h\to 0} \frac{\cos(x+h)-cos(x)}{h} = &\lim_{h\to 0} \frac{\cos(x)\cos(h)-\sin(x)\sin(h)-cos(x)}{h} \\ =& \lim_{h\to 0} \frac{\cos(x)(\cos(h)-1)}{h}-\frac{\sin(x)\sin(h)}{h}\\  =&  \cos(x) \times \lim_{h\to 0}\frac{\cos(h)-1}{h}- \sin(x) \times \lim_{h\to 0} \frac{\sin(h)}{h}\\  =& -\sin{x}
 \end{align*}
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \cos(x)$.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \cos(x)$.}
 
 
 \begin{sageblock}
@@ -174,7 +184,7 @@ La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
 
 
 
@@ -188,7 +198,7 @@ La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
 \end{align*}
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \sin(x)$.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \sin(x)$.}
 
 
 \begin{sageblock}
@@ -196,7 +206,7 @@ La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
 
 
 
@@ -224,7 +234,7 @@ Le graphe de $\sage{f(x)} $.
 
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \tan(x)$ avec Sage.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \tan(x)$ avec Sage.}
 
 
 \begin{sageblock}
@@ -232,7 +242,7 @@ Le graphe de $\sage{f(x)} $.
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
 
 
 
@@ -243,7 +253,7 @@ La primitive de $\sage{f(x)} = \sage{F(x)} + Cste $.
 \section{La fonction  $x \mapsto \arccos(x) $.}
 
 
-La restriction de la fonction $x \mapsto \Arccos(x) $ à l'intervalle $[-1,\pi]$ est une bijection de $[-1,1] \rightarrow [-\inf,\inf]$ . Il existe donc une fonction réciproque à la fonction $x \mapsto \Arccos(x) $ que l'on nomme $x \mapsto \cos(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $]-1,1[$.
+La restriction de la fonction $x \mapsto \arccos(x) $ à l'intervalle $[-1,\pi]$ est une bijection de $[-1,1] \rightarrow [-\inf,\inf]$ . Il existe donc une fonction réciproque à la fonction $x \mapsto \arccos(x) $ que l'on nomme $x \mapsto \cos(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $]-1,1[$.
 
 \subsection{Calcul de la dérivée de la fonction $x \mapsto \arccos(x) $.}
 
@@ -275,9 +285,9 @@ Le graphe de $\sage{f(x)} $.
 \end{center}
 
 
-On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \mapsto \arccos(x) $.
+On peut maintenant entreprendre le calcul de Une primitive de la  fonction  $x \mapsto \arccos(x) $.
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \arccos(x) $.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \arccos(x) $.}
 
 
 
@@ -301,7 +311,7 @@ Finalement $\int \arccos(x) \, dx = x \times \arccos(x) - \sqrt{1- x^2} + Cste $
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 
 \section{La fonction  $x \mapsto \arcsin(x) $.}
@@ -345,13 +355,13 @@ Le graphe de $\sage{f(x)} $.
 
 
 
-On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \mapsto \arcsin(x) $.
+On peut maintenant entreprendre le calcul de Une primitive de la  fonction  $x \mapsto \arcsin(x) $.
 
 
 
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \arcsin(x) $.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \arcsin(x) $.}
 
 
 Je pose que $u(x)$  est égal à la fonction $\arcsin(x)$ et $v'(x)$ est égal $1$  d'où $u'(x)$  est égal à la fonction $ \frac{1}{\sqrt{1- x^2}} $ et $v(x)$ est égal $x$.
@@ -373,7 +383,7 @@ Finalement $\int \arcsin(x) \, dx = x \times \arccos(x) - \sqrt{1- x^2} + Cste $
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 
 
@@ -418,14 +428,14 @@ Le graphe de $\sage{f(x)} $.
 
 
 
-On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \mapsto \arctan(x) $.
+On peut maintenant entreprendre le calcul de Une primitive de la  fonction  $x \mapsto \arctan(x) $.
 
 
 
 
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \arctan(x) $.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \arctan(x) $.}
 
 
 
@@ -449,7 +459,7 @@ Finalement $\int \arctan(x) \, dx = x \times \arctan(x) -\ln{ \sqrt{1+ x^2}} + C
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 
 
@@ -457,7 +467,7 @@ La primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 
 On passe des formules de trigonométrie aux formules de trigonométries hyperboliques en remplaçant $\cos$ par $\cosh$ et $\sin$ par $i . \sinh$. Par exemple pour $\cos^2+\sin^2=1$
-nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\cos(a+b)=\cos(a) \cos(b) - \sin(a) \sin(b) $, nous obtenons $\cosh(a+b)=\cosh(a) \cosh(b) - i .\sinh(a) i . \sinh(b) $ c'est-à-dire $\cosh(a+b)=\cosh(a) \cosh(b) - (i)^2 \sinh(a) \sinh(b) $ finalement $\cosh(a+b) = \cosh(a) \cosh(b) + \sinh(a) \sinh(b) $. On change de signe!
+nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\cos(a+b)=\cos(a) \cos(b) - \sin(a) \sin(b) $, nous obtenons $\cosh(a+b)=\cosh(a) \cosh(b) - i .\sinh(a) i . \sinh(b) $ c'est-à-dire $\cosh(a+b)=\cosh(a) \cosh(b) - (i)^2 \sinh(a) \sinh(b) $. \\ Finalement on a $\cosh(a+b) = \cosh(a) \cosh(b) + \sinh(a) \sinh(b) $. On change de signe!
 
 
 
@@ -469,12 +479,12 @@ nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\c
 \end{align*}
 
 
-\subsubsection{Vérification avec Sage}
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \cosh(x)$.}
 
-\subsubsection{Vérification avec Sage}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \cosh(x)$.}
 
+$\int \cosh(x) dx = \int \frac{\exp(x)+ \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx + \int \exp(x) dx = \frac{1}{2} \times \exp(x) - \exp(-x) = \sinh$
+\\
 
 
 \section{La fonction  $x \mapsto \sinh(x)$.}
@@ -483,14 +493,17 @@ nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\c
 \subsection{Dérivée de la fonction $x \mapsto \sinh(x)$.}
 
 \begin{align*}
-(\sinh(x))' = &
+\sinh(x)' =& \left( \frac{\exp(x)-\exp(-x)}{2} \right)' \\ =& \frac{\exp(x)'-\exp(-x)'}{2} \\=& \frac{\exp(x)+\exp(-x)}{2} \\=& \cosh(x)
 \end{align*}
 
 
-\subsubsection{Vérification avec Sage}
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \sinh(x)$.}
+
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \sinh(x)$.}
+
+
+$\int \sinh(x) dx = \int \frac{\exp(x)- \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx - \int \exp(x) dx = \frac{1}{2} \times \exp(x) + \exp(-x) = \cosh$
 
 
 \subsubsection{Vérification avec Sage}
@@ -501,7 +514,7 @@ nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\c
 \end{sageblock}
 
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 Le graphe de $\sage{f(x)} $.
 
@@ -526,7 +539,7 @@ Le graphe de $\sage{f(x)} $.
 \subsubsection{Vérification avec Sage}
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \tanh(x)$.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \tanh(x)$.}
 
 
 \begin{align*}
@@ -542,7 +555,7 @@ Le graphe de $\sage{f(x)} $.
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 Le graphe de $\sage{f(x)} $.
 
@@ -568,7 +581,7 @@ Le graphe de $\sage{f(x)} $.
 \subsubsection{Vérification avec Sage}
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \arg \cosh(x)$.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \arg \cosh(x)$.}
 
 
 
@@ -580,7 +593,7 @@ Le graphe de $\sage{f(x)} $.
 \end{sageblock}
 
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 Le graphe de $\sage{f(x)} $.
 
@@ -610,7 +623,7 @@ Le graphe de $\sage{f(x)} $.
 
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \arg \sinh(x)$.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \arg \sinh(x)$.}
 
 
 
@@ -623,7 +636,7 @@ Le graphe de $\sage{f(x)} $.
 \end{sageblock}
 
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 
 
@@ -657,7 +670,7 @@ Le graphe de $\sage{f(x)} $.
 
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \arg \tanh(x)$.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \arg \tanh(x)$.}
 
 
 
@@ -670,7 +683,7 @@ Le graphe de $\sage{f(x)} $.
 \end{sageblock}
 
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 
 
@@ -704,25 +717,25 @@ Le graphe de $\sage{f(x)} $.
 \chapter{Calcul de quelques primitives.}
 
 
-\section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 + 1} } $ }
+\section{Calcul d'Une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 + 1} } $ }
 
 \subsection{Vérification avec Sage}
 
-\section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ x + 1} } $ }
+\section{Calcul d'Une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ x + 1} } $ }
 
 \subsection{Vérification avec Sage}
 
-\section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ \alpha^2} } $ }
+\section{Calcul d'Une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ \alpha^2} } $ }
 
 \subsection{Vérification avec Sage}
 
 
 
-\subsubsection{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ a^2} } $ par un changement de variable puis par l'emploi d'une variable auxiliaire} 
+\subsubsection{Calcul d'Une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ a^2} } $ par un changement de variable puis par l'emploi d'une variable auxiliaire} 
 
 \subsubsection{Vérification avec Sage}
 
-\section{Calcul d'une primitive de $  x \longmapsto  \sqrt{x^2 + 1}  $ \label{sqrt-001} }
+\section{Calcul d'Une primitive de $  x \longmapsto  \sqrt{x^2 + 1}  $ \label{sqrt-001} }
 
 \subsubsection{Vérification avec Sage}
 
@@ -734,7 +747,7 @@ Le graphe de $\sage{f(x)} $.
 \subsubsection{Première Méthode}
 
 
-Passons par les limites pour trouver la primitive de $\ln(x)$,
+Passons par les limites pour trouver Une primitive de $\ln(x)$,
 
 $ \lim_{h \mapsto 0} \frac{\ln(x+h) - \ln(x}{h} = \lim_{h \mapsto 0} \frac{\ln(\frac{x+h}{x})}{h}  = \lim_{h \mapsto 0} \frac{ \ln(1+X)}{x\times X}$, avec $X=\frac{h}{x}$.
 
@@ -773,14 +786,14 @@ Le graphe de $\sage{f(x)} $.
 
 
 
-On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \mapsto \ln(x) $.
+On peut maintenant entreprendre le calcul de Une primitive de la  fonction  $x \mapsto \ln(x) $.
 
 
 
 
 
 
-\subsection{Calcul de la primitive de la fonction  $x \mapsto \ln(x) $.}
+\subsection{Calcul de Une primitive de la fonction  $x \mapsto \ln(x) $.}
 
 
 Je pose que $u(x)$  est égal à la fonction $\ln(x)$ et $v'(x)$ est égal $1$  d'où $u'(x)$  est égal à la fonction $ \frac{1}{1+ x^2} $ et $v(x)$ est égal $x$.
@@ -802,7 +815,7 @@ Finalement $\int \ln(x) \, dx = x \times \ln(x) -x + Cste $
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-La primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
 
 

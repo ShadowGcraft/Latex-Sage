@@ -12,16 +12,16 @@
 \contentsline {subsection}{\numberline {1.3.2}Calcul de Une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \tan (x)$ avec Sage.}{3}{}%
 \contentsline {section}{\numberline {1.4}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,cos}}(x) $.}{3}{}%
 \contentsline {subsection}{\numberline {1.4.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,cos}}(x) $.}{4}{}%
-\contentsline {subsection}{\numberline {1.4.2}Calcul de Une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,cos}}(x) $.}{5}{}%
+\contentsline {subsection}{\numberline {1.4.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,cos}}(x) $.}{5}{}%
 \contentsline {section}{\numberline {1.5}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,sin}}(x) $.}{5}{}%
 \contentsline {subsection}{\numberline {1.5.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,sin}}(x) $.}{6}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{6}{}%
-\contentsline {subsection}{\numberline {1.5.2}Calcul de Une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,sin}}(x) $.}{7}{}%
+\contentsline {subsection}{\numberline {1.5.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,sin}}(x) $.}{7}{}%
 \contentsline {subsubsection}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{\sqrt {1- x^2}} \, dx $.}{7}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{7}{}%
 \contentsline {section}{\numberline {1.6}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,tan}}(x) $.}{7}{}%
 \contentsline {subsection}{\numberline {1.6.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,tan}}(x) $.}{7}{}%
-\contentsline {subsection}{\numberline {1.6.2}Calcul de Une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,tan}}(x) $.}{8}{}%
+\contentsline {subsection}{\numberline {1.6.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\,tan}}(x) $.}{8}{}%
 \contentsline {subsubsection}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{1+ x^2} \, dx $.}{9}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{9}{}%
 \contentsline {chapter}{\numberline {2}Fonctions hyperboliques et hyperboliques inverses.}{10}{}%

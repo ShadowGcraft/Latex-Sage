@@ -59,13 +59,19 @@ x \arctan\left(x\right) - \frac{1}{2} \, \log\left(x^{2} + 1\right)}{}{}{}{}}
 \newlabel{@sageinline28}{{%
 \tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline29}{{%
-\log\left(x\right)}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline30}{{%
-\frac{1}{x}}{}{}{}{}}
+\log\left(\cosh\left(x\right)\right)}{}{}{}{}}
 \newlabel{@sageinline31}{{%
-\log\left(x\right)}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline32}{{%
 \log\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline33}{{%
+\frac{1}{x}}{}{}{}{}}
+\newlabel{@sageinline34}{{%
+\log\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline35}{{%
+\log\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline36}{{%
 x \log\left(x\right) - x}{}{}{}{}}
-%50d15028489455002161e7682edee999% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+%697160d4d3cd9015845ba7eb831a870b% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

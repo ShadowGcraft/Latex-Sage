@@ -283,50 +283,65 @@ try:
  _st_.plot(7, format='notprovided', _p_=plot(f(x), x, -5, 5))
 except:
  _st_.goboom(519)
-_st_.current_tex_line = 602
+try:
+ _st_.current_tex_line = 560
+ _st_.inline(29, latex(f(x)))
+except:
+ _st_.goboom(560)
+try:
+ _st_.current_tex_line = 560
+ _st_.inline(30, latex(F(x)))
+except:
+ _st_.goboom(560)
+try:
+ _st_.current_tex_line = 562
+ _st_.inline(31, latex(f(x)))
+except:
+ _st_.goboom(562)
+_st_.current_tex_line = 663
 _st_.blockbegin()
 try:
      f(x) = ln(x)
      g(x) = diff(f(x),x,1)
 except:
- _st_.goboom(605)
+ _st_.goboom(666)
 _st_.blockend()
 try:
- _st_.current_tex_line = 607
- _st_.inline(29, latex(f(x)))
+ _st_.current_tex_line = 668
+ _st_.inline(32, latex(f(x)))
 except:
- _st_.goboom(607)
+ _st_.goboom(668)
 try:
- _st_.current_tex_line = 607
- _st_.inline(30, latex(g(x)))
+ _st_.current_tex_line = 668
+ _st_.inline(33, latex(g(x)))
 except:
- _st_.goboom(607)
+ _st_.goboom(668)
 try:
- _st_.current_tex_line = 609
- _st_.inline(31, latex(f(x)))
+ _st_.current_tex_line = 670
+ _st_.inline(34, latex(f(x)))
 except:
- _st_.goboom(609)
+ _st_.goboom(670)
 try:
- _st_.current_tex_line = 613
+ _st_.current_tex_line = 674
  _st_.plot(8, format='notprovided', _p_=plot(f(x), x, 0, 10))
 except:
- _st_.goboom(613)
-_st_.current_tex_line = 647
+ _st_.goboom(674)
+_st_.current_tex_line = 708
 _st_.blockbegin()
 try:
      f(x) = log(x)
      F(x) = integrate(f(x),x)
 except:
- _st_.goboom(650)
+ _st_.goboom(711)
 _st_.blockend()
 try:
- _st_.current_tex_line = 652
- _st_.inline(32, latex(f(x)))
+ _st_.current_tex_line = 713
+ _st_.inline(35, latex(f(x)))
 except:
- _st_.goboom(652)
+ _st_.goboom(713)
 try:
- _st_.current_tex_line = 652
- _st_.inline(33, latex(F(x)))
+ _st_.current_tex_line = 713
+ _st_.inline(36, latex(F(x)))
 except:
- _st_.goboom(652)
+ _st_.goboom(713)
 _st_.endofdoc()

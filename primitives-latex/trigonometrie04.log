@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.21)  6 APR 2024 13:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.21)  6 APR 2024 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**trigonometrie023.tex
-(./trigonometrie023.tex
+**trigonometrie04.tex
+(./trigonometrie04.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/extreport.cls
@@ -436,13 +436,12 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \c@ST@cmdline=\count310
 \sagetexindent=\skip61
 
-(./trigonometrie023.sagetex.sout)
+No file trigonometrie04.sagetex.sout.
 \sagecommandlineskip=\skip62
 )
 LaTeX Font Info:    Trying to load font information for T1+ccr on input line 12
 8.
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/ccfonts/t1ccr.fd
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/ccfonts/t1ccr.fd
 File: t1ccr.fd 1999/11/22 v1.0a (WaS)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -450,8 +449,8 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box63
 )
-No file trigonometrie023.aux.
-\openout1 = `trigonometrie023.aux'.
+No file trigonometrie04.aux.
+\openout1 = `trigonometrie04.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
 LaTeX Font Info:    ... okay on input line 128.
@@ -527,7 +526,7 @@ e
 
 \c@lstlisting=\count318
 \ST@sf=\write5
-\openout5 = `trigonometrie023.sagetex.sage'.
+\openout5 = `trigonometrie04.sagetex.sage'.
 
 LaTeX Font Info:    Trying to load font information for U+zeur on input line 14
 3.
@@ -557,9 +556,9 @@ LaTeX Font Warning: Font shape `T1/ccr/m/n' in size <35.83> not available
 LaTeX Font Warning: Font shape `T1/ccr/b/n' undefined
 (Font)              using `T1/ccr/m/n' instead on input line 146.
 
-No file trigonometrie023.toc.
+No file trigonometrie04.toc.
 \tf@toc=\write6
-\openout6 = `trigonometrie023.toc'.
+\openout6 = `trigonometrie04.toc'.
 
 [1
 
@@ -583,7 +582,33 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [1
 
-] [2] [3]
+]
+
+LaTeX Warning: Reference `@sageinline0' on page 2 undefined on input line 182.
+
+
+LaTeX Warning: Reference `@sageinline1' on page 2 undefined on input line 182.
+
+
+LaTeX Warning: Reference `@sageinline2' on page 2 undefined on input line 201.
+
+
+LaTeX Warning: Reference `@sageinline3' on page 2 undefined on input line 201.
+
+[2]
+
+LaTeX Warning: Reference `@sageinline4' on page 3 undefined on input line 220.
+
+
+LaTeX Warning: Reference `@sageinline5' on page 3 undefined on input line 220.
+
+
+LaTeX Warning: Reference `@sageinline6' on page 3 undefined on input line 236.
+
+
+LaTeX Warning: Reference `@sageinline7' on page 3 undefined on input line 236.
+
+[3]
 Overfull \hbox (10.31303pt too wide) in paragraph at lines 252--254
 []\T1/ccr/b/n/14.4 En rem-pla-çant $\U/zeur/m/n/14.4 X$ \T1/ccr/b/n/14.4 par $[
 ]\U/zeus/m/n/14.4 ¨\U/zeur/m/n/14.4 x\U/zeus/m/n/14.4 ©$\T1/ccr/b/n/14.4 , on a
@@ -596,51 +621,76 @@ Overfull \hbox (9.36578pt too wide) in paragraph at lines 255--256
 /n/14.4 ©[] ½ [] ½ [] ½ []$\T1/ccr/b/n/14.4 . 
  []
 
-<sage-plots-for-trigonometrie023.tex/plot-0.pdf, id=29, 452.72893pt x 338.37286
-pt>
-File: sage-plots-for-trigonometrie023.tex/plot-0.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie023.tex/plot-0.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie023.tex/plot-0.pdf  used o
-n input line 268.
-(pdftex.def)             Requested size: 217.66211pt x 162.68044pt.
-<sage-plots-for-trigonometrie023.tex/plot-1.pdf, id=30, 454.1694pt x 338.6628pt
->
-File: sage-plots-for-trigonometrie023.tex/plot-1.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie023.tex/plot-1.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie023.tex/plot-1.pdf  used o
-n input line 269.
-(pdftex.def)             Requested size: 217.66211pt x 162.30824pt.
-[4] [5 <./sage-plots-for-trigonometrie023.tex/plot-0.pdf> <./sage-plots-for-tri
-gonometrie023.tex/plot-1.pdf>]
+
+LaTeX Warning: Reference `@sageinline8' on page 4 undefined on input line 264.
+
+
+LaTeX Warning: Reference `@sageinline9' on page 4 undefined on input line 264.
+
+
+Package sagetex Warning: Graphics file sage-plots-for-trigonometrie04.tex/plot-
+0.pdf on page 4 does not exist. Plot command is on input line 268.
+
+
+Package sagetex Warning: Graphics file sage-plots-for-trigonometrie04.tex/plot-
+1.pdf on page 4 does not exist. Plot command is on input line 269.
+
+
+LaTeX Warning: Reference `@sageinline10' on page 4 undefined on input line 270.
+
+
+[4]
+
+LaTeX Warning: Reference `@sageinline11' on page 5 undefined on input line 297.
+
+
+
+LaTeX Warning: Reference `@sageinline12' on page 5 undefined on input line 297.
+
+
+[5]
 Overfull \hbox (5.04564pt too wide) in paragraph at lines 315--316
 []\T1/ccr/b/n/14.4 Finalement, $[]\U/zeus/m/n/14.4 ¨\U/zeur/m/n/14.4 x\U/zeus/m
 /n/14.4 ©[] ½ [] ½ [] ½ []$\T1/ccr/b/n/14.4 . 
  []
 
-<sage-plots-for-trigonometrie023.tex/plot-2.pdf, id=63, 452.72893pt x 339.66899
-pt>
-File: sage-plots-for-trigonometrie023.tex/plot-2.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie023.tex/plot-2.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie023.tex/plot-2.pdf  used o
-n input line 328.
-(pdftex.def)             Requested size: 217.66211pt x 163.30359pt.
-<sage-plots-for-trigonometrie023.tex/plot-3.pdf, id=64, 455.30101pt x 338.6628p
-t>
-File: sage-plots-for-trigonometrie023.tex/plot-3.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie023.tex/plot-3.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie023.tex/plot-3.pdf  used o
-n input line 329.
-(pdftex.def)             Requested size: 217.66211pt x 161.90001pt.
-[6] [7 <./sage-plots-for-trigonometrie023.tex/plot-2.pdf> <./sage-plots-for-tri
-gonometrie023.tex/plot-3.pdf>]
-<sage-plots-for-trigonometrie023.tex/plot-4.pdf, id=91, 453.75993pt x 338.21674
-pt>
-File: sage-plots-for-trigonometrie023.tex/plot-4.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie023.tex/plot-4.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie023.tex/plot-4.pdf  used o
-n input line 387.
-(pdftex.def)             Requested size: 217.66211pt x 162.23897pt.
-<sage-plots-for-trigonometrie023.tex/plot-5.pdf, id=92, 455.30101pt x 339.01567
-pt>
-File: sage-plots-for-trigonometrie023.tex/plot-5.pdf Graphic file (type pdf)
-<use sage-plots-for-trig
+
+LaTeX Warning: Reference `@sageinline13' on page 6 undefined on input line 324.
+
+
+
+LaTeX Warning: Reference `@sageinline14' on page 6 undefined on input line 324.
+
+
+
+Package sagetex Warning: Graphics file sage-plots-for-trigonometrie04.tex/plot-
+2.pdf on page 6 does not exist. Plot command is on input line 328.
+
+
+Package sagetex Warning: Graphics file sage-plots-for-trigonometrie04.tex/plot-
+3.pdf on page 6 does not exist. Plot command is on input line 329.
+
+
+LaTeX Warning: Reference `@sageinline15' on page 6 undefined on input line 330.
+
+
+[6]
+
+LaTeX Warning: Reference `@sageinline16' on page 7 undefined on input line 358.
+
+
+
+LaTeX Warning: Reference `@sageinline17' on page 7 undefined on input line 358.
+
+
+[7]
+
+LaTeX Warning: Reference `@sageinline18' on page 8 undefined on input line 383.
+
+
+
+LaTeX Warning: Reference `@sageinline19' on page 8 undefined on input line 383.
+
+
+
+Package sagetex Warning: Graphics file sage-plots-for-

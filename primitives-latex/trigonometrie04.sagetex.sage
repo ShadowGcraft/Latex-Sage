@@ -205,4 +205,128 @@ try:
 except:
  _st_.goboom(388)
 try:
- _st_.c
+ _st_.current_tex_line = 389
+ _st_.inline(20, latex(f(x)))
+except:
+ _st_.goboom(389)
+_st_.current_tex_line = 413
+_st_.blockbegin()
+try:
+     f(x) = arctan(x)
+     F(x) = integrate(f(x),x)
+except:
+ _st_.goboom(416)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 418
+ _st_.inline(21, latex(f(x)))
+except:
+ _st_.goboom(418)
+try:
+ _st_.current_tex_line = 418
+ _st_.inline(22, latex(F(x)))
+except:
+ _st_.goboom(418)
+_st_.current_tex_line = 467
+_st_.blockbegin()
+try:
+     f(x) = sinh(x)
+     F(x) = integrate(f(x),x)
+except:
+ _st_.goboom(470)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 473
+ _st_.inline(23, latex(f(x)))
+except:
+ _st_.goboom(473)
+try:
+ _st_.current_tex_line = 473
+ _st_.inline(24, latex(F(x)))
+except:
+ _st_.goboom(473)
+try:
+ _st_.current_tex_line = 475
+ _st_.inline(25, latex(f(x)))
+except:
+ _st_.goboom(475)
+try:
+ _st_.current_tex_line = 479
+ _st_.plot(6, format='notprovided', _p_=plot(f(x), x, -5, 5))
+except:
+ _st_.goboom(479)
+_st_.current_tex_line = 508
+_st_.blockbegin()
+try:
+     f(x) = tanh(x)
+     F(x) = integrate(f(x),x)
+except:
+ _st_.goboom(511)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 513
+ _st_.inline(26, latex(f(x)))
+except:
+ _st_.goboom(513)
+try:
+ _st_.current_tex_line = 513
+ _st_.inline(27, latex(F(x)))
+except:
+ _st_.goboom(513)
+try:
+ _st_.current_tex_line = 515
+ _st_.inline(28, latex(f(x)))
+except:
+ _st_.goboom(515)
+try:
+ _st_.current_tex_line = 519
+ _st_.plot(7, format='notprovided', _p_=plot(f(x), x, -5, 5))
+except:
+ _st_.goboom(519)
+_st_.current_tex_line = 602
+_st_.blockbegin()
+try:
+     f(x) = ln(x)
+     g(x) = diff(f(x),x,1)
+except:
+ _st_.goboom(605)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 607
+ _st_.inline(29, latex(f(x)))
+except:
+ _st_.goboom(607)
+try:
+ _st_.current_tex_line = 607
+ _st_.inline(30, latex(g(x)))
+except:
+ _st_.goboom(607)
+try:
+ _st_.current_tex_line = 609
+ _st_.inline(31, latex(f(x)))
+except:
+ _st_.goboom(609)
+try:
+ _st_.current_tex_line = 613
+ _st_.plot(8, format='notprovided', _p_=plot(f(x), x, 0, 10))
+except:
+ _st_.goboom(613)
+_st_.current_tex_line = 647
+_st_.blockbegin()
+try:
+     f(x) = log(x)
+     F(x) = integrate(f(x),x)
+except:
+ _st_.goboom(650)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 652
+ _st_.inline(32, latex(f(x)))
+except:
+ _st_.goboom(652)
+try:
+ _st_.current_tex_line = 652
+ _st_.inline(33, latex(F(x)))
+except:
+ _st_.goboom(652)
+_st_.endofdoc()

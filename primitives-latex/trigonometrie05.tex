@@ -98,11 +98,11 @@
 \renewcommand{\cosh}{\mathop{\mathrm{ch}}}
 \renewcommand{\tanh}{\mathop{\mathrm{th}}}
 
-\renewcommand{\arg}{\mathop{\mathrm{Arg\,}}}
+\renewcommand{\arg}{\mathop{\mathrm{Arg}}}
 
-\renewcommand{\arcsin}{\mathop{\mathrm{Arc\,sin}}}
-\renewcommand{\arccos}{\mathop{\mathrm{Arc\,cos}}}
-\renewcommand{\arctan}{\mathop{\mathrm{Arc\,tan}}}
+\renewcommand{\arcsin}{\mathop{\mathrm{Arc\mspace{2mu}sin}}}
+\renewcommand{\arccos}{\mathop{\mathrm{Arc\mspace{2mu}cos}}}
+\renewcommand{\arctan}{\mathop{\mathrm{Arc\mspace{2mu}tan}}}
 \renewcommand{\Im}{\mathop{\mathfrak{I}\mathrm{m}}}
 \renewcommand{\Re}{\mathop{\mathfrak{R}\mathrm{m}}}
 
@@ -522,28 +522,123 @@ Le graphe de $\sage{f(x)} $.
 %\sageplot{plot(g(x), x, -1, 1)}
 \end{center}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{La fonction  $x \mapsto \arg\sinh(x)$.}
 
-La fonction $x \mapsto \sinh(x)$ est inversable sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\sinh $\fg et définit la fonction \og\emph{argument sinus hyperbolique}\fg telle que $x \mapsto \arg\sinh(x)$.
+
+
+
+\section{La fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
+
+Le cosinus hyperbolique, noté $\cosh$ est défini sur $\R$ selon l'expression $\frac{\exp(x)+\exp(-x)}{2}$, son domaine de valeurs est $[1, +\infty [$ 
+c'est une fonction paire c'est-à-dire $\cosh(-x)=\cosh(x)$.
+
+
+La fonction $x \mapsto \cosh(x)$ est inversable sur le domaine de définition restreint à $\R^+$, car elle y est bijective, son inverse est notée \og $ \arg\mspace{-1mu}\cosh $\fg et définit la fonction \og\emph{argument cosinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
+
+
+\begin{center}
+\sageplot[width=.5\textwidth]{plot(arccosh(x), x, 1, 20)} \\
+La représentation graphique de $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
+\end{center}
+On observe que la fonction est croissante, continue sur $\left[1\,,\,+\infty \right[ $ et dérivable sur l'intervalle ouvert $\left]1\,,\,+\infty \right[ $.
+                                                                                               
+
+\subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
+On a la fonction composée $\Id = \cosh \circ \arg\mspace{-1mu}\cosh$ telle que $x\mapsto\cosh\left(\arg\mspace{-1mu}\cosh(x)\right)=x$ dont la dérivée s'écrit alors $1= \arg\mspace{-1mu}\cosh\nolimits' \times \cosh\nolimits'\circ\arg\mspace{-1mu}\cosh$.
+\begin{align*}
+x & =\cosh\left(\arg\mspace{-1mu}\cosh(x)\right)(x) \quad \textrm{en dérivant, on a}\\
+1 & = \arg\mspace{-1mu}\cosh\nolimits'(x) \times \cosh\nolimits'\circ\arg\mspace{-1mu}\cosh(x) \quad \textrm{d'où}\\
+\arg\mspace{-1mu}\cosh\nolimits'(x) & =\frac{1}{ \cosh\nolimits'\circ\arg\mspace{-1mu}\cosh(x)}=\frac{1}{ \sinh\left(\arg\mspace{-1mu}\sinh(x)\right)}\quad \textrm{or, on sait que}\\
+1 & = \cosh\nolimits^2\left(\arg\mspace{-1mu}\cosh(x)\right) - \sinh\nolimits^2\left(\arg\mspace{-1mu}\cosh(x)\right) \quad \textrm{alors}\\
+\sinh\left(\arg\mspace{-1mu}\cosh(x)\right) & = \sqrt{\cosh\nolimits^2\left(\arg\mspace{-1mu}\cosh(x)\right)-1}=\sqrt{x^2-1}\quad \textrm{finalement}\\
+\arg\mspace{-1mu}\cosh\nolimits'(x) & = \frac{1}{ \sqrt{x^2-1}}\quad \textrm{on vérifie ce calcul avec Sage.}
+\end{align*}
+
+
+\subsubsection{Vérification avec Sage}
+
+
+\begin{sageblock}
+    f(x) = arccosh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+La dérivée de $\sage{f(x)} = \sage{g(x)} $.
+
+
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
+
+Pour calculer $\int \arg\mspace{-1mu}\cosh(x) \, dx$, je procède par une intégration par parties en posant $u(x) = \arg\mspace{-1mu}\cosh(x)$ et $v'(x) = dx$, d'où $u'(x) = \frac{1}{ \sqrt{x^2-1}}$ et $ v(x) = x $. \\
+On a donc
+\begin{align*}
+\int \arg\mspace{-1mu}\cosh(x) \, dx & = x \arg\mspace{-1mu}\cosh(x) - \int \frac{x}{ \sqrt{x^2-1}} \, dx \quad \textrm{or}\\
+\int \frac{x}{ \sqrt{x^2-1}} \, dx & = \int \left(\sqrt{x^2-1}\right)' \, dx = \sqrt{x^2-1}  \quad \textrm{d'où}\\
+\int \arg\mspace{-1mu}\cosh(x) \, dx & = x \arg\mspace{-1mu}\cosh(x) - \sqrt{x^2-1} + C^{ste} \quad \textrm{que l'on retrouve avec Sage.}
+\end{align*}
+
+
+\subsubsection{Vérification avec Sage}
+
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(f(x), x, 1, 20)} 
+\sageplot[width=.3\textwidth]{plot(g(x), x, 1, 20)} 
+\sageplot[width=.3\textwidth]{plot(F(x), x, 1, 20)}\\
+Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\cosh(x)$, de sa dérivée et de sa primitive.
+\end{center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{La fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$.}
+
+La fonction $x \mapsto \sinh(x)$ est inversable sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\mspace{-1mu}\sinh $\fg et définit la fonction \og\emph{argument sinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\sinh(x)$.
 
 
 \begin{center}
 \sageplot[width=.5\textwidth]{plot(arcsinh(x), x, -20, 20)} \\
-La représentation graphique de $x \mapsto \arg\sinh(x)$.
+La représentation graphique de $x \mapsto \arg\mspace{-1mu}\sinh(x)$.
 \end{center}
-On observe que la fonction est croissante, impaire $\arg\sinh(-x) = -\arg\sinh(x) $
+On observe que la fonction est croissante, impaire $\arg\mspace{-1mu}\sinh(-x) = -\arg\mspace{-1mu}\sinh(x) $
 et on observe que la fonction est continue et dérivable sur $\R$.                                                                                                             
 
-\subsection{Dérivée de la fonction $x \mapsto \arg\sinh(x)$.}
-On a la fonction composée $\Id = \sinh \circ \arg\sinh$ telle que $x\mapsto\sinh\left(\arg\sinh(x)\right)=x$ dont la dérivée s'écrit alors $1= \arg\sinh\nolimits' \times \sinh\nolimits'\circ\arg\sinh$
+\subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\sinh(x)$.}
+On a la fonction composée $\Id = \sinh \circ \arg\mspace{-1mu}\sinh$ telle que $x\mapsto\sinh\left(\arg\mspace{-1mu}\sinh(x)\right)=x$ dont la dérivée s'écrit alors $1= \arg\mspace{-1mu}\sinh\nolimits' \times \sinh\nolimits'\circ\arg\mspace{-1mu}\sinh$.
 \begin{align*}
-x & =\sinh\left(\arg\sinh(x)\right)(x) \quad \textrm{en dérivant, on a}\\
-1 & = \arg\sinh\nolimits'(x) \times \sinh\nolimits'\circ\arg\sinh(x) \quad \textrm{d'où}\\
-\arg\sinh\nolimits'(x) & =\frac{1}{ \sinh\nolimits'\circ\arg\sinh(x)}=\frac{1}{ \cosh\left(\arg\sinh(x)\right)}\quad \textrm{or}\\
-\cosh\left(\arg\sinh(x)\right) & = \sqrt{1+\sinh\nolimits^2\left(\arg\sinh(x)\right)}=\sqrt{1+x^2}\quad \textrm{donc}\\
-\arg\sinh\nolimits'(x) & = \frac{1}{ \sqrt{1+x^2}}\quad \textrm{on vérifie ce calcul avec Sage.}
+x & =\sinh\left(\arg\mspace{-1mu}\sinh(x)\right)(x) \quad \textrm{en dérivant, on a}\\
+1 & = \arg\mspace{-1mu}\sinh\nolimits'(x) \times \sinh\nolimits'\circ\arg\mspace{-1mu}\sinh(x) \quad \textrm{d'où}\\
+\arg\mspace{-1mu}\sinh\nolimits'(x) & =\frac{1}{ \sinh\nolimits'\circ\arg\mspace{-1mu}\sinh(x)}=\frac{1}{ \cosh\left(\arg\mspace{-1mu}\sinh(x)\right)}\quad \textrm{or}\\
+\cosh\left(\arg\mspace{-1mu}\sinh(x)\right) & = \sqrt{1+\sinh\nolimits^2\left(\arg\mspace{-1mu}\sinh(x)\right)}=\sqrt{1+x^2}\quad \textrm{donc}\\
+\arg\mspace{-1mu}\sinh\nolimits'(x) & = \frac{1}{ \sqrt{1+x^2}}\quad \textrm{on vérifie ce calcul avec Sage.}
 \end{align*}
 
 
@@ -553,22 +648,33 @@ x & =\sinh\left(\arg\sinh(x)\right)(x) \quad \textrm{en dérivant, on a}\\
 \begin{sageblock}
     f(x) = arcsinh(x)
     g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
 \end{sageblock}
 
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
 
-\subsection{Calcul d'une primitive de la fonction  $x \mapsto \arg\sinh(x)$.}
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$.}
 
+Pour calculer $\int \arg\mspace{-1mu}\sinh(x) \, dx$, je procède par une intégration par parties en posant $u(x) = \arg\mspace{-1mu}\sinh(x)$ et $v'(x) = dx$, d'où $u'(x) = \frac{1}{ \sqrt{1+x^2}}$ et $ v(x) = x $. \\
+On a donc
 \begin{align*}
+\int \arg\mspace{-1mu}\sinh(x) \, dx & = x \arg\mspace{-1mu}\sinh(x) - \int \frac{x}{ \sqrt{1+x^2}} \, dx \quad \textrm{or}\\
+\int \frac{x}{ \sqrt{1+x^2}} \, dx & = \int \left(\sqrt{1+x^2}\right)' \, dx = \sqrt{1+x^2}  \quad \textrm{d'où}\\
+\int \arg\mspace{-1mu}\sinh(x) \, dx & = x \arg\mspace{-1mu}\sinh(x) - \sqrt{1+x^2} + C^{ste} \quad \textrm{que l'on retrouve avec Sage.}
 \end{align*}
 
 
 \subsubsection{Vérification avec Sage}
 
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 
-
-Une primitive de $\sage{f(x)} = \sage{F(x)} $.
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(f(x), x, -20, 20)} 
+\sageplot[width=.3\textwidth]{plot(g(x), x, -20, 20)} 
+\sageplot[width=.3\textwidth]{plot(F(x), x, -20, 20)}\\
+Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\sinh(x)$, de sa dérivée et de sa primitive.
+\end{center}
 
 Le graphe de $\sage{f(x)} $.
 

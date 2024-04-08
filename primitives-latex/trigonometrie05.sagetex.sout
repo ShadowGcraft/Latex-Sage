@@ -75,15 +75,21 @@ x \operatorname{arcosh}\left(x\right) - \sqrt{x^{2} - 1}}{}{}{}{}}
 \newlabel{@sageinline36}{{%
 x \operatorname{arsinh}\left(x\right) - \sqrt{x^{2} + 1}}{}{}{}{}}
 \newlabel{@sageinline37}{{%
-\operatorname{arsinh}\left(x\right)}{}{}{}{}}
+\operatorname{artanh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline38}{{%
-\log\left(x\right)}{}{}{}{}}
+-\frac{1}{x^{2} - 1}}{}{}{}{}}
 \newlabel{@sageinline39}{{%
-\frac{1}{x}}{}{}{}{}}
+\operatorname{artanh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline40}{{%
-\log\left(x\right)}{}{}{}{}}
+x \operatorname{artanh}\left(x\right) + \frac{1}{2} \, \log\left(-x^{2} + 1\right)}{}{}{}{}}
 \newlabel{@sageinline41}{{%
 \log\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline42}{{%
+\frac{1}{x}}{}{}{}{}}
+\newlabel{@sageinline43}{{%
+\log\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline44}{{%
+\log\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline45}{{%
 x \log\left(x\right) - x}{}{}{}{}}
-%a61cd77667412bb718cafa4081bd4b30% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+%960932487365bfee952cea5628598d78% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

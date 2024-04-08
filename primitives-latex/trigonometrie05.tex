@@ -181,7 +181,7 @@ La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto \sage{F(x)} + Cste $ définie à une constante près.
+Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto \sage{F(x)} + C^{ste} $ définie à une constante près.
 
 
 \section{La fonction  $x \mapsto \sin(x)$.}
@@ -200,7 +200,7 @@ Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + Cste $ définie à une constante près.
+Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + C^{ste} $ définie à une constante près.
 
 
 \section{La fonction  $x \mapsto \tan(x)$.}
@@ -225,7 +225,7 @@ La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \tan(x)$.}
 
 On a $\tan(x)=\frac{\sin(x)}{\cos(x)}$, alors $\int \tan(x) \, dx =\int \frac{\sin(x)}{\cos(x)}\, dx$.\\
-Je pose $u(x)=\cos(x)$ donc $u'(x)= -\sin(x) \,dx$ et par ce changement de variable on a $\int \tan(x) \, dx = \int \frac{\sin(x)}{\cos(x)}\, dx  = -\int \frac{u'}{u} = -\ln|u|  = \ln\left(\frac{1}{|u|}\right)  = \ln\left(\frac{1}{|\cos(x)|}\right) +Cste$.
+Je pose $u(x)=\cos(x)$ donc $u'(x)= -\sin(x) \,dx$ et par ce changement de variable on a $\int \tan(x) \, dx = \int \frac{\sin(x)}{\cos(x)}\, dx  = -\int \frac{u'}{u} = -\ln|u|  = \ln\left(\frac{1}{|u|}\right)  = \ln\left(\frac{1}{|\cos(x)|}\right) +C^{ste}$.
 
 
 \subsubsection*{Vérification avec Sage}
@@ -235,7 +235,7 @@ Je pose $u(x)=\cos(x)$ donc $u'(x)= -\sin(x) \,dx$ et par ce changement de varia
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-Une primitive de $\sage{f(x)}$ est la fonction définie à une constante près $x \mapsto \sage{F(x)} + Cste $.
+Une primitive de $\sage{f(x)}$ est la fonction définie à une constante près $x \mapsto \sage{F(x)} + C^{ste} $.
 
 La fonction $x\mapsto \sec$ est la fonction paire $x\mapsto \frac{1}{\cos(x)}$ périodique de période $2\pi$ définie sur $\R-\{ \frac{\pi}{2}+k\pi, k\in\Z\}$. On retrouve bien le résultat précédent.
 
@@ -287,7 +287,7 @@ Alors on a, par une intégration par parties, $\int \arccos(x) \, dx = x \times 
 $\int \frac{x}{\sqrt{1- x^2}} \, dx = \frac{-1}{2} \int \frac{d(1-x^2)}{\sqrt{1- x^2}}= -\sqrt{1- x^2} $.
 
 
-Finalement $\int \arccos(x) \, dx = x  \arccos(x) - \sqrt{1- x^2} + Cste $ est une primitive de la fonction $x \mapsto \arccos(x) $.
+Finalement $\int \arccos(x) \, dx = x  \arccos(x) - \sqrt{1- x^2} + C^{ste} $ est une primitive de la fonction $x \mapsto \arccos(x) $.
 
 \subsubsection*{Vérification avec Sage}
 
@@ -296,7 +296,7 @@ Finalement $\int \arccos(x) \, dx = x  \arccos(x) - \sqrt{1- x^2} + Cste $ est u
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-Une primitive de $\sage{f(x)} = \sage{F(x)} + Cste$.
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
 
 \section{La fonction  $x \mapsto \arcsin(x) $.}
@@ -348,7 +348,7 @@ Alors on a $\int \arcsin(x) \, dx = x \times \arcsin(x) -\int \frac{1}{\sqrt{1- 
 $\int \frac{x}{\sqrt{1- x^2}} \, dx = \frac{1}{2} \int \frac{d(1-x^2)}{\sqrt{1- x^2}}= \sqrt{1- x^2} $.
 
 
-Finalement, une primitive de la fonction $x \mapsto \arcsin(x) $ est une fonction  $ x \mapsto x \arcsin(x) - \sqrt{1- x^2} + Cste $.
+Finalement, une primitive de la fonction $x \mapsto \arcsin(x) $ est une fonction  $ x \mapsto x \arcsin(x) - \sqrt{1- x^2} + C^{ste} $.
 
 \subsubsection{Vérification avec Sage}
 
@@ -357,7 +357,7 @@ Finalement, une primitive de la fonction $x \mapsto \arcsin(x) $ est une fonctio
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-Une primitive de la fonction $\sage{f(x)} = \sage{F(x)} + Cste$.
+Une primitive de la fonction $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
 
 \section{La fonction  $x \mapsto \arctan(x) $.}
@@ -406,8 +406,8 @@ Alors on a $\int \arctan(x) \, dx = x \times \arctan(x) -\int \frac{1}{1+x^2} \t
 
 $\int \frac{x}{1+ x^2} \, dx = \frac{1}{2} \int \frac{d(1+x^2)}{1+ x^2} $.
 
-D'où $\int \arctan(x) \, dx = x \arctan(x) - \frac{1}{2} \ln \left| 1+ x^2 \right| + Cste $. 
-Finalement, une primitive de la fonction $x \mapsto \arctan(x) $ est une fonction $x \mapsto x \arctan(x) -\ln\left( \sqrt{1+ x^2}\right) + Cste $ ou encore $x \mapsto x \arctan(x) +\ln\left( \frac{1}{\sqrt{1+ x^2}}\right) + Cste $.
+D'où $\int \arctan(x) \, dx = x \arctan(x) - \frac{1}{2} \ln \left| 1+ x^2 \right| + C^{ste} $. 
+Finalement, une primitive de la fonction $x \mapsto \arctan(x) $ est une fonction $x \mapsto x \arctan(x) -\ln\left( \sqrt{1+ x^2}\right) + C^{ste} $ ou encore $x \mapsto x \arctan(x) +\ln\left( \frac{1}{\sqrt{1+ x^2}}\right) + C^{ste} $.
 
 
 \subsubsection{Vérification avec Sage}
@@ -417,7 +417,7 @@ Finalement, une primitive de la fonction $x \mapsto \arctan(x) $ est une fonctio
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-Une primitive de $\sage{f(x)} = \sage{F(x)} + Cste$.
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -490,7 +490,7 @@ Le graphe de $\sage{f(x)} $.
 \subsection{Dérivée de la fonction $x \mapsto \tanh(x)$.}
 
 \begin{align*}
-(\tanh(x))' = & \frac{\cosh(x)'}{\sinh(x)'} \\  = & \frac{\cosh(x)' \times \sinh(x) - \sinh(x)' \times \cosh(x)}{\cosh(x)^2} \\ = &  \frac{sinh(x)^2 -\cosh(x)^2}{\cosh(x)^2} \\ = & \frac{1}{\cosh(x)^2}
+(\tanh(x))' = & \frac{\cosh(x)'}{\sinh(x)'} \\  = & \frac{\cosh(x)' \times \sinh(x) - \sinh(x)' \times \cosh(x)}{\cosh(x)^2} \\ = &  \frac{sinh(x)^2 -\cosh(x)^2}{\cosh(x)^2} \\ = & \frac{-1}{\cosh(x)^2}
 \end{align*}
 
 
@@ -676,8 +676,92 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\sinh(x)$, de sa dérivée et de sa primitive.
 \end{center}
 
-Le graphe de $\sage{f(x)} $.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{La fonction  $x \mapsto \arg\mspace{-1mu}\tanh(x)$.}
+
+La fonction $x \mapsto \tanh(x)$ est inversable sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\mspace{-1mu}\tanh $\fg et définit la fonction \og\emph{argument tangente hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\tanh(x)$.
+
+
+\begin{center}
+\sageplot[width=.5\textwidth]{plot(arctanh(x), x, -1, 1)} \\
+La représentation graphique de $x \mapsto \arg\mspace{-1mu}\tanh(x)$.
+\end{center}
+On observe que la fonction est croissante, impaire $\arg\mspace{-1mu}\sinh(-x) = -\arg\mspace{-1mu}\sinh(x) $
+et on observe que la fonction est continue et dérivable sur l'intervalle ouvert $]-1,1[$.                                                                                                             
+
+\subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\tanh(x)$.}
+On a la fonction composée $\Id = \tanh \circ \arg\mspace{-1mu}\tanh$ telle que $x\mapsto\tanh\left(\arg\mspace{-1mu}\tanh(x)\right)=x$ dont la dérivée s'écrit alors $1= \arg\mspace{-1mu}\tanh\nolimits' \times \tanh\nolimits'\circ\arg\mspace{-1mu}\tanh$.
+\begin{align*}
+x & =\tanh\left(\arg\mspace{-1mu}\tanh(x)\right)(x) \quad \textrm{en dérivant, on a}\\
+1 & = \arg\mspace{-1mu}\tanh\nolimits'(x) \times \tanh\nolimits'\circ\arg\mspace{-1mu}\tanh(x) \quad \textrm{d'où}\\
+\arg\mspace{-1mu}\tanh\nolimits'(x) & =\frac{1}{ \tanh\nolimits'\circ\arg\mspace{-1mu}\tanh(x)}\quad \textrm{or, la dérivée de } \tanh \; \textrm{vaut}\\
+\tanh\nolimits' & = 1-\tanh\nolimits^2 \quad \textrm{donc} \\
+%\arg\mspace{-1mu}\tanh\nolimits'(x) & =\frac{1}{ \tanh\nolimits'\circ\arg\mspace{-1mu}\tanh(x)}\\
+\tanh\nolimits'\left(\arg\mspace{-1mu}\tanh(x)\right) & = 1 - \tanh\nolimits^2 \left(\arg\mspace{-1mu}\tanh(x)\right) = 1 - x^2 \quad \textrm{finalement}\\
+\arg\mspace{-1mu}\tanh\nolimits'(x) & = \frac{1}{ 1- x^2} \quad \textrm{on vérifie ce calcul avec Sage.}
+\end{align*}
+
+
+\subsubsection{Vérification avec Sage}
+
+
+\begin{sageblock}
+    f(x) = arctanh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+La dérivée de $\sage{f(x)} = \sage{g(x)} $.
+
+
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \arg\mspace{-1mu}\tanh(x)$.}
+
+Pour calculer $\int \arg\mspace{-1mu}\tanh(x) \, dx$, je procède par une intégration par parties en posant $u(x) = \arg\mspace{-1mu}\tanh(x)$ et $v'(x) = dx$, d'où $u'(x) = \frac{1}{ 1 - x^2 }$ et $ v(x) = x $. \\
+On a donc
+\begin{align*}
+\int \arg\mspace{-1mu}\tanh(x) \, dx & = x \arg\mspace{-1mu}\tanh(x) - \int  \frac{x}{ 1 - x^2 } \, dx \quad \textrm{on reconnaît dans}\\
+- \int  \frac{x}{ 1 - x^2 } \, dx & = -\frac{1}{-2} \int  \frac{d(1 - x^2 )}{ 1 - x^2 } \, dx = \frac{1}{2} \int  \frac{d(1 - x^2 )}{ 1 - x^2 } \, dx  \quad \textrm{d'où}\\
+\int \arg\mspace{-1mu}\tanh(x) \, dx & = x \arg\mspace{-1mu}\tanh(x) + \frac{1}{2} \ln|1- x^2| + C^{ste} \quad \textrm{or} \; x \, \in ]-1, 1[ \\
+\int \arg\mspace{-1mu}\tanh(x) \, dx & = x \arg\mspace{-1mu}\tanh(x) + \frac{1}{2} \ln(1- x^2) + C^{ste} \quad \textrm{que l'on retrouve avec Sage.}
+\end{align*}
+
+
+\subsubsection{Vérification avec Sage}
+
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(f(x), x, -1, 1)} 
+\sageplot[width=.3\textwidth]{plot(g(x), x, -1, 1)} 
+\sageplot[width=.3\textwidth]{plot(F(x), x, -1, 1)}\\
+Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\tanh(x)$, de sa dérivée et de sa primitive.
+\end{center}
 
 
 
@@ -710,7 +794,7 @@ Le graphe de $\sage{f(x)} $.
 \section{La fonction  $x \mapsto \ln(x) $.}
 
 \begin{align*}
-\int \ln(x) = & \int \ln(x) \times 1 \\ = & x \times \ln(x) - \int \ln(x)' \times x dx \\ = & x \times \ln(x) - \int 1 dx \\ = &  x \times \ln(x) - x
+\int \ln(x) = & \int \ln(x) \times 1 \\ = & x \times \ln(x) - \int \ln(x)' \times x dx \\ = & x \times \ln(x) - \int 1 dx \\ = &  x \times \ln(x) - x + C^{ste}
 \end{align*}
 
 
@@ -818,7 +902,7 @@ Alors on a $\int \ln(x) \, dx = x \times \ln(x) -\int \frac{1}{x} \times x \, dx
 $\int \frac{x}{x} \, dx = \int 1 \, dx = x$.
 
 
-Finalement $\int \ln(x) \, dx = x \times \ln(x) -x + Cste $
+Finalement $\int \ln(x) \, dx = x \times \ln(x) -x + C^{ste} $
 
 \subsubsection{Vérification avec Sage}
 

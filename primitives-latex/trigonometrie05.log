@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.6)  12 APR 2024 08:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.21)  12 APR 2024 09:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **trigonometrie05.tex
 (./trigonometrie05.tex
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-03-14>
+L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
@@ -26,7 +26,7 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \bibindent=\dimen140
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/03/29 v24.3 The Babel package
+Package: babel 2024/02/07 v24.2 The Babel package
 \babel@savecnt=\count197
 \U@D=\dimen141
 \l@unhyphenated=\language89
@@ -415,18 +415,18 @@ LaTeX Info: Redefining \UseVerb on input line 1229.
 \lst@maxwidth=\dimen256
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/03/11 1.10a (Carsten Heinz)
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 \c@lstnumber=\count307
 \lst@skipnumbers=\count308
 \lst@framebox=\box63
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/03/11 1.10a listings configuration
+File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
-Package: listings 2024/03/11 1.10a (Carsten Heinz)
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
@@ -455,7 +455,7 @@ LaTeX Font Info:    Trying to load font information for T1+ccr on input line 12
 File: t1ccr.fd 1999/11/22 v1.0a (WaS)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count312
 \l__pdf_internal_box=\box64
 )
@@ -685,13 +685,13 @@ File: sage-plots-for-trigonometrie05.tex/plot-9.pdf Graphic file (type pdf)
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-9.pdf  used on
  input line 600.
 (pdftex.def)             Requested size: 145.11053pt x 107.84781pt.
-<sage-plots-for-trigonometrie05.tex/plot-10.pdf, id=182, 455.27718pt x 339.2593
-5pt>
+<sage-plots-for-trigonometrie05.tex/plot-10.pdf, id=182, 455.27718pt x 339.2059
+pt>
 File: sage-plots-for-trigonometrie05.tex/plot-10.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-10.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-10.pdf  used o
 n input line 601.
-(pdftex.def)             Requested size: 145.11053pt x 108.13036pt.
+(pdftex.def)             Requested size: 145.11053pt x 108.11333pt.
 <sage-plots-for-trigonometrie05.tex/plot-11.pdf, id=183, 455.23953pt x 338.3728
 6pt>
 File: sage-plots-for-trigonometrie05.tex/plot-11.pdf Graphic file (type pdf)
@@ -723,15 +723,15 @@ File: sage-plots-for-trigonometrie05.tex/plot-14.pdf Graphic file (type pdf)
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-14.pdf  used o
 n input line 686.
 (pdftex.def)             Requested size: 145.11053pt x 108.49272pt.
-<sage-plots-for-trigonometrie05.tex/plot-15.pdf, id=235, 453.75993pt x 337.3912
-2pt>
+<sage-plots-for-trigonometrie05.tex/plot-15.pdf, id=235, 453.75993pt x 337.3916
+3pt>
 File: sage-plots-for-trigonometrie05.tex/plot-15.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-15.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-15.pdf  used o
 n input line 687.
-(pdftex.def)             Requested size: 145.11053pt x 107.89531pt.
+(pdftex.def)             Requested size: 145.11053pt x 107.89545pt.
  [15]
-<sage-plots-for-trigonometrie05.tex/plot-16.pdf, id=239, 453.08101pt x 339.6689
+<sage-plots-for-trigonometrie05.tex/plot-16.pdf, id=239, 453.09158pt x 339.6689
 9pt>
 File: sage-plots-for-trigonometrie05.tex/plot-16.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-16.pdf>
@@ -741,27 +741,27 @@ n input line 724.
  [16 <./sage-plots-for-trigonometrie05.tex/plot-13.pdf> <./sage-plots-for-trigo
 nometrie05.tex/plot-14.pdf> <./sage-plots-for-trigonometrie05.tex/plot-15.pdf> 
 <./sage-plots-for-trigonometrie05.tex/plot-16.pdf>]
-<sage-plots-for-trigonometrie05.tex/plot-17.pdf, id=292, 453.18933pt x 339.6689
+<sage-plots-for-trigonometrie05.tex/plot-17.pdf, id=291, 453.21144pt x 339.6689
 9pt>
 File: sage-plots-for-trigonometrie05.tex/plot-17.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-17.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-17.pdf  used o
 n input line 772.
-(pdftex.def)             Requested size: 145.11053pt x 108.75848pt.
-<sage-plots-for-trigonometrie05.tex/plot-18.pdf, id=293, 453.25993pt x 339.0939
-3pt>
+(pdftex.def)             Requested size: 145.11053pt x 108.7533pt.
+<sage-plots-for-trigonometrie05.tex/plot-18.pdf, id=292, 453.19061pt x 339.2232
+4pt>
 File: sage-plots-for-trigonometrie05.tex/plot-18.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-18.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-18.pdf  used o
 n input line 773.
-(pdftex.def)             Requested size: 145.11053pt x 108.55884pt.
-<sage-plots-for-trigonometrie05.tex/plot-19.pdf, id=294, 453.17094pt x 338.3733
-5pt>
+(pdftex.def)             Requested size: 145.11053pt x 108.61575pt.
+<sage-plots-for-trigonometrie05.tex/plot-19.pdf, id=293, 453.19214pt x 338.3733
+8pt>
 File: sage-plots-for-trigonometrie05.tex/plot-19.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-19.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-19.pdf  used o
 n input line 774.
-(pdftex.def)             Requested size: 145.11053pt x 108.35396pt.
+(pdftex.def)             Requested size: 145.11053pt x 108.34364pt.
  [17] [18 <./sage-plots-for-trigonometrie05.tex/plot-17.pdf> <./sage-plots-for-
 trigonometrie05.tex/plot-18.pdf> <./sage-plots-for-trigonometrie05.tex/plot-19.
 pdf>]
@@ -803,29 +803,29 @@ Overfull \hbox (6.57018pt too wide) in paragraph at lines 914--915
 s/m/n/12 ©© ½
  []
 
-<sage-plots-for-trigonometrie05.tex/plot-20.pdf, id=353, 454.29468pt x 339.6689
+<sage-plots-for-trigonometrie05.tex/plot-20.pdf, id=351, 454.23532pt x 339.6689
 9pt>
 File: sage-plots-for-trigonometrie05.tex/plot-20.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-20.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-20.pdf  used o
 n input line 929.
-(pdftex.def)             Requested size: 241.84843pt x 180.82706pt.
+(pdftex.def)             Requested size: 241.84843pt x 180.85297pt.
 [23]
 *********************************************************************
 [24 <./sage-plots-for-trigonometrie05.tex/plot-20.pdf>] (./trigonometrie05.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-03-14>
+L3 programming layer <2024-02-20>
  ***********
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9565 strings out of 474104
- 155077 string characters out of 5743468
- 1943493 words of memory out of 5000000
- 31755 multiletter control sequences out of 15000+600000
+ 9565 strings out of 474116
+ 155074 string characters out of 5743682
+ 1943187 words of memory out of 5000000
+ 31743 multiletter control sequences out of 15000+600000
  585093 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,11n,65p,490b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -843,9 +843,9 @@ m10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols
 rm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfoti1
 0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.
 pfb>
-Output written on trigonometrie05.pdf (29 pages, 263292 bytes).
+Output written on trigonometrie05.pdf (29 pages, 262489 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
+ 428 PDF objects out of 1000 (max. 8388607)
  210 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)

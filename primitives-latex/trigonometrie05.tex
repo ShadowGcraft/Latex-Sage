@@ -3,7 +3,6 @@
 % !TEX encoding = UTF-8 Unicode
 % The following lines are standard LaTeX preamble statements.
 
-%\documentclass[a4paper,12pt]{smfart}
 
 %\documentclass[a4paper,12pt]{smfart}
 
@@ -12,8 +11,8 @@
 
 %\documentclass[a4paper,17pt]{extarticle} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
 
-%\documentclass[a4paper,11pt]{report}
-\documentclass[a4paper,14pt]{extreport} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
+\documentclass[a4paper,12pt]{report}
+%\documentclass[a4paper,14pt]{extreport} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
 
 
 \usepackage[french]{babel}
@@ -176,6 +175,10 @@ La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \cos(x)$.}
 
+Dans la section suivante, on calcule la dérivée de la fonction $x \mapsto \sin(x)$ qui vaut $x \mapsto \cos(x)$, par conséquent une primitive de $x \mapsto \cos(x)$ est égale à une constante près à $  \sin(x) + C^{ste} $.
+
+On vérifie ce résultat avec Sage.
+
 \begin{sageblock}
     f(x) = cos(x)
     F(x) = integrate(f(x),x)
@@ -189,15 +192,21 @@ Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto
 
 \subsection{Dérivée de la fonction $x \mapsto \sin(x)$.}
 
+\textcolor{red}{DÉMONSTRATION À REVOIR}
+
 \begin{align*}
-\lim_{h\to 0} \frac{\sin(x+h)-sin(x)}{h} =& \lim_{h\to 0} \frac{\cos(x)\sin(h)-\cos(x)\sin(h)-\sin(x)}{h} \\= & \lim_{h\to 0} \frac{\sin(x)(\cos(h)-1)}{h}-\frac{\cos(x)\sin(h)}{h} \\=&\sin(x) \times  \lim_{h\to 0} \frac{\cos(h)-1}{h}-\cos(x) \times \frac{\sin(h)}{h} \\= \cos{x}
+\lim_{h\to 0} \frac{\sin(x+h)-sin(x)}{h} & = \lim_{h\to 0} \frac{\cos(x)\sin(h)-\cos(x)\sin(h)-\sin(x)}{h} \\  & =  \lim_{h\to 0} \frac{\sin(x)(\cos(h)-1)}{h}-\frac{\cos(x)\sin(h)}{h} \\ & = \sin(x) \times  \lim_{h\to 0} \frac{\cos(h)-1}{h}-\cos(x) \times \frac{\sin(h)}{h} \\ & = \cos{x}
 \end{align*}
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \sin(x)$.}
 
+Dansins la section précédente, on a calculé la dérivée de la fonction $x \mapsto \cos(x)$ qui vaut $x \mapsto -\sin(x)$, par conséquent une primitive de $x \mapsto \sin(x)$ est égale à une constante près à $ - \cos(x) + C^{ste} $.
+
+On vérifie ce résultat avec Sage.
+
 \begin{sageblock}
     f(x) = sin(x)
-    F(x) = integrate(f(x),x)
+    F(x) = integrate(f(x),x) 
 \end{sageblock}
 
 Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + C^{ste} $ définie à une constante près.
@@ -209,14 +218,14 @@ Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + C^{ste} $ définie à une con
 
 
 \begin{align*}
-\tan(x)' = & \left(\frac{\sin(x)}{\cos(x)}\right)' \\ = & \frac{\cos(x) \times \cos(x)+\sin(x)\times \sin(x)}{\cos(x)^2}  \\ = & \frac{1}{\cos(x)^2} = 1 + \tan(x)^2
+\tan(x)' & =  \left(\frac{\sin(x)}{\cos(x)}\right)' \\ & =  \frac{\cos(x) \times \cos(x)+\sin(x)\times \sin(x)}{\cos^2(x)}  \\ & =  \frac{1}{\cos^2(x)} = 1 + \tan^2(x)
 \end{align*}
 
 \subsubsection{Vérification avec Sage}
 
 \begin{sageblock}
     f(x) = tan(x)
-    g(x) = diff(f(x),x)
+    g(x) = diff(f(x),x) 
 \end{sageblock}
 
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
@@ -451,7 +460,10 @@ $\int \cosh(x) dx = \int \frac{\exp(x)+ \exp(-x)}{2} dx = \frac{1}{2} \times \in
 \subsection{Dérivée de la fonction $x \mapsto \sinh(x)$.}
 
 \begin{align*}
-\sinh(x)' =& \left( \frac{\exp(x)-\exp(-x)}{2} \right)' \\ =& \frac{\exp(x)'-\exp(-x)'}{2} \\=& \frac{\exp(x)+\exp(-x)}{2} \\=& \cosh(x)
+\sinh(x)' & = \left( \frac{\exp(x)-\exp(-x)}{2} \right)' \\ 
+& = \frac{\exp(x)'-\exp(-x)'}{2} \\
+& = \frac{\exp(x)+\exp(-x)}{2} \\
+& = \cosh(x)
 \end{align*}
 
 
@@ -461,7 +473,7 @@ $\int \cosh(x) dx = \int \frac{\exp(x)+ \exp(-x)}{2} dx = \frac{1}{2} \times \in
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \sinh(x)$.}
 
 
-$\int \sinh(x) dx = \int \frac{\exp(x)- \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx - \int \exp(x) dx = \frac{1}{2} \times \exp(x) + \exp(-x) = \cosh$
+$\int \sinh(x) dx = \int \frac{\exp(x)- \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx - \int \exp(x) dx = \frac{1}{2} \times \exp(x) + \exp(-x) = \cosh(x)$
 
 
 \subsubsection{Vérification avec Sage}
@@ -764,9 +776,51 @@ Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\t
 \end{center}
 
 
+\chapter{Récapitulation de nos travaux et de leurs résultats}
+
+
+\section{Dérivées, fonctions, primitives des fonctions trigonométriques}
+
+\begin{align*}
+\textrm{dérivée} \hspace{2cm} & \textrm{fonction} \hspace{2cm} & \textrm{primitive}  \\ 
+x \mapsto -\sin(x) \hspace{2cm} & x \mapsto \cos(x) \hspace{2cm} & \sin(x) + C^{ste}  \\
+x \mapsto \cos(x) \hspace{2cm} & x \mapsto \sin(x) \hspace{2cm} & -\cos(x) + C^{ste}   \\
+x \mapsto 1 + \tan\nolimits^2(x) \hspace{2cm} & x \mapsto \tan(x) \hspace{2cm} & -\ln\left| \cos(x)\right| + C^{ste} \\
+\end{align*}
 
 
 
+\section{Dérivées, fonctions, primitives des fonctions trigonométriques inverses}
+
+\begin{align*}
+\textrm{dérivée} \hspace{1.5cm} & \textrm{fonction} \hspace{1.5cm} & \textrm{primitive}  \\ 
+x \mapsto \frac{-1}{ \sqrt{1 - x^2}} \hspace{1.5cm} & x \mapsto \arccos(x) \hspace{1.5cm} & x \arccos(x) - \sqrt{1 - x^2 } + C^{ste}  \\
+x \mapsto \frac{1}{ \sqrt{1 - x^2}} \hspace{1.5cm} & x \mapsto \arcsin(x) \hspace{1.5cm} & x \arcsin(x) + \sqrt{1 - x^2 } + C^{ste}   \\
+x \mapsto \frac{1}{ 1 + x^2} \hspace{1.5cm} & x \mapsto \arctan(x) \hspace{1.5cm} &  x \arctan(x) - \frac{1}{2} \ln( 1 + x^2) + C^{ste} \\
+\end{align*}
+
+
+
+\section{Dérivées, fonctions, primitives des fonctions trigonométriques hyperboliques}
+
+\begin{align*}
+\textrm{dérivée} \hspace{2cm} & \textrm{fonction} \hspace{2cm} & \textrm{primitive}  \\ 
+x \mapsto \sinh(x) \hspace{2cm} & x \mapsto \cosh(x) \hspace{2cm} & \sinh(x) + C^{ste}  \\
+x \mapsto \cosh(x) \hspace{2cm} & x \mapsto \sinh(x) \hspace{2cm} & \cosh(x) + C^{ste}   \\
+x \mapsto 1 - \tanh\nolimits^2(x) \hspace{2cm} & x \mapsto \tanh(x) \hspace{2cm} & \ln( \cosh(x)) + C^{ste} \\
+\end{align*}
+
+
+
+
+\section{Dérivées, fonctions, primitives des fonctions trigonométriques hyperboliques inverses}
+
+\begin{align*}
+\textrm{dérivée} \hspace{1.5cm} & \textrm{fonction} \hspace{1.5cm} & \textrm{primitive}  \\ 
+x \mapsto \frac{1}{ \sqrt{x^2-1}} \hspace{1.5cm} & x \mapsto \arg\mspace{-1mu}\cosh(x) \hspace{1.5cm} & x \arg\mspace{-1mu}\cosh(x) - \sqrt{x^2-1} + C^{ste}  \\
+x \mapsto \frac{1}{ \sqrt{x^2+1}} \hspace{1.5cm} & x \mapsto \arg\mspace{-1mu}\sinh(x) \hspace{1.5cm} & x \arg\mspace{-1mu}\sinh(x) - \sqrt{x^2 +1 } + C^{ste}   \\
+x \mapsto \frac{1}{ 1 - x^2} \hspace{1.5cm} & x \mapsto \arg\mspace{-1mu}\tanh(x) \hspace{1.5cm} &  x \arg\mspace{-1mu}\tanh(x) + \frac{1}{2} \ln(1- x^2) + C^{ste} \\
+\end{align*}
 
 
 
@@ -794,7 +848,7 @@ Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\t
 \section{La fonction  $x \mapsto \ln(x) $.}
 
 \begin{align*}
-\int \ln(x) = & \int \ln(x) \times 1 \\ = & x \times \ln(x) - \int \ln(x)' \times x dx \\ = & x \times \ln(x) - \int 1 dx \\ = &  x \times \ln(x) - x + C^{ste}
+\int \ln(x) & =  \int \ln(x) \times 1 \\ & =  x \times \ln(x) - \int \ln(x)' \times x dx \\ & =  x \times \ln(x) - \int  dx \\ & =   x  \ln(x) - x + C^{ste}
 \end{align*}
 
 
@@ -813,7 +867,7 @@ Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\t
 \section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 + 1} } $ }
 
 
-$\int \frac{dx}{\sqrt{x^2 + 1}}$. Je pose $y+x = \sqrt{x^2+1} $
+$\int \frac{dx}{\sqrt{x^2 + 1}}$. Je pose $y-x = \sqrt{x^2+1} $
 
 
 \section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ x + 1} } $ }
@@ -911,7 +965,7 @@ Finalement $\int \ln(x) \, dx = x \times \ln(x) -x + C^{ste} $
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-Une primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 
 
 

@@ -149,23 +149,67 @@
 
 
 \begin{abstract}
+On se propose dans ce document d'étudier la trigonométrie rectiligne et la trigonométrie hyperbolique. La trigonométrie sphérique ne sera pas abordée dans ce document.
+
 Quelques considérations préliminaires sur le calcul de certaines primitives telles que celles des fonctions 
  $x \mapsto \arccos(x) $,  $x \mapsto \arcsin(x) $ ou bien $x \mapsto \arctan(x) $ une astuce est indispensable. Elle consiste à procéder à une intégration par parties. En effet, n'ayant aucune idée des primitives, il est raisonnable de changer leurs rôles respectifs et de considérer, non plus la fonction initiale, mais sa dérivée.
  
 Le premier objectif est donc de vérifier si celles-ci existent et sont calculables.
 
-Remarque.\\
-On passe des formules de trigonométrie aux formules de trigonométries hyperboliques en remplaçant $\cos$ par $\cosh$ et $\sin$ par $i . \sinh$.
-
 
 \end{abstract} 
+
+\chapter{Établissement des outils indispensables.}
+ 
+\section{Quelques formules de la trigonométrie.} 
+\begin{equation} 
+\quad \sin^2(x) + \cos^2(x)  = 1 
+\end{equation}
+\begin{equation} 
+\quad \sin(a+b)  = \sin(a)\cos(b) + \cos(a)\sin(b) 
+\end{equation}
+\begin{equation} 
+\quad \cos(a+b)  = \cos(a)\cos(b) - \sin(a)\sin(b)  
+\end{equation}
+
+
+\section{Quelques formules de la trigonométrie hyperbolique.}
+Remarque:
+on passe des formules de la trigonométrie linéaire aux formules de la trigonométrie hyperbolique en remplaçant $\cos$ par $\cosh$ et $\sin$ par $i . \sinh$.
+\begin{equation*}
+\quad  (i.\sinh\nolimits(x))^2 + \cosh\nolimits^2(x)  = 1 
+\end{equation*}
+\begin{equation}
+\quad  -\sinh\nolimits^2(x) + \cosh\nolimits^2(x)  = 1 
+\end{equation}
+\begin{equation*}
+i . \sinh(a+b)  = i . \sinh(a)\cosh(b) + \cosh(a)(i . \sinh(b)) \quad \textrm{puis en divisant par } i 
+\end{equation*}
+\begin{equation}
+\quad \sinh(a+b)  = \sinh(a)\cosh(b) + \cosh(a) \sinh(b)
+\end{equation} 
+\begin{equation*}
+\cosh(a+b)  = \cosh(a)\cosh(b) - (i. \sinh(a)) (i.\sinh(b)) \quad \textrm{autrement écrit} 
+\end{equation*}
+\begin{equation}
+\quad \cosh(a+b)  = \cosh(a)\cosh(b) + \sinh(a) \sinh(b) 
+\end{equation}
+
+
+
+
 
 \chapter{Fonctions trigonométriques et trigonométriques inverses.}
 
 
 \section{La fonction  $x \mapsto \cos(x)$.}
 
-La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est une bijection de $[0,\pi] \rightarrow [-1,+1]$ . Il existe donc une fonction réciproque à la fonction $x \mapsto \cos(x) $ que l'on nomme $x \mapsto \arccos(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $ ]-1,1[$.
+\begin{center}
+\sageplot[width=.45\textwidth]{plot(cos(x), x, -pi, pi)} \\
+La représentation graphique de $x\mapsto \cos(x)$.
+\end{center}
+
+La fonction est paire et périodique de période $2 \pi$.
 
 \subsection{Dérivée de la fonction $x \mapsto \cos(x)$.}
 
@@ -175,7 +219,7 @@ La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \cos(x)$.}
 
-Dans la section suivante, on calcule la dérivée de la fonction $x \mapsto \sin(x)$ qui vaut $x \mapsto \cos(x)$, par conséquent une primitive de $x \mapsto \cos(x)$ est égale à une constante près à $  \sin(x) + C^{ste} $.
+Dans la section suivante, on calcule la dérivée de la fonction $x \mapsto \sin(x)$ qui vaut $x \mapsto \cos(x)$, par conséquent une primitive de $x \mapsto \cos(x)$ est égale, à une constante près, à $  \sin(x) + C^{ste} $.
 
 On vérifie ce résultat avec Sage.
 
@@ -188,11 +232,13 @@ Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto
 
 
 \section{La fonction  $x \mapsto \sin(x)$.}
-
+\begin{center}
+\sageplot[width=.45\textwidth]{plot(sin(x), x, -pi, pi)} \\
+La représentation graphique de $x\mapsto \sin(x)$.
+\end{center}
+La fonction est impaire et périodique de période $2 \pi$.
 
 \subsection{Dérivée de la fonction $x \mapsto \sin(x)$.}
-
-%\textcolor{red}{DÉMONSTRATION À REVOIR}
 
 \begin{align*}
 \lim_{h\to 0} \frac{\sin(x+h)-sin(x)}{h} & = \lim_{h\to 0} \frac{\sin(x)\cos(h)+\cos(x)\sin(h)-\sin(x)}{h} \\  & =  \lim_{h\to 0} \frac{\sin(x)(\cos(h)-1)}{h}+\frac{\cos(x)\sin(h)}{h} \\ & = \sin(x) \times  \lim_{h\to 0} \frac{\cos(h)-1}{h}+\cos(x) \times  \lim_{h\to 0}  \frac{\sin(h)}{h} \\ & = \cos{x}
@@ -200,7 +246,7 @@ Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \sin(x)$.}
 
-Dansins la section précédente, on a calculé la dérivée de la fonction $x \mapsto \cos(x)$ qui vaut $x \mapsto -\sin(x)$, par conséquent une primitive de $x \mapsto \sin(x)$ est égale à une constante près à $ - \cos(x) + C^{ste} $.
+Dans la section précédente, on a calculé la dérivée de la fonction $x \mapsto \cos(x)$ qui vaut $x \mapsto -\sin(x)$, par conséquent une primitive de $x \mapsto \sin(x)$ est égale, à une constante près, à $ - \cos(x) + C^{ste} $.
 
 On vérifie ce résultat avec Sage.
 
@@ -214,11 +260,23 @@ Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + C^{ste} $ définie à une con
 
 \section{La fonction  $x \mapsto \tan(x)$.}
 
+\begin{center}
+\sageplot[width=.45\textwidth]{plot(tan(x), x, -1.4, 1.4)} \\
+La représentation graphique de $x\mapsto \tan(x)$.
+\end{center}
+
+
+La fonction $x \mapsto \tan(x)$ étant périodique de période $\pi$, on choisit de restreindre le domaine de définition à l'intervalle ouvert $ \left] -\frac{\pi}{ 2} , \frac{\pi}{ 2} \right[ $.
+
+
 \subsection{Dérivée de la fonction $x \mapsto \tan(x)$.}
 
-
 \begin{align*}
-\tan(x)' & =  \left(\frac{\sin(x)}{\cos(x)}\right)' \\ & =  \frac{\cos(x) \times \cos(x)+\sin(x)\times \sin(x)}{\cos^2(x)}  \\ & =  \frac{1}{\cos^2(x)} = 1 + \tan^2(x)
+\tan(x)' 
+& =  \left(\frac{\sin(x)}{\cos(x)}\right)' \\ 
+& =  \frac{\cos(x) \times \cos(x) - (-\sin(x)) \times \sin(x)}{\cos^2(x)}  \\ 
+& =  \frac{\cos(x) \times \cos(x) + \sin(x)\times \sin(x)}{\cos^2(x)}  \\ 
+& =  \frac{1}{\cos^2(x)} = 1 + \tan^2(x)
 \end{align*}
 
 \subsubsection{Vérification avec Sage}
@@ -235,6 +293,10 @@ La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
 On a $\tan(x)=\frac{\sin(x)}{\cos(x)}$, alors $\int \tan(x) \, dx =\int \frac{\sin(x)}{\cos(x)}\, dx$.\\
 Je pose $u(x)=\cos(x)$ donc $u'(x)= -\sin(x) \,dx$ et par ce changement de variable on a $\int \tan(x) \, dx = \int \frac{\sin(x)}{\cos(x)}\, dx  = -\int \frac{u'}{u} = -\ln|u|  = \ln\left(\frac{1}{|u|}\right)  = \ln\left(\frac{1}{|\cos(x)|}\right) +C^{ste}$.
+
+Or, on a choisi le domaine de définition de la fonction $x \mapsto \tan(x)$ restreint à l'intervalle ouvert $ \left] -\frac{\pi}{ 2} , \frac{\pi}{ 2} \right[ $, par conséquent $\cos(x)$ est positif sur cet intervalle donc $|\cos(x)| = \cos(x)$.
+
+Finalement $ \ln\left(\frac{1}{\cos(x)}\right) +C^{ste}$ est une primitive de $x \mapsto \tan(x)$.
 
 
 \subsubsection*{Vérification avec Sage}

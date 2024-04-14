@@ -161,7 +161,7 @@ Le premier objectif est donc de vérifier si celles-ci existent et sont calculab
 
 \chapter{Établissement des outils indispensables.}
  
-\section{Quelques formules de la trigonométrie.} 
+\section{Quelques formules de la trigonométrie rectiligne.} 
 \begin{equation} 
 \quad \sin^2(x) + \cos^2(x)  = 1 
 \end{equation}
@@ -206,7 +206,7 @@ i . \sinh(a+b)  = i . \sinh(a)\cosh(b) + \cosh(a)(i . \sinh(b)) \quad \textrm{pu
 
 \begin{center}
 \sageplot[width=.45\textwidth]{plot(cos(x), x, -pi, pi)} \\
-La représentation graphique de $x\mapsto \cos(x)$.
+La représentation graphique de $x\mapsto \cos(x)$ sur l'intervalle $[-\pi, \pi]$.
 \end{center}
 
 La fonction est paire et périodique de période $2 \pi$.
@@ -234,7 +234,7 @@ Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto
 \section{La fonction  $x \mapsto \sin(x)$.}
 \begin{center}
 \sageplot[width=.45\textwidth]{plot(sin(x), x, -pi, pi)} \\
-La représentation graphique de $x\mapsto \sin(x)$.
+La représentation graphique de $x\mapsto \sin(x)$ sur l'intervalle $[-\pi, \pi]$.
 \end{center}
 La fonction est impaire et périodique de période $2 \pi$.
 
@@ -262,7 +262,7 @@ Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + C^{ste} $ définie à une con
 
 \begin{center}
 \sageplot[width=.45\textwidth]{plot(tan(x), x, -1.4, 1.4)} \\
-La représentation graphique de $x\mapsto \tan(x)$.
+La représentation graphique de $x\mapsto \tan(x)$ sur l'intervalle ouvert $ \left] -\frac{\pi}{ 2} , \frac{\pi}{ 2} \right[ $.
 \end{center}
 
 
@@ -504,7 +504,10 @@ nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\c
 
 \subsection{Dérivée de la fonction $x \mapsto \cosh(x)$.}
 \begin{align*}
-\cosh(x)' =& \left( \frac{\exp(x)+\exp(-x)}{2} \right)' \\ =& \frac{\exp(x)'+\exp(-x)'}{2} \\=& \frac{\exp(x)-\exp(-x)}{2} \\=& \sinh(x)
+\cosh(x)' & = \left( \frac{\exp(x)+\exp(-x)}{2} \right)' \\ 
+& = \frac{\exp(x)'+\exp(-x)'}{2} \\
+& = \frac{\exp(x)-\exp(-x)}{2} \\
+& = \sinh(x)
 \end{align*}
 
 
@@ -564,7 +567,10 @@ Le graphe de $\sage{f(x)} $.
 \subsection{Dérivée de la fonction $x \mapsto \tanh(x)$.}
 
 \begin{align*}
-(\tanh(x))' = & \left(\frac{\sinh(x)}{\cosh(x)}\right)' \\  = & \frac{\sinh(x)' \times \cosh(x) - \cosh(x)' \times \sinh(x)}{\cosh(x)^2} \\ = &  \frac{\cosh(x)^2 -\sinh(x)^2}{\cosh(x)^2} \\ = & \frac{1}{\cosh(x)^2}
+(\tanh(x))' & =  \left(\frac{\sinh(x)}{\cosh(x)}\right)' \\
+&  =  \frac{\sinh(x)' \times \cosh(x) - \cosh(x)' \times \sinh(x)}{\cosh(x)^2} \\ 
+&  =   \frac{\cosh(x)^2 -\sinh(x)^2}{\cosh(x)^2} \\
+&  =  \frac{1}{\cosh(x)^2}
 \end{align*}
 
 
@@ -574,7 +580,10 @@ Le graphe de $\sage{f(x)} $.
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \tanh(x)$.}
 
 \begin{align*}
-\int \tanh(x) = &\int \frac{\cosh(x)}{\sinh(x)} \\  = & \int \frac{1}{u(x)} \times du(x), u(x) =  \cosh(x), du(x) = \sinh(x) \\ = & \ln(u(x)) \\ = & \ln(\cosh(x))
+\int \tanh(x) & = \int \frac{\cosh(x)}{\sinh(x)} \\
+&  =  \int \frac{1}{u(x)} \times du(x), u(x) =  \cosh(x), du(x) = \sinh(x) \\
+&  =  \ln(u(x)) \\
+& =   \ln(\cosh(x))
 \end{align*}
 
 
@@ -705,7 +714,7 @@ La représentation graphique de $x \mapsto \arg\mspace{-1mu}\sinh(x)$.
 On observe que la fonction est croissante, impaire $\arg\mspace{-1mu}\sinh(-x) = -\arg\mspace{-1mu}\sinh(x) $
 et on observe que la fonction est continue et dérivable sur $\R$.                                                                                                             
 
-\subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\sinh(x)$.}
+\subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\sinh(x)$.\label{argsinh}}
 On a la fonction composée $\Id = \sinh \circ \arg\mspace{-1mu}\sinh$ telle que $x\mapsto\sinh\left(\arg\mspace{-1mu}\sinh(x)\right)=x$ dont la dérivée s'écrit alors $1= \arg\mspace{-1mu}\sinh\nolimits' \times \sinh\nolimits'\circ\arg\mspace{-1mu}\sinh$.
 \begin{align*}
 x & =\sinh\left(\arg\mspace{-1mu}\sinh(x)\right)(x) \quad \textrm{en dérivant, on a}\\
@@ -832,7 +841,7 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 
 \begin{center}
 \sageplot[width=.3\textwidth]{plot(f(x), x, -1, 1)} 
-\sageplot[width=.3\textwidth]{plot(g(x), x, -1, 1)} 
+\sageplot[width=.3\textwidth]{plot(g(x), x, -0.9, 0.9)} 
 \sageplot[width=.3\textwidth]{plot(F(x), x, -1, 1)}\\
 Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\tanh(x)$, de sa dérivée et de sa primitive.
 \end{center}
@@ -913,46 +922,6 @@ x \mapsto \frac{1}{ 1 - x^2} \hspace{1.5cm} & x \mapsto \arg\mspace{-1mu}\tanh(x
 \int \ln(x) & =  \int \ln(x) \times 1 \\ & =  x \times \ln(x) - \int \ln(x)' \times x dx \\ & =  x \times \ln(x) - \int  dx \\ & =   x  \ln(x) - x + C^{ste}
 \end{align*}
 
-
-\section{La fonction  $x \mapsto \exp(x) $.}
-
-
-\begin{align*}
-\int \exp(x) = \exp(x)
-\end{align*}
-
-
-
-
-
-
-\section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 + 1} } $ }
-
-
-$\int \frac{dx}{\sqrt{x^2 + 1}}$. Je pose $y-x = \sqrt{x^2+1} $
-
-
-\section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ x + 1} } $ }
-
-
-
-
-\section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ \alpha^2} } $ }
-
-\subsection{Vérification avec Sage}
-
-
-
-\subsubsection{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ a^2} } $ par un changement de variable puis par l'emploi d'une variable auxiliaire} 
-
-\subsubsection{Vérification avec Sage}
-
-\section{Calcul d'une primitive de $  x \longmapsto  \sqrt{x^2 + 1}  $ \label{sqrt-001} }
-
-\subsubsection{Vérification avec Sage}
-
-
-
 \subsection{Calcul de la dérivée de la fonction $x \mapsto \ln(x) $.}
 
 
@@ -966,14 +935,16 @@ $ \lim_{h \mapsto 0} \frac{\ln(x+h) - \ln(x}{h} = \lim_{h \mapsto 0} \frac{\ln(\
 
 On a donc 
 
-$\lim_{h \mapsto 0} \frac{\ln(1+X)}{x\times X} = \frac{1}{x} \times \lim_{h \mapsto 0} \frac{\ln(1+X)}{X} = \frac{1}{x} \times 1 = \frac{1}{x}$
+$\lim_{h \mapsto 0} \frac{\ln(1+X)}{x\times X} = \frac{1}{x} \times \lim_{h \mapsto 0} \frac{\ln(1+X)}{X} = \frac{1}{x} \times 1 = \frac{1}{x}$.
 
 
 
 
 \subsubsection{Seconde Méthode}
 
-Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. On a $\exp((\ln(x))=x)$, par conséquent la dérivée de cette expression s'exprime par $ \exp(\ln(x)) \times (\ln(x)' = 1$, d'où $(\ln(x))' = \frac{1}{\exp(\ln(x))}  = \frac{1}{x} $.
+Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. 
+
+On a $\exp((\ln(x))=x)$, par conséquent la dérivée de cette expression s'exprime par $ \exp(\ln(x)) \times (\ln(x)' = 1$, d'où $(\ln(x))' = \frac{1}{\exp(\ln(x))}  = \frac{1}{x} $.
 
 \subsubsection{Vérification avec Sage}
 
@@ -1028,6 +999,95 @@ Finalement $\int \ln(x) \, dx = x \times \ln(x) -x + C^{ste} $
 \end{sageblock}
 
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
+
+
+\section{La fonction  $x \mapsto \exp(x) $.}
+
+\begin{align*}
+\int \exp(x) = \exp(x) + C^{ste}.
+\end{align*}
+
+
+\section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 + 1} } $. }
+
+
+Je pose $y-x = \sqrt{x^2+1} $ avec $y - x = \sqrt{x^2 + 1} \geqslant 0 $, donc $y \geqslant  x$.
+
+Quel est le signe de $y$ c'est-à-dire le signe de $x + \sqrt{x^2+1} $?
+
+\begin{center}
+\sageplot[width=.4\textwidth]{plot(x+sqrt(x^2+1), x, -5, 5)} 
+\sageplot[width=.4\textwidth]{plot(diff(x+sqrt(x^2+1),x), x, -5, 5)} \\
+La représentation graphique de $x + \sqrt{x^2+1}$ et de sa dérivée.
+\end{center}
+
+
+
+En élevant au carré, on a 
+\begin{align*}
+(y-x)^2 & = x^2 + 1 \\
+y^2 - 2yx + x^2 & = x^2 + 1 \\
+y^2 - 2yx  & = 1 \quad \textrm{ puis en différentiant chaque variable} \\
+2ydy - 2dy \times x - 2ydx & = 0 \\
+(y-x)dy & = ydx \\
+\frac{dy}{y} & = \frac{dx}{(y-x)} = \frac{dx}{\sqrt{x^2+1} } \\
+\int \frac{dy}{y} = \ln|y| + C^{ste} & = \int \frac{dx}{\sqrt{x^2+1} } dx \quad \textrm{or} \; y = x + \sqrt{x^2+1}  \geqslant 0 \\
+\ln(x + \sqrt{x^2+1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2+1} } dx  
+\end{align*}
+Or, nous avons déjà vu en \ref{argsinh} page \pageref{argsinh} que la dérivée de la fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$  vaut $ \frac{1}{ \sqrt{1+x^2}}$ ce qui implique que $\ln(x + \sqrt{x^2+1}) + C^{ste} = \arg\mspace{-1mu}\sinh\nolimits(x) $. Montrons-le !
+
+\subsection{Avons nous $\arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sqrt{x^2+1}) + C^{ste} $ ?}
+
+Posons $ y = \arg\mspace{-1mu}\sinh\nolimits(x) $, comme $ \arg\mspace{-1mu}\sinh\nolimits $ est la fonction inverse de $\sinh$, on a $\sinh(y) = \frac{\exp(y) - \exp(-y)}{2} = x$ d'où $2x = \exp(y) - \exp(-y) $ et en multipliant par $\exp(y)$, on obtient l'équation du second degré en $\exp(y)$,
+\begin{equation}
+\left(\exp(y) \right)^2 - 2x \exp(y) -1 = 0, 
+\end{equation}
+dont le discriminant $\Delta$ vaut $4x^2 + 4 \neq 0$, ainsi les solutions s'écrivent $ \exp(y_1) = x + \frac{\sqrt{4x^2 + 4}}{2} = x + \sqrt{x^2+1}$ et $ \exp(y_2) = x - \frac{\sqrt{4x^2 + 4}}{2} = x - \sqrt{x^2+1}$. 
+
+On ne retient que la solution $ \exp(y) = x + \sqrt{x^2+1}$ puisque la fonction exponentielle est toujours positive et que $ \exp(y_2) = x - \sqrt{x^2+1} < 0 $.
+
+Finalement, $y = \arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sqrt{x^2+1})$.
+
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(log(x+sqrt(x^2+1)), x, -5, 5)} 
+%\sageplot[width=.3\textwidth]{plot(log(x-sqrt(x^2+1)), x, -5, 0)} 
+\sageplot[width=.3\textwidth]{plot(arcsinh(x), x, -5, 5)} \\
+Les représentations graphiques de $\ln(x + \sqrt{x^2+1})$ et de $\arg\mspace{-1mu}\sinh\nolimits(x)$.
+\end{center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ x + 1} } $. }
+
+
+\section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ \alpha^2} } $. }
+
+\subsection{Vérification avec Sage}
+
+
+
+\subsubsection{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ a^2} } $ par un changement de variable puis par l'emploi d'une variable auxiliaire} 
+
+\subsubsection{Vérification avec Sage}
+
+\section{Calcul d'une primitive de $  x \longmapsto  \sqrt{x^2 + 1}  $ \label{sqrt-001} }
+
+\subsubsection{Vérification avec Sage}
 
 
 

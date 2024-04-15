@@ -628,7 +628,7 @@ La représentation graphique de $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
 On observe que la fonction est croissante, continue sur $\left[1\,,\,+\infty \right[ $ et dérivable sur l'intervalle ouvert $\left]1\,,\,+\infty \right[ $.
                                                                                                
 
-\subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
+\subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\cosh(x)$.\label{argcosh}}
 On a la fonction composée $\Id = \cosh \circ \arg\mspace{-1mu}\cosh$ telle que $x\mapsto\cosh\left(\arg\mspace{-1mu}\cosh(x)\right)=x$ dont la dérivée s'écrit alors $1= \arg\mspace{-1mu}\cosh\nolimits' \times \cosh\nolimits'\circ\arg\mspace{-1mu}\cosh$.
 \begin{align*}
 x & =\cosh\left(\arg\mspace{-1mu}\cosh(x)\right)(x) \quad \textrm{en dérivant, on a}\\
@@ -673,31 +673,6 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 \sageplot[width=.3\textwidth]{plot(F(x), x, 1, 20)}\\
 Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\cosh(x)$, de sa dérivée et de sa primitive.
 \end{center}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1008,6 +983,84 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 \end{align*}
 
 
+\section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 - 1} } $. }
+
+
+Je pose $y-x = \sqrt{x^2 - 1} $ avec $y - x = \sqrt{x^2 - 1} \geqslant 0 $, donc $y \geqslant  x$.
+
+Quel est le signe de $y$ c'est-à-dire le signe de $x + \sqrt{x^2 - 1} $?
+
+La fonction $ x\mapsto x + \sqrt{x^2 - 1} $ est définie, continue et dérivable sur l'intervalle ouvert $ ]-\infty,-1[ \, \cup \, ]1,+\infty[ $.
+
+\begin{center}
+\sageplot[width=.4\textwidth]{plot(x+sqrt(x^2-1), x, -5, -1)} 
+\sageplot[width=.4\textwidth]{plot(diff(x+sqrt(x^2-1),x), x, -5, -1)} \\
+La représentation graphique de $x + \sqrt{x^2-1}$ et de sa dérivée sur l'intervalle $ ]-\infty,-1[ $.
+\end{center}
+La fonction $ x\mapsto x + \sqrt{x^2 - 1} < 0 $ donc $ y < 0 $ sur l'intervalle $ ]-\infty,-1[ $.
+
+\begin{center}
+\sageplot[width=.4\textwidth]{plot(x+sqrt(x^2-1), x, 1, 5)} 
+\sageplot[width=.4\textwidth]{plot(diff(x+sqrt(x^2-1),x), x, 1, 5)} \\
+La représentation graphique de $x + \sqrt{x^2-1}$ et de sa dérivée sur l'intervalle $ ]1,+\infty[ $.
+\end{center}
+
+La fonction $ x\mapsto x + \sqrt{x^2 - 1} > 0 $ donc $ y > 0 $ sur l'intervalle $ 1,+\infty[ $.
+
+
+
+
+En élevant au carré, on a 
+\begin{align*}
+(y-x)^2 & = x^2 - 1 \\
+y^2 - 2yx + x^2 & = x^2 - 1 \\
+y^2 - 2yx  & = -1 \quad \textrm{ puis en différentiant chaque variable} \\
+2ydy - 2dy \times x - 2ydx & = 0 \\
+(y-x)dy & = ydx \\
+\frac{dy}{y} & = \frac{dx}{(y-x)} = \frac{dx}{\sqrt{x^2-1} } \\
+\int \frac{dy}{y} = \ln|y| + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx \\
+\ln\left|x + \sqrt{x^2-1}\right| + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{autrement écrit}\\ 
+\ln(-x - \sqrt{x^2-1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{pour} \;  x \in ]-\infty,-1[ \\
+\ln(x + \sqrt{x^2-1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{pour} \; x \in ]1,+\infty[ .
+\end{align*}
+Or, nous avons déjà vu en~\ref{argcosh}, page~\pageref{argcosh} que la dérivée de la fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$  vaut $ \frac{1}{ \sqrt{1-x^2}}$ ce qui implique que $\ln\left|x + \sqrt{x^2-1}\right| + C^{ste} = \arg\mspace{-1mu}\cosh\nolimits(x) $. Montrons-le !
+
+\subsection{Avons nous $\arg\mspace{-1mu}\cosh\nolimits(x) = \ln\left|x + \sqrt{x^2-1}\right| + C^{ste} $ ?}
+
+Posons $ y = \arg\mspace{-1mu}\cosh\nolimits(x) $, comme $ \arg\mspace{-1mu}\cosh\nolimits $ est la fonction inverse de $\cosh$, on a $\cosh(y) = \frac{\exp(y) + \exp(-y)}{2} = \cosh(\arg\mspace{-1mu}\cosh\nolimits(x)) = x $ d'où $ \exp(y) + \exp(-y) -2x = 0 $ et en multipliant par $\exp(y)$, on obtient l'équation du second degré ordonné en $\exp(y)$,
+\begin{equation}
+\label{equa01}
+\left(\exp(y) \right)^2 - 2x \exp(y) +1 = 0, 
+\end{equation}
+dont le discriminant $\Delta$ vaut $4x^2 - 4 > 0$ pour $ x \in ]-\infty,-1[ \, \cup \, ]1,+\infty[ $, ainsi les solutions s'écrivent $ \exp(y_1) = x + \frac{\sqrt{4x^2 - 4}}{2} = x + \sqrt{x^2-1}$ et $ \exp(y_2) = x - \frac{\sqrt{4x^2 - 4}}{2} = x - \sqrt{x^2-1}$. 
+
+La fonction exponentielle étant toujours positive sur $\R$, alors  les solutions de l'équation du second degré~\ref{equa01} sont celles pour  $ x \in ]1,+\infty[ $. En effet, pour $ x \in ]-\infty,-1[ $, les fonctions $x \mapsto x + \sqrt{x^2-1}$ et $x \mapsto x - \sqrt{x^2-1}$ sont négatives.
+
+Les seules solutions qui conviennent sont  $\exp(y)  = x + \sqrt{x^2-1}$ et $\exp(y) = x - \sqrt{x^2-1}$ pour $ x \in ]1,+\infty[ $.
+
+
+Finalement, on a  $y = \arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sqrt{x^2-1})$ et $y = \arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x - \sqrt{x^2-1})$ pour $ x \in ]1,+\infty[ $.
+
+
+
+\begin{center}
+\sageplot[width=.2\textwidth]{plot((x+sqrt(x^2-1)), x, 1, 5)} 
+%\sageplot[width=.2\textwidth]{plot((x+sqrt(x^2-1)), x, -5, -1)} 
+\sageplot[width=.2\textwidth]{plot((x-sqrt(x^2-1)), x, 1, 5)} 
+%\sageplot[width=.2\textwidth]{plot((x-sqrt(x^2-1)), x, -5, -1)} 
+\\
+\sageplot[width=.2\textwidth]{plot(arccosh(x), x, 1, 5)} \\
+\sageplot[width=.2\textwidth]{plot(log(x+sqrt(x^2-1)), x, 1, 5)} 
+\sageplot[width=.2\textwidth]{plot(log(x-sqrt(x^2-1)), x, 1, 5)} 
+%\sageplot[width=.2\textwidth]{plot(log(x+sqrt(x^2-1)), x, -5, -1)} 
+\\
+Les représentations graphiques de $\ln(x + \sqrt{x^2-1})$ et de $\arg\mspace{-1mu}\cosh\nolimits(x)$.
+\end{center}
+
+
+Nous avons montré l'égalité $\arg\mspace{-1mu}\cosh\nolimits(x) = \ln(x + \sqrt{x^2-1}) + C^{ste} $ pour $ x \in ]1,+\infty[ $.
+
+
 \section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 + 1} } $. }
 
 
@@ -1034,7 +1087,7 @@ y^2 - 2yx  & = 1 \quad \textrm{ puis en différentiant chaque variable} \\
 \int \frac{dy}{y} = \ln|y| + C^{ste} & = \int \frac{dx}{\sqrt{x^2+1} } dx \quad \textrm{or} \; y = x + \sqrt{x^2+1}  \geqslant 0 \\
 \ln(x + \sqrt{x^2+1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2+1} } dx  
 \end{align*}
-Or, nous avons déjà vu en \ref{argsinh} page \pageref{argsinh} que la dérivée de la fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$  vaut $ \frac{1}{ \sqrt{1+x^2}}$ ce qui implique que $\ln(x + \sqrt{x^2+1}) + C^{ste} = \arg\mspace{-1mu}\sinh\nolimits(x) $. Montrons-le !
+Or, nous avons déjà vu en~\ref{argsinh}, page~\pageref{argsinh} que la dérivée de la fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$  vaut $ \frac{1}{ \sqrt{1+x^2}}$ ce qui implique que $\ln(x + \sqrt{x^2+1}) + C^{ste} = \arg\mspace{-1mu}\sinh\nolimits(x) $. Montrons-le !
 
 \subsection{Avons nous $\arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sqrt{x^2+1}) + C^{ste} $ ?}
 
@@ -1057,17 +1110,7 @@ Les représentations graphiques de $\ln(x + \sqrt{x^2+1})$ et de $\arg\mspace{-1
 \end{center}
 
 
-
-
-
-
-
-
-
-
-
-
-
+Nous avons montré l'égalité $\arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sqrt{x^2+1}) + C^{ste} $.
 
 
 

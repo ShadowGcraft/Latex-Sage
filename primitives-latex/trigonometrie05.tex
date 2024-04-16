@@ -494,7 +494,7 @@ La représentation graphique de $x \mapsto \sage{sinh(x)} $ et de sa dérivée.
 
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \sinh(x)$.}
-$\int \sinh(x) dx = \int \frac{\exp(x)- \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx - \int \exp(x) dx = \frac{1}{2} \times \exp(x) + \exp(-x) = \cosh(x) + C^{ste}$
+$\int \sinh(x) dx = \int \frac{\exp(x)- \exp(-x)}{2} dx = \frac{1}{2} \times \left( \int \exp(x) dx - \int \exp(-x) dx \right) = \frac{ \exp(x) + \exp(-x) }{2} = \cosh(x) + C^{ste}$
 \paragraph{On vérifie ce résultat avec Sage.}
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
@@ -511,13 +511,12 @@ Définissons nos fonctions dans {\texttt{Sage}}
 
 
 \begin{center}
-\sageplot[width=.4\textwidth]{plot(tanh(x), x, -4, 4)} 
-\sageplot[width=.4\textwidth]{plot(diff(tanh(x), x) , x, -4, 4)} \\
-La représentation graphique de $x \mapsto \sage{tanh(x)} $ et de sa dérivée.
+\sageplot[width=.3\textwidth]{plot(f(x), x, -3, 3)}
+\sageplot[width=.3\textwidth]{plot(g(x), x, -3, 3)} \\
+La représentation graphique de $x \mapsto \sage{f(x)} $ et de sa dérivée.
 \end{center}
 
 \subsection{Dérivée de la fonction $x \mapsto \tanh(x)$.}
-
 \begin{align*}
 (\tanh(x))' & =  \left(\frac{\sinh(x)}{\cosh(x)}\right)' \\
 &  =  \frac{\sinh(x)' \times \cosh(x) - \cosh(x)' \times \sinh(x)}{\cosh(x)^2} \\ 
@@ -526,37 +525,17 @@ La représentation graphique de $x \mapsto \sage{tanh(x)} $ et de sa dérivée.
 \end{align*}
 
 
-\paragraph{On vérifie ce résultat avec Sage.}
-
-
-
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \tanh(x)$.}
-
-\begin{center}
-%\sageplot[width=.4\textwidth]{plot(tanh(x), x, -4, 4)} 
-\sageplot[width=.4\textwidth]{plot(integrate(tanh(x), x) , x, -4, 4)} \\
-La représentation graphique de $x \mapsto \sage{tanh(x)} $ et de sa dérivée.
-\end{center}
-
-
 \begin{align*}
 \int \tanh(x) & = \int \frac{\cosh(x)}{\sinh(x)} \\
-&  =  \int \frac{1}{u(x)} \times du(x), \quad \textrm{en posant } u(x) =  \cosh(x) \; \textrm{et donc } du(x) = \sinh(x) \\
+&  =  \int \frac{du(x)}{u(x)} , \quad \textrm{en posant } u(x) =  \cosh(x) \; \textrm{et donc } du(x) = \sinh(x) \\
 &  =  \ln|u(x)| = \ln|\cosh(x)|  \quad \textrm{or } \cosh(x)>0 \; \textrm{sur } \R ,  \textrm{ donc}\\
 &  =   \ln\left(\cosh(x)\right) + C^{ste} 
 \end{align*}
 
-
 \paragraph{On vérifie ce résultat avec Sage.}
-
-
-
-\begin{sageblock}
-    f(x) = tanh(x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
-
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
+
 
 
 
@@ -564,16 +543,20 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = arccosh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
 
 Le cosinus hyperbolique, noté $\cosh$ est défini sur $\R$ selon l'expression $\frac{\exp(x)+\exp(-x)}{2}$, son domaine de valeurs est $[1, +\infty [$ 
 c'est une fonction paire c'est-à-dire $\cosh(-x)=\cosh(x)$.
 
 
 La fonction $x \mapsto \cosh(x)$ est inversible sur le domaine de définition restreint à $\R^+$, car elle y est bijective, son inverse est notée \og $ \arg\mspace{-1mu}\cosh $\fg et définit la fonction \og\emph{argument cosinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
-
-
 \begin{center}
-\sageplot[width=.5\textwidth]{plot(arccosh(x), x, 1, 20)} \\
+\sageplot[width=.3\textwidth]{plot(f(x), x, 1, 20)} \\
 La représentation graphique de $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
 \end{center}
 On observe que la fonction est croissante, continue sur $\left[1\,,\,+\infty \right[ $ et dérivable sur l'intervalle ouvert $\left]1\,,\,+\infty \right[ $.
@@ -592,31 +575,20 @@ x & =\cosh\left(\arg\mspace{-1mu}\cosh(x)\right)(x) \quad \textrm{en dérivant, 
 
 
 \paragraph{On vérifie ce résultat avec Sage.}
-
-
-
-\begin{sageblock}
-    f(x) = arccosh(x)
-    g(x) = diff(f(x),x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
-
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
-
-Pour calculer $\int \arg\mspace{-1mu}\cosh(x) \, dx$, je procède par une intégration par parties en posant $u(x) = \arg\mspace{-1mu}\cosh(x)$ et $v'(x) = dx$, d'où $u'(x) = \frac{1}{ \sqrt{x^2-1}}$ et $ v(x) = x $. \\
+Pour calculer $\int \arg\mspace{-1mu}\cosh(x) \, dx$, on procède par une intégration par parties en posant $u(x) = \arg\mspace{-1mu}\cosh(x)$ et $v'(x) = dx$, d'où $u'(x) = \frac{1}{ \sqrt{x^2-1}}$ et $ v(x) = x $. \\
 On a donc
 \begin{align*}
 \int \arg\mspace{-1mu}\cosh(x) \, dx & = x \arg\mspace{-1mu}\cosh(x) - \int \frac{x}{ \sqrt{x^2-1}} \, dx \quad \textrm{or}\\
 \int \frac{x}{ \sqrt{x^2-1}} \, dx & = \int \left(\sqrt{x^2-1}\right)' \, dx = \sqrt{x^2-1}  \quad \textrm{d'où}\\
-\int \arg\mspace{-1mu}\cosh(x) \, dx & = x \arg\mspace{-1mu}\cosh(x) - \sqrt{x^2-1} + C^{ste} \quad \textrm{que l'on retrouve avec Sage.}
+\int \arg\mspace{-1mu}\cosh(x) \, dx & = x \arg\mspace{-1mu}\cosh(x) - \sqrt{x^2-1} + C^{ste} 
 \end{align*}
 
 
 \paragraph{On vérifie ce résultat avec Sage.}
-
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 
 \begin{center}
@@ -630,12 +602,19 @@ Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\c
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$.}
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = arcsinh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
 
 La fonction $x \mapsto \sinh(x)$ est inversible sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\mspace{-1mu}\sinh $\fg et définit la fonction \og\emph{argument sinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\sinh(x)$.
 
 
 \begin{center}
-\sageplot[width=.5\textwidth]{plot(arcsinh(x), x, -20, 20)} \\
+\sageplot[width=.3\textwidth]{plot(arcsinh(x), x, -20, 20)} \\
 La représentation graphique de $x \mapsto \arg\mspace{-1mu}\sinh(x)$.
 \end{center}
 On observe que la fonction est croissante, impaire $\arg\mspace{-1mu}\sinh(-x) = -\arg\mspace{-1mu}\sinh(x) $
@@ -648,37 +627,23 @@ x & =\sinh\left(\arg\mspace{-1mu}\sinh(x)\right)(x) \quad \textrm{en dérivant, 
 1 & = \arg\mspace{-1mu}\sinh\nolimits'(x) \times \sinh\nolimits'\circ\arg\mspace{-1mu}\sinh(x) \quad \textrm{d'où}\\
 \arg\mspace{-1mu}\sinh\nolimits'(x) & =\frac{1}{ \sinh\nolimits'\circ\arg\mspace{-1mu}\sinh(x)}=\frac{1}{ \cosh\left(\arg\mspace{-1mu}\sinh(x)\right)}\quad \textrm{or}\\
 \cosh\left(\arg\mspace{-1mu}\sinh(x)\right) & = \sqrt{1+\sinh\nolimits^2\left(\arg\mspace{-1mu}\sinh(x)\right)}=\sqrt{1+x^2}\quad \textrm{donc}\\
-\arg\mspace{-1mu}\sinh\nolimits'(x) & = \frac{1}{ \sqrt{1+x^2}}\quad \textrm{on vérifie ce calcul avec Sage.}
+\arg\mspace{-1mu}\sinh\nolimits'(x) & = \frac{1}{ \sqrt{1+x^2}}
 \end{align*}
 
 
 \paragraph{On vérifie ce résultat avec Sage.}
-
-
-
-\begin{sageblock}
-    f(x) = arcsinh(x)
-    g(x) = diff(f(x),x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
-
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$.}
-
-Pour calculer $\int \arg\mspace{-1mu}\sinh(x) \, dx$, je procède par une intégration par parties en posant $u(x) = \arg\mspace{-1mu}\sinh(x)$ et $v'(x) = dx$, d'où $u'(x) = \frac{1}{ \sqrt{1+x^2}}$ et $ v(x) = x $. \\
+Pour calculer $\int \arg\mspace{-1mu}\sinh(x) \, dx$, on procède par une intégration par parties en posant $u(x) = \arg\mspace{-1mu}\sinh(x)$ et $v'(x) = dx$, d'où $u'(x) = \frac{1}{ \sqrt{1+x^2}}$ et $ v(x) = x $. \\
 On a donc
 \begin{align*}
 \int \arg\mspace{-1mu}\sinh(x) \, dx & = x \arg\mspace{-1mu}\sinh(x) - \int \frac{x}{ \sqrt{1+x^2}} \, dx \quad \textrm{or}\\
 \int \frac{x}{ \sqrt{1+x^2}} \, dx & = \int \left(\sqrt{1+x^2}\right)' \, dx = \sqrt{1+x^2}  \quad \textrm{d'où}\\
 \int \arg\mspace{-1mu}\sinh(x) \, dx & = x \arg\mspace{-1mu}\sinh(x) - \sqrt{1+x^2} + C^{ste} \quad \textrm{que l'on retrouve avec Sage.}
 \end{align*}
-
-
 \paragraph{On vérifie ce résultat avec Sage.}
-
-
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 
 \begin{center}
@@ -690,15 +655,21 @@ Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\s
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \arg\mspace{-1mu}\tanh(x)$.}
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = arctanh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
 
 La fonction $x \mapsto \tanh(x)$ est inversible sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\mspace{-1mu}\tanh $\fg et définit la fonction \og\emph{argument tangente hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\tanh(x)$.
 
 
 \begin{center}
-\sageplot[width=.5\textwidth]{plot(arctanh(x), x, -1, 1)} \\
+\sageplot[width=.3\textwidth]{plot(f(x), x, -1, 1)} \\
 La représentation graphique de $x \mapsto \arg\mspace{-1mu}\tanh(x)$.
 \end{center}
-On observe que la fonction est croissante, impaire $\arg\mspace{-1mu}\sinh(-x) = -\arg\mspace{-1mu}\sinh(x) $
+On observe que la fonction est croissante, impaire $\arg\mspace{-1mu}\tanh(-x) = -\arg\mspace{-1mu}\tanh(x) $
 et on observe que la fonction est continue et dérivable sur l'intervalle ouvert $]-1,1[$.                                                                                                             
 
 \subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\tanh(x)$.}
@@ -710,20 +681,9 @@ x & =\tanh\left(\arg\mspace{-1mu}\tanh(x)\right)(x) \quad \textrm{en dérivant, 
 \tanh\nolimits' & = 1-\tanh\nolimits^2 \quad \textrm{donc} \\
 %\arg\mspace{-1mu}\tanh\nolimits'(x) & =\frac{1}{ \tanh\nolimits'\circ\arg\mspace{-1mu}\tanh(x)}\\
 \tanh\nolimits'\left(\arg\mspace{-1mu}\tanh(x)\right) & = 1 - \tanh\nolimits^2 \left(\arg\mspace{-1mu}\tanh(x)\right) = 1 - x^2 \quad \textrm{finalement}\\
-\arg\mspace{-1mu}\tanh\nolimits'(x) & = \frac{1}{ 1- x^2} \quad \textrm{on vérifie ce calcul avec Sage.}
+\arg\mspace{-1mu}\tanh\nolimits'(x) & = \frac{1}{ 1- x^2} 
 \end{align*}
-
-
 \paragraph{On vérifie ce résultat avec Sage.}
-
-
-
-\begin{sageblock}
-    f(x) = arctanh(x)
-    g(x) = diff(f(x),x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
-
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
 
@@ -751,7 +711,7 @@ Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\t
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Récapitulation de nos travaux et de leurs résultats}
+\chapter{Récapitulation des résultats}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dérivées, fonctions, primitives des fonctions trigonométriques}
@@ -805,166 +765,45 @@ x \mapsto \frac{1}{ 1 - x^2} \hspace{1.5cm} & x \mapsto \arg\mspace{-1mu}\tanh(x
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \ln(x) $.}
-
-\begin{align*}
-\int \ln(x) & =  \int \ln(x) \times 1 \\ & =  x \times \ln(x) - \int \ln(x)' \times x dx \\ & =  x \times \ln(x) - \int  dx \\ & =   x  \ln(x) - x + C^{ste}
-\end{align*}
-
-\subsection{Calcul de la dérivée de la fonction $x \mapsto \ln(x) $.}
-
-
-\subsubsection{Première Méthode}
-
-
-Passons par les limites pour trouver Une primitive de $\ln(x)$,
-
-$ \lim_{h \mapsto 0} \frac{\ln(x+h) - \ln(x}{h} = \lim_{h \mapsto 0} \frac{\ln(\frac{x+h}{x})}{h}  = \lim_{h \mapsto 0} \frac{ \ln(1+X)}{x\times X}$, avec $X=\frac{h}{x}$.
-
-
-On a donc 
-
-$\lim_{h \mapsto 0} \frac{\ln(1+X)}{x\times X} = \frac{1}{x} \times \lim_{h \mapsto 0} \frac{\ln(1+X)}{X} = \frac{1}{x} \times 1 = \frac{1}{x}$.
-
-
-
-
-\subsubsection{Seconde Méthode}
-
-Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. 
-
-On a $\exp((\ln(x))=x)$, par conséquent la dérivée de cette expression s'exprime par $ \exp(\ln(x)) \times (\ln(x)' = 1$, d'où $(\ln(x))' = \frac{1}{\exp(\ln(x))}  = \frac{1}{x} $.
-
-\paragraph{On vérifie ce résultat avec Sage.}
-
-
+Définissons la fonction dans Sage.
 \begin{sageblock}
     f(x) = ln(x)
     g(x) = diff(f(x),x,1)
+    F(x) = integrate(f(x),x)
 \end{sageblock}
+\begin{align*}
+\int \ln(x) & =  \int \ln(x) \times 1 \\ 
+& =  x \times \ln(x) - \int \ln(x)' \times x dx \\ 
+& =  x \times \ln(x) - \int  dx \\ 
+& =   x  \ln(x) - x + C^{ste}
+\end{align*}
 
+\subsection{Calcul de la dérivée de la fonction $x \mapsto \ln(x) $.}
+\paragraph{Première Méthode}
+Passons par les limites pour trouver une primitive de $\ln(x)$:\\
+$ \lim_{h \mapsto 0} \frac{\ln(x+h) - \ln(x}{h} = \lim_{h \mapsto 0} \frac{\ln(\frac{x+h}{x})}{h}  = \lim_{h \mapsto 0} \frac{ \ln(1+X)}{x\times X}$, avec $X=\frac{h}{x}$.\\
+On a donc 
+$\lim_{h \mapsto 0} \frac{\ln(1+X)}{x\times X} = \frac{1}{x} \times \lim_{h \mapsto 0} \frac{\ln(1+X)}{X} = \frac{1}{x} \times 1 = \frac{1}{x}$.
+\paragraph{Seconde Méthode}
+Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. \\
+On a $\exp((\ln(x))=x)$, par conséquent la dérivée de cette expression s'exprime par $ \exp(\ln(x)) \times (\ln(x)' = 1$, d'où $(\ln(x))' = \frac{1}{\exp(\ln(x))}  = \frac{1}{x} $.
+\paragraph{On vérifie ce résultat avec Sage.}
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
-
-Le graphe de $\sage{f(x)} $.
-
-
 \begin{center}
-\sageplot[width=.5\textwidth]{plot(f(x), x, 0, 10)} \\
-%\sageplot{plot(g(x), x, -1, 1)}
+\sageplot[width=.3\textwidth]{plot(f(x), x, 0, 10)} \\
+Le graphe de $x \mapsto \ln(x) $.
 \end{center}
 
 
 On peut maintenant entreprendre le calcul d'une primitive de la  fonction  $x \mapsto \ln(x) $.
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \ln(x) $.}
+Je pose que $u(x)$  est égal à la fonction $\ln(x)$ et $v'(x)$ est égal $dx$  d'où $u'(x)$  est égal à la fonction $ \frac{1}{1+ x^2} $ et $v(x)$ est égal $x$.
+Alors on a $\int \ln(x) \, dx = x \times \ln(x) -\int \frac{1}{x} \times x \, dx = x \times \ln(x) - x + C^{ste} $.
 
-
-\subsection{Calcul d"une primitive de la fonction  $x \mapsto \ln(x) $.}
-
-
-Je pose que $u(x)$  est égal à la fonction $\ln(x)$ et $v'(x)$ est égal $1$  d'où $u'(x)$  est égal à la fonction $ \frac{1}{1+ x^2} $ et $v(x)$ est égal $x$.
-
-Alors on a $\int \ln(x) \, dx = x \times \ln(x) -\int \frac{1}{x} \times x \, dx $.
-
-
-\subsubsection{Calcul de $\int \frac{x}{x} \, dx $.}
-
-$\int \frac{x}{x} \, dx = \int 1 \, dx = x$.
-
-
-Finalement $\int \ln(x) \, dx = x \times \ln(x) -x + C^{ste} $
-
+Finalement, $\int \ln(x) \, dx = x \times \ln(x) -x + C^{ste} $
 \paragraph{On vérifie ce résultat avec Sage.}
-
-
-\begin{sageblock}
-    f(x) = log(x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
-
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{La fonction  $x \mapsto \exp(x) $.}
-
-\begin{align*}
-\int \exp(x) = \exp(x) + C^{ste}.
-\end{align*}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 - 1} } $. }
-
-
-Je pose $y-x = \sqrt{x^2 - 1} $ avec $y - x = \sqrt{x^2 - 1} \geqslant 0 $, donc $y \geqslant  x$.
-
-Quel est le signe de $y$ c'est-à-dire le signe de $x + \sqrt{x^2 - 1} $?
-
-La fonction $ x\mapsto x + \sqrt{x^2 - 1} $ est définie, continue et dérivable sur l'intervalle ouvert $ ]-\infty,-1[ \, \cup \, ]1,+\infty[ $.
-
-\begin{center}
-\sageplot[width=.4\textwidth]{plot(x+sqrt(x^2-1), x, -5, -1)} 
-\sageplot[width=.4\textwidth]{plot(diff(x+sqrt(x^2-1),x), x, -5, -1)} \\
-La représentation graphique de $x + \sqrt{x^2-1}$ et de sa dérivée sur l'intervalle $ ]-\infty,-1[ $.
-\end{center}
-La fonction $ x\mapsto x + \sqrt{x^2 - 1} < 0 $ donc $ y < 0 $ sur l'intervalle $ ]-\infty,-1[ $.
-
-\begin{center}
-\sageplot[width=.4\textwidth]{plot(x+sqrt(x^2-1), x, 1, 5)} 
-\sageplot[width=.4\textwidth]{plot(diff(x+sqrt(x^2-1),x), x, 1, 5)} \\
-La représentation graphique de $x + \sqrt{x^2-1}$ et de sa dérivée sur l'intervalle $ ]1,+\infty[ $.
-\end{center}
-
-La fonction $ x\mapsto x + \sqrt{x^2 - 1} > 0 $ donc $ y > 0 $ sur l'intervalle $ 1,+\infty[ $.
-
-
-
-
-En élevant au carré, on a 
-\begin{align*}
-(y-x)^2 & = x^2 - 1 \\
-y^2 - 2yx + x^2 & = x^2 - 1 \\
-y^2 - 2yx  & = -1 \quad \textrm{ puis en différentiant chaque variable} \\
-2ydy - 2dy \times x - 2ydx & = 0 \\
-(y-x)dy & = ydx \\
-\frac{dy}{y} & = \frac{dx}{(y-x)} = \frac{dx}{\sqrt{x^2-1} } \\
-\int \frac{dy}{y} = \ln|y| + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx \\
-\ln\left|x + \sqrt{x^2-1}\right| + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{autrement écrit}\\ 
-\ln(-x - \sqrt{x^2-1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{pour} \;  x \in ]-\infty,-1[ \\
-\ln(x + \sqrt{x^2-1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{pour} \; x \in ]1,+\infty[ .
-\end{align*}
-Or, nous avons déjà vu en~\ref{argcosh}, page~\pageref{argcosh} que la dérivée de la fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$  vaut $ \frac{1}{ \sqrt{1-x^2}}$ ce qui implique que $\ln\left|x + \sqrt{x^2-1}\right| + C^{ste} = \arg\mspace{-1mu}\cosh\nolimits(x) $. Montrons-le !
-
-\subsection{Avons nous $\arg\mspace{-1mu}\cosh\nolimits(x) = \ln\left|x + \sqrt{x^2-1}\right| + C^{ste} $ ?}
-
-Posons $ y = \arg\mspace{-1mu}\cosh\nolimits(x) $, comme $ \arg\mspace{-1mu}\cosh\nolimits $ est la fonction inverse de $\cosh$, on a $\cosh(y) = \frac{\exp(y) + \exp(-y)}{2} = \cosh(\arg\mspace{-1mu}\cosh\nolimits(x)) = x $ d'où $ \exp(y) + \exp(-y) -2x = 0 $ et en multipliant par $\exp(y)$, on obtient l'équation du second degré ordonné en $\exp(y)$,
-\begin{equation}
-\label{equa01}
-\left(\exp(y) \right)^2 - 2x \exp(y) +1 = 0, 
-\end{equation}
-dont le discriminant $\Delta$ vaut $4x^2 - 4 > 0$ pour $ x \in ]-\infty,-1[ \, \cup \, ]1,+\infty[ $, ainsi les solutions s'écrivent $ \exp(y_1) = x + \frac{\sqrt{4x^2 - 4}}{2} = x + \sqrt{x^2-1}$ et $ \exp(y_2) = x - \frac{\sqrt{4x^2 - 4}}{2} = x - \sqrt{x^2-1}$. 
-
-La fonction exponentielle étant toujours positive sur $\R$, alors  les solutions de l'équation du second degré~\ref{equa01} sont celles pour  $ x \in ]1,+\infty[ $. En effet, pour $ x \in ]-\infty,-1[ $, les fonctions $x \mapsto x + \sqrt{x^2-1}$ et $x \mapsto x - \sqrt{x^2-1}$ sont négatives.
-
-Les seules solutions qui conviennent sont  $\exp(y)  = x + \sqrt{x^2-1}$ et $\exp(y) = x - \sqrt{x^2-1}$ pour $ x \in ]1,+\infty[ $.
-
-
-Finalement, on a  $y = \arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sqrt{x^2-1})$ et $y = \arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x - \sqrt{x^2-1})$ pour $ x \in ]1,+\infty[ $.
-
-
-
-\begin{center}
-\sageplot[width=.2\textwidth]{plot((x+sqrt(x^2-1)), x, 1, 5)} 
-%\sageplot[width=.2\textwidth]{plot((x+sqrt(x^2-1)), x, -5, -1)} 
-\sageplot[width=.2\textwidth]{plot((x-sqrt(x^2-1)), x, 1, 5)} 
-%\sageplot[width=.2\textwidth]{plot((x-sqrt(x^2-1)), x, -5, -1)} 
-\\
-\sageplot[width=.2\textwidth]{plot(arccosh(x), x, 1, 5)} \\
-\sageplot[width=.2\textwidth]{plot(log(x+sqrt(x^2-1)), x, 1, 5)} 
-\sageplot[width=.2\textwidth]{plot(log(x-sqrt(x^2-1)), x, 1, 5)} 
-%\sageplot[width=.2\textwidth]{plot(log(x+sqrt(x^2-1)), x, -5, -1)} 
-\\
-Les représentations graphiques de $\ln(x + \sqrt{x^2-1})$ et de $\arg\mspace{-1mu}\cosh\nolimits(x)$.
-\end{center}
-
-
-Nous avons montré l'égalité $\arg\mspace{-1mu}\cosh\nolimits(x) = \ln(x + \sqrt{x^2-1}) + C^{ste} $ pour $ x \in ]1,+\infty[ $.
 
 
 \section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 + 1} } $. }
@@ -1017,6 +856,81 @@ Les représentations graphiques de $\ln(x + \sqrt{x^2+1})$ et de $\arg\mspace{-1
 
 
 Nous avons montré l'égalité $\arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sqrt{x^2+1}) + C^{ste} $.
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 - 1} } $. }
+On pose $y-x = \sqrt{x^2 - 1} $ avec $y - x = \sqrt{x^2 - 1} \geqslant 0 $, donc $y \geqslant  x$.
+
+Quel est le signe de $y$ c'est-à-dire le signe de $x + \sqrt{x^2 - 1} $?
+
+La fonction $ x\mapsto x + \sqrt{x^2 - 1} $ est définie, continue et dérivable sur l'intervalle ouvert $ ]-\infty,-1[ \, \cup \, ]1,+\infty[ $.
+
+\begin{center}
+\sageplot[width=.2\textwidth]{plot(x+sqrt(x^2-1), x, -5, -1)} 
+\sageplot[width=.2\textwidth]{plot(diff(x+sqrt(x^2-1),x), x, -5, -1)} \\
+La représentation graphique de $x + \sqrt{x^2-1}$ et de sa dérivée sur l'intervalle $ ]-\infty,-1[ $.
+\end{center}
+La fonction $ x\mapsto x + \sqrt{x^2 - 1} < 0 $ donc $ y < 0 $ sur l'intervalle $ ]-\infty,-1[ $.
+
+\begin{center}
+\sageplot[width=.2\textwidth]{plot(x+sqrt(x^2-1), x, 1, 5)} 
+\sageplot[width=.2\textwidth]{plot(diff(x+sqrt(x^2-1),x), x, 1, 5)} \\
+La représentation graphique de $x + \sqrt{x^2-1}$ et de sa dérivée sur l'intervalle $ ]1,+\infty[ $.
+\end{center}
+La fonction $ x\mapsto x + \sqrt{x^2 - 1} > 0 $ donc $ y > 0 $ sur l'intervalle $ 1,+\infty[ $.
+
+En élevant au carré $y-x = \sqrt{x^2 - 1} $, on a 
+\begin{align*}
+(y-x)^2 & = x^2 - 1 \\
+y^2 - 2yx + x^2 & = x^2 - 1 \\
+y^2 - 2yx  & = -1 \quad \textrm{ puis en différentiant chaque variable} \\
+2ydy - 2dy \times x - 2ydx & = 0 \\
+(y-x)dy & = ydx \\
+\frac{dy}{y} & = \frac{dx}{(y-x)} = \frac{dx}{\sqrt{x^2-1} } \\
+\int \frac{dy}{y} = \ln|y| + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx \\
+\ln\left|x + \sqrt{x^2-1}\right| + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{autrement écrit}\\ 
+\ln(-x - \sqrt{x^2-1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{pour} \;  x \in ]-\infty,-1[ \\
+\ln(x + \sqrt{x^2-1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2-1} } dx  \quad \textrm{pour} \; x \in ]1,+\infty[ .
+\end{align*}
+Or, nous avons déjà vu en~\ref{argcosh}, page~\pageref{argcosh} que la dérivée de la fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$  vaut $ \frac{1}{ \sqrt{1-x^2}}$ ce qui implique que $\ln\left|x + \sqrt{x^2-1}\right| + C^{ste} = \arg\mspace{-1mu}\cosh\nolimits(x) $. Montrons-le !
+
+\subsection{Avons nous $\arg\mspace{-1mu}\cosh\nolimits(x) = \ln\left|x + \sqrt{x^2-1}\right| + C^{ste} $ ?}
+
+Posons $ y = \arg\mspace{-1mu}\cosh\nolimits(x) $, comme $ \arg\mspace{-1mu}\cosh\nolimits $ est la fonction inverse de $\cosh$, alors on a \\
+$\cosh(y) = \frac{\exp(y) + \exp(-y)}{2} = \cosh(\arg\mspace{-1mu}\cosh\nolimits(x)) = x $ d'où $ \exp(y) + \exp(-y) -2x = 0 $ et en multipliant par $\exp(y)$, on obtient l'équation du second degré ordonné en $\exp(y)$,
+\begin{equation}
+\label{equa01}
+\left(\exp(y) \right)^2 - 2x \exp(y) +1 = 0, 
+\end{equation}
+dont le discriminant $\Delta$ vaut $4x^2 - 4 > 0$ pour $ x \in ]-\infty,-1[ \, \cup \, ]1,+\infty[ $, ainsi les solutions s'écrivent $ \exp(y_1) = x + \frac{\sqrt{4x^2 - 4}}{2} = x + \sqrt{x^2-1}$ et $ \exp(y_2) = x - \frac{\sqrt{4x^2 - 4}}{2} = x - \sqrt{x^2-1}$. 
+
+La fonction exponentielle étant toujours positive sur $\R$, alors  les solutions de l'équation du second degré~\ref{equa01} sont celles pour  $ x \in ]1,+\infty[ $. En effet, pour $ x \in ]-\infty,-1[ $, les fonctions $x \mapsto x + \sqrt{x^2-1}$ et $x \mapsto x - \sqrt{x^2-1}$ sont négatives.
+
+Les seules solutions qui conviennent sont  $\exp(y)  = x + \sqrt{x^2-1}$ et $\exp(y) = x - \sqrt{x^2-1}$ pour $ x \in ]1,+\infty[ $.
+
+
+Finalement, on a  $y = \arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sqrt{x^2-1})$ et $y = \arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x - \sqrt{x^2-1})$ pour $ x \in ]1,+\infty[ $.
+
+
+
+\begin{center}
+\sageplot[width=.2\textwidth]{plot((x+sqrt(x^2-1)), x, 1, 5)} 
+%\sageplot[width=.2\textwidth]{plot((x+sqrt(x^2-1)), x, -5, -1)} 
+\sageplot[width=.2\textwidth]{plot((x-sqrt(x^2-1)), x, 1, 5)} 
+%\sageplot[width=.2\textwidth]{plot((x-sqrt(x^2-1)), x, -5, -1)} 
+\\
+\sageplot[width=.2\textwidth]{plot(arccosh(x), x, 1, 5)} \\
+\sageplot[width=.2\textwidth]{plot(log(x+sqrt(x^2-1)), x, 1, 5)} 
+\sageplot[width=.2\textwidth]{plot(log(x-sqrt(x^2-1)), x, 1, 5)} 
+%\sageplot[width=.2\textwidth]{plot(log(x+sqrt(x^2-1)), x, -5, -1)} 
+\\
+Les représentations graphiques de $\ln(x + \sqrt{x^2-1})$ et de $\arg\mspace{-1mu}\cosh\nolimits(x)$.
+\end{center}
+
+
+Nous avons montré l'égalité $\arg\mspace{-1mu}\cosh\nolimits(x) = \ln(x + \sqrt{x^2-1}) + C^{ste} $ pour $ x \in ]1,+\infty[ $.
 
 
 

@@ -63,41 +63,37 @@ x \arctan\left(x\right) - \frac{1}{2} \, \log\left(x^{2} + 1\right)}{}{}{}{}}
 \newlabel{@sageinline30}{{%
 \tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline31}{{%
-\tanh\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline32}{{%
 \log\left(\cosh\left(x\right)\right)}{}{}{}{}}
+\newlabel{@sageinline32}{{%
+\operatorname{arcosh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline33}{{%
-\operatorname{arcosh}\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline34}{{%
 \frac{1}{\sqrt{x + 1} \sqrt{x - 1}}}{}{}{}{}}
-\newlabel{@sageinline35}{{%
+\newlabel{@sageinline34}{{%
 \operatorname{arcosh}\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline36}{{%
+\newlabel{@sageinline35}{{%
 x \operatorname{arcosh}\left(x\right) - \sqrt{x^{2} - 1}}{}{}{}{}}
+\newlabel{@sageinline36}{{%
+\operatorname{arsinh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline37}{{%
-\operatorname{arsinh}\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline38}{{%
 \frac{1}{\sqrt{x^{2} + 1}}}{}{}{}{}}
-\newlabel{@sageinline39}{{%
+\newlabel{@sageinline38}{{%
 \operatorname{arsinh}\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline40}{{%
+\newlabel{@sageinline39}{{%
 x \operatorname{arsinh}\left(x\right) - \sqrt{x^{2} + 1}}{}{}{}{}}
+\newlabel{@sageinline40}{{%
+\operatorname{artanh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline41}{{%
-\operatorname{artanh}\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline42}{{%
 -\frac{1}{x^{2} - 1}}{}{}{}{}}
-\newlabel{@sageinline43}{{%
+\newlabel{@sageinline42}{{%
 \operatorname{artanh}\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline44}{{%
+\newlabel{@sageinline43}{{%
 x \operatorname{artanh}\left(x\right) + \frac{1}{2} \, \log\left(-x^{2} + 1\right)}{}{}{}{}}
+\newlabel{@sageinline44}{{%
+\log\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline45}{{%
-\log\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline46}{{%
 \frac{1}{x}}{}{}{}{}}
+\newlabel{@sageinline46}{{%
+\log\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline47}{{%
-\log\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline48}{{%
-\log\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline49}{{%
 x \log\left(x\right) - x}{}{}{}{}}
-%b293132f541c652a2e355851b38cb014% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+%529ed46d25c468c9cc6e0834e40b2ce5% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

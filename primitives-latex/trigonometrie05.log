@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.21)  12 APR 2024 09:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.6)  15 APR 2024 13:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **trigonometrie05.tex
 (./trigonometrie05.tex
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
+L3 programming layer <2024-03-14>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
@@ -26,7 +26,7 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \bibindent=\dimen140
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2024/02/07 v24.2 The Babel package
+Package: babel 2024/03/29 v24.3 The Babel package
 \babel@savecnt=\count197
 \U@D=\dimen141
 \l@unhyphenated=\language89
@@ -415,18 +415,18 @@ LaTeX Info: Redefining \UseVerb on input line 1229.
 \lst@maxwidth=\dimen256
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+File: lstpatch.sty 2024/03/11 1.10a (Carsten Heinz)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
 \c@lstnumber=\count307
 \lst@skipnumbers=\count308
 \lst@framebox=\box63
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/02/21 1.10 listings configuration
+File: listings.cfg 2024/03/11 1.10a listings configuration
 ))
-Package: listings 2024/02/21 1.10 (Carsten Heinz)
+Package: listings 2024/03/11 1.10a (Carsten Heinz)
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
@@ -455,7 +455,7 @@ LaTeX Font Info:    Trying to load font information for T1+ccr on input line 12
 File: t1ccr.fd 1999/11/22 v1.0a (WaS)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count312
 \l__pdf_internal_box=\box64
 )
@@ -571,262 +571,410 @@ LaTeX Font Warning: Font shape `T1/ccr/b/n' undefined
 
  [3] [1]
 Chapitre 1.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-82.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [1
+[1
 
-] [2] [3]
-Overfull \hbox (25.66887pt too wide) in paragraph at lines 259--260
-[]\T1/ccr/b/n/12 Pour ce cal-cul, il faut uti-li-ser le cal-cul de la dé-ri-vée
- d'une fonc-tion com-po-sée. On a $[]\U/zeus/m/n/12 ¨[]¨\U/zeur/m/n/12 x\U/zeus
-/m/n/12 ©© ½
- []
-
-<sage-plots-for-trigonometrie05.tex/plot-0.pdf, id=39, 452.72893pt x 338.37286p
-t>
+]
+Chapitre 2.
+<sage-plots-for-trigonometrie05.tex/plot-0.pdf, id=27, 455.30101pt x 338.6628pt
+>
 File: sage-plots-for-trigonometrie05.tex/plot-0.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-0.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-0.pdf  used on
- input line 279.
-(pdftex.def)             Requested size: 217.66211pt x 162.68044pt.
-<sage-plots-for-trigonometrie05.tex/plot-1.pdf, id=40, 454.1694pt x 338.6628pt>
+ input line 208.
+(pdftex.def)             Requested size: 217.66211pt x 161.90001pt.
+[2
 
+ <./sage-plots-for-trigonometrie05.tex/plot-0.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+26.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+<sage-plots-for-trigonometrie05.tex/plot-1.pdf, id=45, 455.30101pt x 338.65826p
+t>
 File: sage-plots-for-trigonometrie05.tex/plot-1.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-1.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-1.pdf  used on
- input line 280.
-(pdftex.def)             Requested size: 217.66211pt x 162.30824pt.
-[4 <./sage-plots-for-trigonometrie05.tex/plot-0.pdf> <./sage-plots-for-trigonom
-etrie05.tex/plot-1.pdf>]
-Overfull \hbox (23.26881pt too wide) in paragraph at lines 318--319
+ input line 236.
+(pdftex.def)             Requested size: 217.66211pt x 161.89784pt.
+ [3 <./sage-plots-for-trigonometrie05.tex/plot-1.pdf>]
+<sage-plots-for-trigonometrie05.tex/plot-2.pdf, id=62, 455.30101pt x 339.01567p
+t>
+File: sage-plots-for-trigonometrie05.tex/plot-2.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-2.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-2.pdf  used on
+ input line 264.
+(pdftex.def)             Requested size: 217.66211pt x 162.06871pt.
+ [4 <./sage-plots-for-trigonometrie05.tex/plot-2.pdf>]
+Overfull \hbox (25.66887pt too wide) in paragraph at lines 321--322
 []\T1/ccr/b/n/12 Pour ce cal-cul, il faut uti-li-ser le cal-cul de la dé-ri-vée
  d'une fonc-tion com-po-sée. On a $[]\U/zeus/m/n/12 ¨[]¨\U/zeur/m/n/12 x\U/zeus
 /m/n/12 ©© ½
  []
 
 [5]
-<sage-plots-for-trigonometrie05.tex/plot-2.pdf, id=71, 452.72893pt x 339.66899p
+<sage-plots-for-trigonometrie05.tex/plot-3.pdf, id=85, 452.72893pt x 338.37286p
 t>
-File: sage-plots-for-trigonometrie05.tex/plot-2.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie05.tex/plot-2.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-2.pdf  used on
- input line 339.
-(pdftex.def)             Requested size: 217.66211pt x 163.30359pt.
-<sage-plots-for-trigonometrie05.tex/plot-3.pdf, id=72, 455.30101pt x 338.6628pt
->
 File: sage-plots-for-trigonometrie05.tex/plot-3.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-3.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-3.pdf  used on
- input line 340.
-(pdftex.def)             Requested size: 217.66211pt x 161.90001pt.
- [6 <./sage-plots-for-trigonometrie05.tex/plot-2.pdf> <./sage-plots-for-trigono
-metrie05.tex/plot-3.pdf>]
-Overfull \hbox (28.06883pt too wide) in paragraph at lines 381--382
+ input line 341.
+(pdftex.def)             Requested size: 217.66211pt x 162.68044pt.
+<sage-plots-for-trigonometrie05.tex/plot-4.pdf, id=86, 454.1694pt x 338.6628pt>
+
+File: sage-plots-for-trigonometrie05.tex/plot-4.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-4.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-4.pdf  used on
+ input line 342.
+(pdftex.def)             Requested size: 217.66211pt x 162.30824pt.
+ [6 <./sage-plots-for-trigonometrie05.tex/plot-3.pdf> <./sage-plots-for-trigono
+metrie05.tex/plot-4.pdf>]
+Overfull \hbox (23.26881pt too wide) in paragraph at lines 380--381
 []\T1/ccr/b/n/12 Pour ce cal-cul, il faut uti-li-ser le cal-cul de la dé-ri-vée
  d'une fonc-tion com-po-sée. On a $[]\U/zeus/m/n/12 ¨[]¨\U/zeur/m/n/12 x\U/zeus
 /m/n/12 ©© ½
  []
 
-<sage-plots-for-trigonometrie05.tex/plot-4.pdf, id=96, 453.75993pt x 338.21674p
-t>
-File: sage-plots-for-trigonometrie05.tex/plot-4.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie05.tex/plot-4.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-4.pdf  used on
- input line 398.
-(pdftex.def)             Requested size: 217.66211pt x 162.23897pt.
-<sage-plots-for-trigonometrie05.tex/plot-5.pdf, id=97, 455.30101pt x 339.01567p
-t>
+[7]
+<sage-plots-for-trigonometrie05.tex/plot-5.pdf, id=117, 452.72893pt x 339.66899
+pt>
 File: sage-plots-for-trigonometrie05.tex/plot-5.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-5.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-5.pdf  used on
- input line 399.
-(pdftex.def)             Requested size: 217.66211pt x 162.06871pt.
-[7] [8 <./sage-plots-for-trigonometrie05.tex/plot-4.pdf> <./sage-plots-for-trig
-onometrie05.tex/plot-5.pdf>]
-Chapitre 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--455
-
- []
-
-[9
-
-]
-<sage-plots-for-trigonometrie05.tex/plot-6.pdf, id=131, 455.30101pt x 339.66899
-pt>
+ input line 401.
+(pdftex.def)             Requested size: 217.66211pt x 163.30359pt.
+<sage-plots-for-trigonometrie05.tex/plot-6.pdf, id=118, 455.30101pt x 338.6628p
+t>
 File: sage-plots-for-trigonometrie05.tex/plot-6.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-6.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-6.pdf  used on
- input line 493.
-(pdftex.def)             Requested size: 241.84843pt x 180.42279pt.
- [10] [11 <./sage-plots-for-trigonometrie05.tex/plot-6.pdf>]
-<sage-plots-for-trigonometrie05.tex/plot-7.pdf, id=148, 455.30101pt x 338.65112
+ input line 402.
+(pdftex.def)             Requested size: 217.66211pt x 161.90001pt.
+ [8 <./sage-plots-for-trigonometrie05.tex/plot-5.pdf> <./sage-plots-for-trigono
+metrie05.tex/plot-6.pdf>]
+Overfull \hbox (28.06883pt too wide) in paragraph at lines 443--444
+[]\T1/ccr/b/n/12 Pour ce cal-cul, il faut uti-li-ser le cal-cul de la dé-ri-vée
+ d'une fonc-tion com-po-sée. On a $[]\U/zeus/m/n/12 ¨[]¨\U/zeur/m/n/12 x\U/zeus
+/m/n/12 ©© ½
+ []
+
+<sage-plots-for-trigonometrie05.tex/plot-7.pdf, id=143, 453.75993pt x 338.21674
 pt>
 File: sage-plots-for-trigonometrie05.tex/plot-7.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-7.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-7.pdf  used on
- input line 533.
-(pdftex.def)             Requested size: 241.84843pt x 179.88213pt.
-<sage-plots-for-trigonometrie05.tex/plot-8.pdf, id=149, 455.27718pt x 338.37286
+ input line 460.
+(pdftex.def)             Requested size: 217.66211pt x 162.23897pt.
+<sage-plots-for-trigonometrie05.tex/plot-8.pdf, id=144, 455.30101pt x 339.01567
 pt>
 File: sage-plots-for-trigonometrie05.tex/plot-8.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-8.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-8.pdf  used on
- input line 554.
-(pdftex.def)             Requested size: 241.84843pt x 179.7498pt.
- [12 <./sage-plots-for-trigonometrie05.tex/plot-7.pdf> <./sage-plots-for-trigon
-ometrie05.tex/plot-8.pdf>] [13]
-<sage-plots-for-trigonometrie05.tex/plot-9.pdf, id=181, 455.27718pt x 338.37286
+ input line 461.
+(pdftex.def)             Requested size: 217.66211pt x 162.06871pt.
+[9 <./sage-plots-for-trigonometrie05.tex/plot-7.pdf> <./sage-plots-for-trigonom
+etrie05.tex/plot-8.pdf>] [10]
+Chapitre 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--520
+
+ []
+
+[11
+
+]
+<sage-plots-for-trigonometrie05.tex/plot-9.pdf, id=177, 455.30101pt x 339.66899
 pt>
 File: sage-plots-for-trigonometrie05.tex/plot-9.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-9.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-9.pdf  used on
- input line 600.
-(pdftex.def)             Requested size: 145.11053pt x 107.84781pt.
-<sage-plots-for-trigonometrie05.tex/plot-10.pdf, id=182, 455.27718pt x 339.2593
-5pt>
+ input line 558.
+(pdftex.def)             Requested size: 241.84843pt x 180.42279pt.
+ [12] [13 <./sage-plots-for-trigonometrie05.tex/plot-9.pdf>]
+<sage-plots-for-trigonometrie05.tex/plot-10.pdf, id=194, 455.30101pt x 338.6511
+2pt>
 File: sage-plots-for-trigonometrie05.tex/plot-10.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-10.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-10.pdf  used o
-n input line 601.
-(pdftex.def)             Requested size: 145.11053pt x 108.13036pt.
-<sage-plots-for-trigonometrie05.tex/plot-11.pdf, id=183, 455.23953pt x 338.3728
+n input line 604.
+(pdftex.def)             Requested size: 241.84843pt x 179.88213pt.
+<sage-plots-for-trigonometrie05.tex/plot-11.pdf, id=195, 455.27718pt x 338.3728
 6pt>
 File: sage-plots-for-trigonometrie05.tex/plot-11.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-11.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-11.pdf  used o
-n input line 602.
-(pdftex.def)             Requested size: 145.11053pt x 107.85814pt.
-<sage-plots-for-trigonometrie05.tex/plot-12.pdf, id=184, 453.75993pt x 339.6689
-9pt>
+n input line 625.
+(pdftex.def)             Requested size: 241.84843pt x 179.7498pt.
+ [14 <./sage-plots-for-trigonometrie05.tex/plot-10.pdf> <./sage-plots-for-trigo
+nometrie05.tex/plot-11.pdf>] [15]
+<sage-plots-for-trigonometrie05.tex/plot-12.pdf, id=228, 455.27718pt x 338.3728
+6pt>
 File: sage-plots-for-trigonometrie05.tex/plot-12.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-12.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-12.pdf  used o
-n input line 640.
-(pdftex.def)             Requested size: 241.84843pt x 181.03955pt.
- [14 <./sage-plots-for-trigonometrie05.tex/plot-9.pdf> <./sage-plots-for-trigon
-ometrie05.tex/plot-10.pdf> <./sage-plots-for-trigonometrie05.tex/plot-11.pdf> <
-./sage-plots-for-trigonometrie05.tex/plot-12.pdf>]
-<sage-plots-for-trigonometrie05.tex/plot-13.pdf, id=233, 453.75993pt x 339.6689
-9pt>
+n input line 671.
+(pdftex.def)             Requested size: 145.11053pt x 107.84781pt.
+<sage-plots-for-trigonometrie05.tex/plot-13.pdf, id=229, 455.27718pt x 339.2593
+5pt>
 File: sage-plots-for-trigonometrie05.tex/plot-13.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-13.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-13.pdf  used o
-n input line 685.
-(pdftex.def)             Requested size: 145.11053pt x 108.62373pt.
-<sage-plots-for-trigonometrie05.tex/plot-14.pdf, id=234, 453.75993pt x 339.2593
-5pt>
+n input line 672.
+(pdftex.def)             Requested size: 145.11053pt x 108.13036pt.
+<sage-plots-for-trigonometrie05.tex/plot-14.pdf, id=230, 455.23953pt x 338.3728
+6pt>
 File: sage-plots-for-trigonometrie05.tex/plot-14.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-14.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-14.pdf  used o
-n input line 686.
-(pdftex.def)             Requested size: 145.11053pt x 108.49272pt.
-<sage-plots-for-trigonometrie05.tex/plot-15.pdf, id=235, 453.75993pt x 337.3917
-2pt>
+n input line 673.
+(pdftex.def)             Requested size: 145.11053pt x 107.85814pt.
+<sage-plots-for-trigonometrie05.tex/plot-15.pdf, id=231, 453.75993pt x 339.6689
+9pt>
 File: sage-plots-for-trigonometrie05.tex/plot-15.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-15.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-15.pdf  used o
-n input line 687.
-(pdftex.def)             Requested size: 145.11053pt x 107.89548pt.
- [15]
-<sage-plots-for-trigonometrie05.tex/plot-16.pdf, id=239, 453.11044pt x 339.6689
+n input line 686.
+(pdftex.def)             Requested size: 241.84843pt x 181.03955pt.
+ [16 <./sage-plots-for-trigonometrie05.tex/plot-12.pdf> <./sage-plots-for-trigo
+nometrie05.tex/plot-13.pdf> <./sage-plots-for-trigonometrie05.tex/plot-14.pdf> 
+<./sage-plots-for-trigonometrie05.tex/plot-15.pdf>]
+<sage-plots-for-trigonometrie05.tex/plot-16.pdf, id=279, 453.75993pt x 339.6689
 9pt>
 File: sage-plots-for-trigonometrie05.tex/plot-16.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-16.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-16.pdf  used o
-n input line 724.
-(pdftex.def)             Requested size: 241.84843pt x 181.30388pt.
- [16 <./sage-plots-for-trigonometrie05.tex/plot-13.pdf> <./sage-plots-for-trigo
-nometrie05.tex/plot-14.pdf> <./sage-plots-for-trigonometrie05.tex/plot-15.pdf> 
-<./sage-plots-for-trigonometrie05.tex/plot-16.pdf>]
-<sage-plots-for-trigonometrie05.tex/plot-17.pdf, id=291, 453.27292pt x 339.6689
-9pt>
+n input line 731.
+(pdftex.def)             Requested size: 145.11053pt x 108.62373pt.
+<sage-plots-for-trigonometrie05.tex/plot-17.pdf, id=280, 453.75993pt x 339.2593
+5pt>
 File: sage-plots-for-trigonometrie05.tex/plot-17.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-17.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-17.pdf  used o
-n input line 772.
-(pdftex.def)             Requested size: 145.11053pt x 108.73775pt.
-<sage-plots-for-trigonometrie05.tex/plot-18.pdf, id=292, 453.43343pt x 339.2593
-5pt>
+n input line 732.
+(pdftex.def)             Requested size: 145.11053pt x 108.49272pt.
+<sage-plots-for-trigonometrie05.tex/plot-18.pdf, id=281, 453.75993pt x 337.3915
+7pt>
 File: sage-plots-for-trigonometrie05.tex/plot-18.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-18.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-18.pdf  used o
-n input line 773.
-(pdftex.def)             Requested size: 145.11053pt x 108.57037pt.
-<sage-plots-for-trigonometrie05.tex/plot-19.pdf, id=293, 453.18228pt x 338.3729
-6pt>
+n input line 733.
+(pdftex.def)             Requested size: 145.11053pt x 107.89543pt.
+ [17]
+<sage-plots-for-trigonometrie05.tex/plot-19.pdf, id=285, 453.218pt x 339.66899p
+t>
 File: sage-plots-for-trigonometrie05.tex/plot-19.pdf Graphic file (type pdf)
 <use sage-plots-for-trigonometrie05.tex/plot-19.pdf>
 Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-19.pdf  used o
-n input line 774.
-(pdftex.def)             Requested size: 145.11053pt x 108.34866pt.
- [17] [18 <./sage-plots-for-trigonometrie05.tex/plot-17.pdf> <./sage-plots-for-
-trigonometrie05.tex/plot-18.pdf> <./sage-plots-for-trigonometrie05.tex/plot-19.
-pdf>]
-Chapitre 3.
+n input line 770.
+(pdftex.def)             Requested size: 241.84843pt x 181.25723pt.
 
-Overfull \hbox (11.7155pt too wide) in paragraph at lines 782--782
+[18 <./sage-plots-for-trigonometrie05.tex/plot-16.pdf> <./sage-plots-for-trigon
+ometrie05.tex/plot-17.pdf> <./sage-plots-for-trigonometrie05.tex/plot-18.pdf> <
+./sage-plots-for-trigonometrie05.tex/plot-19.pdf>]
+<sage-plots-for-trigonometrie05.tex/plot-20.pdf, id=337, 452.9102pt x 338.67444
+pt>
+File: sage-plots-for-trigonometrie05.tex/plot-20.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-20.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-20.pdf  used o
+n input line 818.
+(pdftex.def)             Requested size: 145.11053pt x 108.50722pt.
+<sage-plots-for-trigonometrie05.tex/plot-21.pdf, id=338, 455.30101pt x 339.2593
+5pt>
+File: sage-plots-for-trigonometrie05.tex/plot-21.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-21.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-21.pdf  used o
+n input line 819.
+(pdftex.def)             Requested size: 145.11053pt x 108.12518pt.
+<sage-plots-for-trigonometrie05.tex/plot-22.pdf, id=339, 453.38846pt x 338.3729
+pt>
+File: sage-plots-for-trigonometrie05.tex/plot-22.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-22.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-22.pdf  used o
+n input line 820.
+(pdftex.def)             Requested size: 145.11053pt x 108.29701pt.
+ [19] [20 <./sage-plots-for-trigonometrie05.tex/plot-20.pdf> <./sage-plots-for-
+trigonometrie05.tex/plot-21.pdf> <./sage-plots-for-trigonometrie05.tex/plot-22.
+pdf>]
+Chapitre 4.
+
+Overfull \hbox (11.7155pt too wide) in paragraph at lines 828--828
 []\T1/ccr/b/n/17.28 Dérivées, fonc-tions, pri-mi-tives des fonc-tions tri-go-no
 -mé-triques 
  []
 
 
-Overfull \hbox (11.7155pt too wide) in paragraph at lines 793--793
+Overfull \hbox (11.7155pt too wide) in paragraph at lines 839--839
 []\T1/ccr/b/n/17.28 Dérivées, fonc-tions, pri-mi-tives des fonc-tions tri-go-no
 -mé-triques
  []
 
-[19
+[21
 
 ]
-Overfull \hbox (11.7155pt too wide) in paragraph at lines 804--804
+Overfull \hbox (11.7155pt too wide) in paragraph at lines 850--850
 []\T1/ccr/b/n/17.28 Dérivées, fonc-tions, pri-mi-tives des fonc-tions tri-go-no
 -mé-triques
  []
 
 
-Overfull \hbox (11.7155pt too wide) in paragraph at lines 816--816
+Overfull \hbox (11.7155pt too wide) in paragraph at lines 862--862
 []\T1/ccr/b/n/17.28 Dérivées, fonc-tions, pri-mi-tives des fonc-tions tri-go-no
 -mé-triques
  []
 
-[20] [21]
-Chapitre 4.
-[22
+[22] [23]
+Chapitre 5.
+
+Overfull \hbox (1.42873pt too wide) in paragraph at lines 922--923
+[]\T1/ccr/b/n/12 On a $[]\U/zeus/m/n/12 ¨¨[]¨\U/zeur/m/n/12 x\U/zeus/m/n/12 ©© 
+½ \U/zeur/m/n/12 x\U/zeus/m/n/12 ©$\T1/ccr/b/n/12 , par consé-quent la dé-ri-vé
+e de cette ex-pres-sion s'ex-prime par $[]\U/zeus/m/n/12 ¨[]¨\U/zeur/m/n/12 x\U
+/zeus/m/n/12 ©© ^^B
+ []
+
+[24
 
 ]
-Overfull \hbox (6.57018pt too wide) in paragraph at lines 914--915
-[]\T1/ccr/b/n/12 Pour ce cal-cul, il faut uti-li-ser le cal-cul de la dé-ri-vée
- d'une fonc-tion com-po-sée. On a $[]\U/zeus/m/n/12 ¨¨[]¨\U/zeur/m/n/12 x\U/zeu
-s/m/n/12 ©© ½
+<sage-plots-for-trigonometrie05.tex/plot-23.pdf, id=398, 454.33304pt x 338.4983
+4pt>
+File: sage-plots-for-trigonometrie05.tex/plot-23.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-23.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-23.pdf  used o
+n input line 937.
+(pdftex.def)             Requested size: 241.84843pt x 180.18834pt.
+ [25 <./sage-plots-for-trigonometrie05.tex/plot-23.pdf>]
+<sage-plots-for-trigonometrie05.tex/plot-24.pdf, id=415, 454.58755pt x 338.4381
+1pt>
+File: sage-plots-for-trigonometrie05.tex/plot-24.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-24.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-24.pdf  used o
+n input line 996.
+(pdftex.def)             Requested size: 193.47578pt x 144.04343pt.
+<sage-plots-for-trigonometrie05.tex/plot-25.pdf, id=416, 454.58755pt x 339.1807
+6pt>
+File: sage-plots-for-trigonometrie05.tex/plot-25.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-25.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-25.pdf  used o
+n input line 997.
+(pdftex.def)             Requested size: 193.47578pt x 144.35951pt.
+<sage-plots-for-trigonometrie05.tex/plot-26.pdf, id=417, 454.23924pt x 338.8530
+4pt>
+File: sage-plots-for-trigonometrie05.tex/plot-26.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-26.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-26.pdf  used o
+n input line 1003.
+(pdftex.def)             Requested size: 193.47578pt x 144.32861pt.
+<sage-plots-for-trigonometrie05.tex/plot-27.pdf, id=418, 454.33769pt x 339.2593
+5pt>
+File: sage-plots-for-trigonometrie05.tex/plot-27.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-27.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-27.pdf  used o
+n input line 1004.
+(pdftex.def)             Requested size: 193.47578pt x 144.47061pt.
+ [26 <./sage-plots-for-trigonometrie05.tex/plot-24.pdf> <./sage-plots-for-trigo
+nometrie05.tex/plot-25.pdf> <./sage-plots-for-trigonometrie05.tex/plot-26.pdf> 
+<./sage-plots-for-trigonometrie05.tex/plot-27.pdf>]
+Overfull \hbox (28.83372pt too wide) in paragraph at lines 1030--1031
+[]\T1/ccr/b/n/12 Posons $\U/zeur/m/n/12 y \U/zeus/m/n/12 ½ []  []¨\U/zeur/m/n/1
+2 x\U/zeus/m/n/12 ©$\T1/ccr/b/n/12 , comme $[]  []$ est la fonc-tion in-verse d
+e $[]$, on a $[]\U/zeus/m/n/12 ¨\U/zeur/m/n/12 y\U/zeus/m/n/12 © ½ [] ½
  []
 
-<sage-plots-for-trigonometrie05.tex/plot-20.pdf, id=351, 454.42802pt x 339.6689
+[27]
+<sage-plots-for-trigonometrie05.tex/plot-28.pdf, id=482, 454.23924pt x 338.8530
+4pt>
+File: sage-plots-for-trigonometrie05.tex/plot-28.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-28.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-28.pdf  used o
+n input line 1047.
+(pdftex.def)             Requested size: 96.73788pt x 72.1643pt.
+<sage-plots-for-trigonometrie05.tex/plot-29.pdf, id=483, 454.33769pt x 339.2593
+5pt>
+File: sage-plots-for-trigonometrie05.tex/plot-29.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-29.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-29.pdf  used o
+n input line 1049.
+(pdftex.def)             Requested size: 96.73788pt x 72.2353pt.
+<sage-plots-for-trigonometrie05.tex/plot-30.pdf, id=484, 454.33769pt x 338.3728
+6pt>
+File: sage-plots-for-trigonometrie05.tex/plot-30.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-30.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-30.pdf  used o
+n input line 1052.
+(pdftex.def)             Requested size: 96.73788pt x 72.04655pt.
+<sage-plots-for-trigonometrie05.tex/plot-31.pdf, id=485, 454.33769pt x 338.3728
+6pt>
+File: sage-plots-for-trigonometrie05.tex/plot-31.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-31.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-31.pdf  used o
+n input line 1053.
+(pdftex.def)             Requested size: 96.73788pt x 72.04655pt.
+<sage-plots-for-trigonometrie05.tex/plot-32.pdf, id=486, 454.50427pt x 339.6689
 9pt>
-File: sage-plots-for-trigonometrie05.tex/plot-20.pdf Graphic file (type pdf)
-<use sage-plots-for-trigonometrie05.tex/plot-20.pdf>
-Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-20.pdf  used o
-n input line 929.
-(pdftex.def)             Requested size: 241.84843pt x 180.77003pt.
-[23]
+File: sage-plots-for-trigonometrie05.tex/plot-32.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-32.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-32.pdf  used o
+n input line 1054.
+(pdftex.def)             Requested size: 96.73788pt x 72.29143pt.
+<sage-plots-for-trigonometrie05.tex/plot-33.pdf, id=487, 455.30101pt x 338.8364
+4pt>
+File: sage-plots-for-trigonometrie05.tex/plot-33.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-33.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-33.pdf  used o
+n input line 1072.
+(pdftex.def)             Requested size: 193.47578pt x 143.98549pt.
+<sage-plots-for-trigonometrie05.tex/plot-34.pdf, id=488, 455.30101pt x 338.2766
+4pt>
+File: sage-plots-for-trigonometrie05.tex/plot-34.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-34.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-34.pdf  used o
+n input line 1073.
+(pdftex.def)             Requested size: 193.47578pt x 143.7476pt.
+ [28 <./sage-plots-for-trigonometrie05.tex/plot-28.pdf> <./sage-plots-for-trigo
+nometrie05.tex/plot-29.pdf> <./sage-plots-for-trigonometrie05.tex/plot-30.pdf> 
+<./sage-plots-for-trigonometrie05.tex/plot-31.pdf> <./sage-plots-for-trigonomet
+rie05.tex/plot-32.pdf> <./sage-plots-for-trigonometrie05.tex/plot-33.pdf> <./sa
+ge-plots-for-trigonometrie05.tex/plot-34.pdf>]
+Overfull \hbox (27.76707pt too wide) in paragraph at lines 1094--1095
+[]\T1/ccr/b/n/12 Posons $\U/zeur/m/n/12 y \U/zeus/m/n/12 ½ []  []¨\U/zeur/m/n/1
+2 x\U/zeus/m/n/12 ©$\T1/ccr/b/n/12 , comme $[]  []$ est la fonc-tion in-verse d
+e $[]$, on a $[]\U/zeus/m/n/12 ¨\U/zeur/m/n/12 y\U/zeus/m/n/12 © ½ [] ½
+ []
+
+<sage-plots-for-trigonometrie05.tex/plot-35.pdf, id=581, 455.30101pt x 339.6689
+9pt>
+File: sage-plots-for-trigonometrie05.tex/plot-35.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-35.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-35.pdf  used o
+n input line 1106.
+(pdftex.def)             Requested size: 145.11053pt x 108.25574pt.
+<sage-plots-for-trigonometrie05.tex/plot-36.pdf, id=582, 455.30101pt x 339.6689
+9pt>
+File: sage-plots-for-trigonometrie05.tex/plot-36.pdf Graphic file (type pdf)
+<use sage-plots-for-trigonometrie05.tex/plot-36.pdf>
+Package pdftex.def Info: sage-plots-for-trigonometrie05.tex/plot-36.pdf  used o
+n input line 1108.
+(pdftex.def)             Requested size: 145.11053pt x 108.25574pt.
+[29 <./sage-plots-for-trigonometrie05.tex/plot-35.pdf> <./sage-plots-for-trigon
+ometrie05.tex/plot-36.pdf>]
 *********************************************************************
-[24 <./sage-plots-for-trigonometrie05.tex/plot-20.pdf>] (./trigonometrie05.aux)
+[30] (./trigonometrie05.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
+L3 programming layer <2024-03-14>
  ***********
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9565 strings out of 474116
- 155074 string characters out of 5743682
- 1943187 words of memory out of 5000000
- 31743 multiletter control sequences out of 15000+600000
- 585093 words of font info for 116 fonts, out of 8000000 for 9000
+ 9696 strings out of 474104
+ 161649 string characters out of 5743468
+ 1943493 words of memory out of 5000000
+ 31882 multiletter control sequences out of 15000+600000
+ 586086 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,11n,65p,490b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -839,14 +987,15 @@ fb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10
 .pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm
 7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eus
 m10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfo
-rm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfoti1
-0.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.
-pfb>
-Output written on trigonometrie05.pdf (29 pages, 261396 bytes).
+/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super
+/sform10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sf
+oti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1
+200.pfb>
+Output written on trigonometrie05.pdf (35 pages, 355951 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
+ 668 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

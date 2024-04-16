@@ -1,77 +1,83 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\numberline {1}Fonctions trigonométriques et trigonométriques inverses.}{1}{}%
-\contentsline {section}{\numberline {1.1}La fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{1}{}%
-\contentsline {subsection}{\numberline {1.1.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{1}{}%
-\contentsline {subsection}{\numberline {1.1.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{1}{}%
-\contentsline {section}{\numberline {1.2}La fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{2}{}%
-\contentsline {subsection}{\numberline {1.2.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{2}{}%
-\contentsline {subsection}{\numberline {1.2.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{2}{}%
-\contentsline {section}{\numberline {1.3}La fonction $x \DOTSB \mapstochar \rightarrow \tan (x)$.}{3}{}%
-\contentsline {subsection}{\numberline {1.3.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \tan (x)$.}{3}{}%
-\contentsline {subsubsection}{Vérification avec Sage}{3}{}%
-\contentsline {subsection}{\numberline {1.3.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \tan (x)$.}{3}{}%
-\contentsline {section}{\numberline {1.4}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax cos}}(x) $.}{3}{}%
-\contentsline {subsection}{\numberline {1.4.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax cos}}(x) $.}{4}{}%
-\contentsline {subsection}{\numberline {1.4.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax cos}}(x) $.}{5}{}%
-\contentsline {section}{\numberline {1.5}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{5}{}%
-\contentsline {subsection}{\numberline {1.5.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{5}{}%
-\contentsline {subsubsection}{Vérification avec Sage}{6}{}%
-\contentsline {subsection}{\numberline {1.5.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{6}{}%
-\contentsline {subsubsection}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{\sqrt {1- x^2}} \, dx $.}{6}{}%
+\contentsline {chapter}{\numberline {1}Établissement des outils indispensables.}{1}{}%
+\contentsline {section}{\numberline {1.1}Quelques formules de la trigonométrie rectiligne.}{1}{}%
+\contentsline {section}{\numberline {1.2}Quelques formules de la trigonométrie hyperbolique.}{1}{}%
+\contentsline {chapter}{\numberline {2}Fonctions trigonométriques et trigonométriques inverses.}{2}{}%
+\contentsline {section}{\numberline {2.1}La fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{2}{}%
+\contentsline {subsection}{\numberline {2.1.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{2}{}%
+\contentsline {subsection}{\numberline {2.1.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \cos (x)$.}{3}{}%
+\contentsline {section}{\numberline {2.2}La fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{3}{}%
+\contentsline {subsection}{\numberline {2.2.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{3}{}%
+\contentsline {subsection}{\numberline {2.2.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{4}{}%
+\contentsline {section}{\numberline {2.3}La fonction $x \DOTSB \mapstochar \rightarrow \tan (x)$.}{4}{}%
+\contentsline {subsection}{\numberline {2.3.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \tan (x)$.}{4}{}%
+\contentsline {subsubsection}{Vérification avec Sage}{5}{}%
+\contentsline {subsection}{\numberline {2.3.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \tan (x)$.}{5}{}%
+\contentsline {section}{\numberline {2.4}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax cos}}(x) $.}{5}{}%
+\contentsline {subsection}{\numberline {2.4.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax cos}}(x) $.}{6}{}%
+\contentsline {subsection}{\numberline {2.4.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax cos}}(x) $.}{6}{}%
+\contentsline {section}{\numberline {2.5}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{7}{}%
+\contentsline {subsection}{\numberline {2.5.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{7}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{7}{}%
-\contentsline {section}{\numberline {1.6}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax tan}}(x) $.}{7}{}%
-\contentsline {subsection}{\numberline {1.6.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax tan}}(x) $.}{7}{}%
-\contentsline {subsection}{\numberline {1.6.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax tan}}(x) $.}{8}{}%
-\contentsline {subsubsection}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{1+ x^2} \, dx $.}{8}{}%
+\contentsline {subsection}{\numberline {2.5.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{8}{}%
+\contentsline {subsubsection}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{\sqrt {1- x^2}} \, dx $.}{8}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{8}{}%
-\contentsline {chapter}{\numberline {2}Fonctions hyperboliques et hyperboliques inverses.}{9}{}%
-\contentsline {section}{\numberline {2.1}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {ch}}(x)$.}{9}{}%
-\contentsline {subsection}{\numberline {2.1.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {ch}}(x)$.}{9}{}%
-\contentsline {subsection}{\numberline {2.1.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {ch}}(x)$.}{10}{}%
-\contentsline {section}{\numberline {2.2}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {sh}}(x)$.}{10}{}%
-\contentsline {subsection}{\numberline {2.2.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {sh}}(x)$.}{10}{}%
-\contentsline {subsection}{\numberline {2.2.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {sh}}(x)$.}{10}{}%
+\contentsline {section}{\numberline {2.6}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax tan}}(x) $.}{9}{}%
+\contentsline {subsection}{\numberline {2.6.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax tan}}(x) $.}{9}{}%
+\contentsline {subsection}{\numberline {2.6.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax tan}}(x) $.}{10}{}%
+\contentsline {subsubsection}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{1+ x^2} \, dx $.}{10}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{10}{}%
-\contentsline {section}{\numberline {2.3}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {th}}(x)$.}{11}{}%
-\contentsline {subsection}{\numberline {2.3.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {th}}(x)$.}{11}{}%
-\contentsline {subsubsection}{Vérification avec Sage}{11}{}%
-\contentsline {subsection}{\numberline {2.3.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {th}}(x)$.}{11}{}%
+\contentsline {chapter}{\numberline {3}Fonctions hyperboliques et hyperboliques inverses.}{11}{}%
+\contentsline {section}{\numberline {3.1}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {ch}}(x)$.}{11}{}%
+\contentsline {subsection}{\numberline {3.1.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {ch}}(x)$.}{11}{}%
+\contentsline {subsection}{\numberline {3.1.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {ch}}(x)$.}{12}{}%
+\contentsline {section}{\numberline {3.2}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {sh}}(x)$.}{12}{}%
+\contentsline {subsection}{\numberline {3.2.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {sh}}(x)$.}{12}{}%
+\contentsline {subsection}{\numberline {3.2.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {sh}}(x)$.}{12}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{12}{}%
-\contentsline {section}{\numberline {2.4}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {ch}}(x)$.}{12}{}%
-\contentsline {subsection}{\numberline {2.4.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {ch}}(x)$.}{13}{}%
+\contentsline {section}{\numberline {3.3}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {th}}(x)$.}{13}{}%
+\contentsline {subsection}{\numberline {3.3.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {th}}(x)$.}{13}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{13}{}%
-\contentsline {subsection}{\numberline {2.4.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {ch}}(x)$.}{13}{}%
+\contentsline {subsection}{\numberline {3.3.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {th}}(x)$.}{13}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{14}{}%
-\contentsline {section}{\numberline {2.5}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{14}{}%
-\contentsline {subsection}{\numberline {2.5.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{15}{}%
+\contentsline {section}{\numberline {3.4}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {ch}}(x)$.}{14}{}%
+\contentsline {subsection}{\numberline {3.4.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {ch}}(x)$.}{15}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{15}{}%
-\contentsline {subsection}{\numberline {2.5.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{15}{}%
-\contentsline {subsubsection}{Vérification avec Sage}{15}{}%
-\contentsline {section}{\numberline {2.6}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {th}}(x)$.}{16}{}%
-\contentsline {subsection}{\numberline {2.6.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {th}}(x)$.}{17}{}%
+\contentsline {subsection}{\numberline {3.4.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {ch}}(x)$.}{15}{}%
+\contentsline {subsubsection}{Vérification avec Sage}{16}{}%
+\contentsline {section}{\numberline {3.5}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{16}{}%
+\contentsline {subsection}{\numberline {3.5.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{17}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{17}{}%
-\contentsline {subsection}{\numberline {2.6.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {th}}(x)$.}{17}{}%
+\contentsline {subsection}{\numberline {3.5.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{17}{}%
 \contentsline {subsubsection}{Vérification avec Sage}{17}{}%
-\contentsline {chapter}{\numberline {3}Récapitulation de nos travaux et de leurs résultats}{19}{}%
-\contentsline {section}{\numberline {3.1}Dérivées, fonctions, primitives des fonctions trigonométriques}{19}{}%
-\contentsline {section}{\numberline {3.2}Dérivées, fonctions, primitives des fonctions trigonométriques inverses}{20}{}%
-\contentsline {section}{\numberline {3.3}Dérivées, fonctions, primitives des fonctions trigonométriques hyperboliques}{20}{}%
-\contentsline {section}{\numberline {3.4}Dérivées, fonctions, primitives des fonctions trigonométriques hyperboliques inverses}{21}{}%
-\contentsline {chapter}{\numberline {4}Calcul de quelques primitives.}{22}{}%
-\contentsline {section}{\numberline {4.1}La fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{22}{}%
-\contentsline {section}{\numberline {4.2}La fonction $x \DOTSB \mapstochar \rightarrow \exp (x) $.}{22}{}%
-\contentsline {section}{\numberline {4.3}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2 + 1} } $ }{22}{}%
-\contentsline {section}{\numberline {4.4}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ x + 1} } $ }{23}{}%
-\contentsline {section}{\numberline {4.5}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ \alpha ^2} } $ }{23}{}%
-\contentsline {subsection}{\numberline {4.5.1}Vérification avec Sage}{23}{}%
-\contentsline {subsubsection}{Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ a^2} } $ par un changement de variable puis par l'emploi d'une variable auxiliaire}{23}{}%
-\contentsline {subsubsection}{Vérification avec Sage}{23}{}%
-\contentsline {section}{\numberline {4.6}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \sqrt {x^2 + 1} $ }{23}{}%
-\contentsline {subsubsection}{Vérification avec Sage}{23}{}%
-\contentsline {subsection}{\numberline {4.6.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{23}{}%
-\contentsline {subsubsection}{Première Méthode}{23}{}%
-\contentsline {subsubsection}{Seconde Méthode}{23}{}%
-\contentsline {subsubsection}{Vérification avec Sage}{23}{}%
-\contentsline {subsection}{\numberline {4.6.2}Calcul d"une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{24}{}%
-\contentsline {subsubsection}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{x} \, dx $.}{24}{}%
-\contentsline {subsubsection}{Vérification avec Sage}{24}{}%
+\contentsline {section}{\numberline {3.6}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {th}}(x)$.}{18}{}%
+\contentsline {subsection}{\numberline {3.6.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {th}}(x)$.}{19}{}%
+\contentsline {subsubsection}{Vérification avec Sage}{19}{}%
+\contentsline {subsection}{\numberline {3.6.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {th}}(x)$.}{19}{}%
+\contentsline {subsubsection}{Vérification avec Sage}{19}{}%
+\contentsline {chapter}{\numberline {4}Récapitulation de nos travaux et de leurs résultats}{21}{}%
+\contentsline {section}{\numberline {4.1}Dérivées, fonctions, primitives des fonctions trigonométriques}{21}{}%
+\contentsline {section}{\numberline {4.2}Dérivées, fonctions, primitives des fonctions trigonométriques inverses}{22}{}%
+\contentsline {section}{\numberline {4.3}Dérivées, fonctions, primitives des fonctions trigonométriques hyperboliques}{22}{}%
+\contentsline {section}{\numberline {4.4}Dérivées, fonctions, primitives des fonctions trigonométriques hyperboliques inverses}{23}{}%
+\contentsline {chapter}{\numberline {5}Calcul de quelques primitives.}{24}{}%
+\contentsline {section}{\numberline {5.1}La fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{24}{}%
+\contentsline {subsection}{\numberline {5.1.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{24}{}%
+\contentsline {subsubsection}{Première Méthode}{24}{}%
+\contentsline {subsubsection}{Seconde Méthode}{24}{}%
+\contentsline {subsubsection}{Vérification avec Sage}{25}{}%
+\contentsline {subsection}{\numberline {5.1.2}Calcul d"une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \ln (x) $.}{25}{}%
+\contentsline {subsubsection}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{x} \, dx $.}{25}{}%
+\contentsline {subsubsection}{Vérification avec Sage}{25}{}%
+\contentsline {section}{\numberline {5.2}La fonction $x \DOTSB \mapstochar \rightarrow \exp (x) $.}{26}{}%
+\contentsline {section}{\numberline {5.3}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2 - 1} } $. }{26}{}%
+\contentsline {subsection}{\numberline {5.3.1}Avons nous $\mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {ch}}\nolimits (x) = \ln \left |x + \sqrt {x^2-1}\right | + C^{ste} $ ?}{27}{}%
+\contentsline {section}{\numberline {5.4}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2 + 1} } $. }{28}{}%
+\contentsline {subsection}{\numberline {5.4.1}Avons nous $\mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}\nolimits (x) = \ln (x + \sqrt {x^2+1}) + C^{ste} $ ?}{29}{}%
+\contentsline {section}{\numberline {5.5}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ x + 1} } $. }{30}{}%
+\contentsline {section}{\numberline {5.6}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ \alpha ^2} } $. }{30}{}%
+\contentsline {subsection}{\numberline {5.6.1}Vérification avec Sage}{30}{}%
+\contentsline {subsubsection}{Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \frac {dx}{\sqrt {x^2+ a^2} } $ par un changement de variable puis par l'emploi d'une variable auxiliaire}{30}{}%
+\contentsline {subsubsection}{Vérification avec Sage}{30}{}%
+\contentsline {section}{\numberline {5.7}Calcul d'une primitive de $ x \DOTSB \mapstochar \DOTSB \relbar \joinrel \rightarrow \sqrt {x^2 + 1} $ }{30}{}%
+\contentsline {subsubsection}{Vérification avec Sage}{30}{}%

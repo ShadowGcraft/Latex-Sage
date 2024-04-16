@@ -11,8 +11,8 @@
 
 %\documentclass[a4paper,17pt]{extarticle} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
 
-\documentclass[a4paper,12pt]{report}
-%\documentclass[a4paper,14pt]{extreport} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
+%\documentclass[a4paper,12pt]{report}
+\documentclass[a4paper,landscape,17pt]{extreport} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
 
 
 \usepackage[french]{babel}
@@ -53,8 +53,7 @@
        \setcounter{subsubsection}{0}%
 }
 
-
-\usepackage[left=2.cm,right=2.cm,top=2.cm,bottom=2cm,bindingoffset=0cm, headsep=0cm,headheight=0cm]{geometry}
+\usepackage[left=.5cm, right=.5cm, top=1.5cm, bottom=1.5cm, bindingoffset=0.cm, headsep=0.cm,headheight=0.cm]{geometry}
 
 %\usepackage{qrcode}
 %\usepackage[draft,forget]{qrcode}
@@ -76,7 +75,9 @@
 %\setmainfont[Ligatures=TeX]{Helvetica}   % Police romaine, utilisée dans le corps du document
 %\setmainfont[Ligatures=TeX]{Lucida Grande}   % Police romaine, utilisée dans le corps du document
 
-\usepackage{ccfonts} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{ccfonts,amssymb} 
 \usepackage[euler-digits]{eulervm} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -136,7 +137,7 @@
 %\bf \Huge
 
 \title{Les primitives et les dérivées.}
-\date{}
+\date{Ce document est destiné à un affichage sur un écran et non pas à une impression sur papier.}
 
 
 \author{Louis Herzog} 
@@ -204,17 +205,26 @@ i . \sinh(a+b)  = i . \sinh(a)\cosh(b) + \cosh(a)(i . \sinh(b)) \quad \textrm{pu
 
 \section{La fonction  $x \mapsto \cos(x)$.}
 
+Définissons nos fonctions dans {\texttt{Sage}}. Soit
+\begin{sageblock}
+    f(x) = cos(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
 \begin{center}
-\sageplot[width=.45\textwidth]{plot(cos(x), x, -pi, pi)} \\
+\sageplot[width=.3\textwidth]{plot(cos(x), x, -pi, pi)} \\
 La représentation graphique de $x\mapsto \cos(x)$ sur l'intervalle $[-\pi, \pi]$.
 \end{center}
-
 La fonction est paire et périodique de période $2 \pi$.
 
 \subsection{Dérivée de la fonction $x \mapsto \cos(x)$.}
 
 \begin{align*}
-\lim_{h\to 0} \frac{\cos(x+h)-cos(x)}{h} = &\lim_{h\to 0} \frac{\cos(x)\cos(h)-\sin(x)\sin(h)-cos(x)}{h} \\ =& \lim_{h\to 0} \frac{\cos(x)(\cos(h)-1)}{h}-\frac{\sin(x)\sin(h)}{h}\\  =&  \cos(x) \times \lim_{h\to 0}\frac{\cos(h)-1}{h}- \sin(x) \times \lim_{h\to 0} \frac{\sin(h)}{h}\\  =& -\sin{x}
+\lim_{h\to 0} \frac{\cos(x+h)-cos(x)}{h}  
+& = \lim_{h\to 0} \frac{\cos(x)\cos(h)-\sin(x)\sin(h)-cos(x)}{h} \\ 
+& = \lim_{h\to 0} \left( \frac{\cos(x)(\cos(h)-1)}{h}-\frac{\sin(x)\sin(h)}{h} \right) \\  
+& =  \cos(x) \times \lim_{h\to 0}\frac{\cos(h)-1}{h}- \sin(x) \times \lim_{h\to 0} \frac{\sin(h)}{h}\\  
+& = -\sin{x}
 \end{align*}
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \cos(x)$.}
@@ -222,18 +232,21 @@ La fonction est paire et périodique de période $2 \pi$.
 Dans la section suivante, on calcule la dérivée de la fonction $x \mapsto \sin(x)$ qui vaut $x \mapsto \cos(x)$, par conséquent une primitive de $x \mapsto \cos(x)$ est égale, à une constante près, à $  \sin(x) + C^{ste} $.
 
 On vérifie ce résultat avec Sage.
-
-\begin{sageblock}
-    f(x) = cos(x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
-
 Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto \sage{F(x)} + C^{ste} $ définie à une constante près.
 
 
 \section{La fonction  $x \mapsto \sin(x)$.}
+
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = sin(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+
 \begin{center}
-\sageplot[width=.45\textwidth]{plot(sin(x), x, -pi, pi)} \\
+\sageplot[width=.3\textwidth]{plot(sin(x), x, -pi, pi)} \\
 La représentation graphique de $x\mapsto \sin(x)$ sur l'intervalle $[-\pi, \pi]$.
 \end{center}
 La fonction est impaire et périodique de période $2 \pi$.
@@ -250,18 +263,22 @@ Dans la section précédente, on a calculé la dérivée de la fonction $x \maps
 
 On vérifie ce résultat avec Sage.
 
-\begin{sageblock}
-    f(x) = sin(x)
-    F(x) = integrate(f(x),x) 
-\end{sageblock}
-
 Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + C^{ste} $ définie à une constante près.
 
 
 \section{La fonction  $x \mapsto \tan(x)$.}
 
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = tan(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+
+
 \begin{center}
-\sageplot[width=.45\textwidth]{plot(tan(x), x, -1.4, 1.4)} \\
+\sageplot[width=.3\textwidth]{plot(tan(x), x, -1.4, 1.4)} \\
 La représentation graphique de $x\mapsto \tan(x)$ sur l'intervalle ouvert $ \left] -\frac{\pi}{ 2} , \frac{\pi}{ 2} \right[ $.
 \end{center}
 
@@ -281,10 +298,6 @@ La fonction $x \mapsto \tan(x)$ étant périodique de période $\pi$, on choisit
 
 \subsubsection{Vérification avec Sage}
 
-\begin{sageblock}
-    f(x) = tan(x)
-    g(x) = diff(f(x),x) 
-\end{sageblock}
 
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
@@ -301,10 +314,6 @@ Finalement $ \ln\left(\frac{1}{\cos(x)}\right) +C^{ste}$ est une primitive de $x
 
 \subsubsection*{Vérification avec Sage}
 
-\begin{sageblock}
-    f(x) = tan(x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
 
 Une primitive de $\sage{f(x)}$ est la fonction définie à une constante près $x \mapsto \sage{F(x)} + C^{ste} $.
 
@@ -318,6 +327,14 @@ La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est
 
 \subsection{Calcul de la dérivée de la fonction $x \mapsto \arccos(x) $.}
 
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = tanh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+
 Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. On a $\cos(\arccos(x))=x$, par conséquent la dérivée de cette expression s'exprime par $ -\sin(\arccos(x) \times \arccos(x)' = 1$, d'où $\arccos(x)' = \frac{-1}{\sin(\arccos(x))} $.
 
 La difficulté est maintenant de déterminer $\sin(\arccos(x))$, or on sait que pour tout $X \in \R$, on a $\sin^2(X) + \cos^2(X) = 1$, d'où $\sin(X) = \sqrt{1-\cos^2(X)}$.
@@ -329,10 +346,6 @@ Finalement, $\arccos(x)' = \frac{-1}{\sin(\arccos(x))} = \frac{-1}{\sqrt{1-\cos^
 
 \subsubsection*{Vérification avec Sage}
 
-\begin{sageblock}
-    f(x) = arccos(x)
-    g(x) = diff(f(x),x)
-\end{sageblock}
 
 La dérivée de la fonction $\sage{f(x)}$ est la fonction $x \mapsto \sage{g(x)} $, ce que l'on retrouve sous une écriture légèrement modifiée de Sage.
 
@@ -362,11 +375,6 @@ Finalement $\int \arccos(x) \, dx = x  \arccos(x) - \sqrt{1- x^2} + C^{ste} $ es
 
 \subsubsection*{Vérification avec Sage}
 
-\begin{sageblock}
-    f(x) = arccos(x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
-
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
 
@@ -375,6 +383,13 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 La restriction de la fonction $x \mapsto \sin(x) $ à l'intervalle $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ est une bijection de $\left[-\frac{\pi}{2},\frac{\pi}{2}\right] \rightarrow [-1,1]$ . Il existe donc une fonction réciproque à la fonction $x \mapsto \sin(x) $ que l'on nomme $x \mapsto \arcsin(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $]-1,1[$.
 
 \subsection{Calcul de la dérivée de la fonction $x \mapsto \arcsin(x) $.}
+
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = arcsin(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
 
 
 Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. On a $\sin(\arcsin(x))=x$, par conséquent la dérivée de cette expression s'exprime par $ \cos(\arcsin(x)) \times \arcsin(x) ' = 1$, d'où $\arcsin(x) ' = \frac{1}{\cos(\arcsin(x))} $.
@@ -388,11 +403,6 @@ on a $\cos(\arcsin(x)) = \sqrt{1-\sin^2(\arcsin(x))} = \sqrt{1- x^2}$.
 Finalement, $\arcsin(x) ' = \frac{1}{\cos(\arcsin(x))}  = \frac{1}{\sqrt{1-\sin^2(\arcsin(x))}} =  \frac{1}{\sqrt{1- x^2}} $.
 
 \subsubsection{Vérification avec Sage}
-
-\begin{sageblock}
-    f(x) = arcsin(x)
-    g(x) = diff(f(x),x)
-\end{sageblock}
 
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
@@ -423,10 +433,6 @@ Finalement, une primitive de la fonction $x \mapsto \arcsin(x) $ est une fonctio
 
 \subsubsection{Vérification avec Sage}
 
-\begin{sageblock}
-    f(x) = arcsin(x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
 
 Une primitive de la fonction $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
@@ -438,6 +444,13 @@ La restriction de la fonction $x \mapsto \tan(x) $ à l'intervalle $\left[-\frac
 
 
 \subsection{Calcul de la dérivée de la fonction $x \mapsto \arctan(x) $.}
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = arctan(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
 
 
 Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. On a $\tan(\arctan(x))=x$, par conséquent la dérivée de cette expression s'exprime par $ \tan'(\arctan(x)) \times \arctan(x)' = 1$, d'où $\arctan(x)' = \frac{1}{\tan'(\arctan(x))} $.
@@ -448,10 +461,6 @@ Finalement, $\arctan(x)' = \frac{1}{1+x^2}$.
 
 \subsubsection*{Vérification avec Sage}
 
-\begin{sageblock}
-    f(x) = arctan(x)
-    g(x) = diff(f(x),x)
-\end{sageblock}
 
 La dérivée de $\sage{f(x)} = \sage{g(x)} $.
 
@@ -483,11 +492,6 @@ Finalement, une primitive de la fonction $x \mapsto \arctan(x) $ est une fonctio
 
 \subsubsection{Vérification avec Sage}
 
-\begin{sageblock}
-    f(x) = arctan(x)
-    F(x) = integrate(f(x),x)
-\end{sageblock}
-
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -499,8 +503,16 @@ On passe des formules de trigonométrie aux formules de trigonométries hyperbol
 nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\cos(a+b)=\cos(a) \cos(b) - \sin(a) \sin(b) $, nous obtenons $\cosh(a+b)=\cosh(a) \cosh(b) - i .\sinh(a) i . \sinh(b) $ c'est-à-dire $\cosh(a+b)=\cosh(a) \cosh(b) - (i)^2 \sinh(a) \sinh(b) $. \\ Finalement on a $\cosh(a+b) = \cosh(a) \cosh(b) + \sinh(a) \sinh(b) $. On change de signe!
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \cosh(x)$.}
+
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = cosh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
 
 
 \begin{center}
@@ -522,16 +534,32 @@ La représentation graphique de $x \mapsto \sage{cosh(x)} $ et de sa dérivée.
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \cosh(x)$.}
 
-$\int \cosh(x) dx = \int \frac{\exp(x)+ \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx + \int \exp(x) dx = \frac{1}{2} \times \exp(x) - \exp(-x) = \sinh$
-\\
+$\int \cosh(x) dx = \int \frac{\exp(x)+ \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx + \int \exp(x) dx = \frac{1}{2} \times \exp(x) - \exp(-x) = \sinh + C^{ste}$
 
+
+\subsubsection{Vérification avec Sage}
+
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{La fonction  $x \mapsto \sinh(x)$.}
 
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = sinh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+
 
 \begin{center}
-\sageplot[width=.4\textwidth]{plot(sinh(x), x, -5, 5)}
-\sageplot[width=.4\textwidth]{plot(diff(sinh(x), x), x, -5, 5)} \\
+\sageplot[width=.4\textwidth]{plot(sinh(x), x, -4, 4)}
+\sageplot[width=.4\textwidth]{plot(diff(sinh(x), x), x, -4, 4)} \\
 La représentation graphique de $x \mapsto \sage{sinh(x)} $ et de sa dérivée. 
 \end{center}
 
@@ -546,33 +574,31 @@ La représentation graphique de $x \mapsto \sage{sinh(x)} $ et de sa dérivée.
 \end{align*}
 
 
-
-
-
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \sinh(x)$.}
 
 
-$\int \sinh(x) dx = \int \frac{\exp(x)- \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx - \int \exp(x) dx = \frac{1}{2} \times \exp(x) + \exp(-x) = \cosh(x)$
+$\int \sinh(x) dx = \int \frac{\exp(x)- \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx - \int \exp(x) dx = \frac{1}{2} \times \exp(x) + \exp(-x) = \cosh(x) + C^{ste}$
 
 
 \subsubsection{Vérification avec Sage}
 
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{La fonction  $x \mapsto \tanh(x)$.}
+
+Définissons nos fonctions dans {\texttt{Sage}}
 \begin{sageblock}
-    f(x) = sinh(x)
+    f(x) = tanh(x)
+    g(x) = diff(f(x),x)
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
 
-Une primitive de $\sage{f(x)} = \sage{F(x)} $.
-
-
-
-\section{La fonction  $x \mapsto \tanh(x)$.}
-
-
 \begin{center}
-\sageplot[width=.4\textwidth]{plot(tanh(x), x, -5, 5)} 
-\sageplot[width=.4\textwidth]{plot(diff(tanh(x), x) , x, -5, 5)} \\
+\sageplot[width=.4\textwidth]{plot(tanh(x), x, -4, 4)} 
+\sageplot[width=.4\textwidth]{plot(diff(tanh(x), x) , x, -4, 4)} \\
 La représentation graphique de $x \mapsto \sage{tanh(x)} $ et de sa dérivée.
 \end{center}
 
@@ -591,11 +617,18 @@ La représentation graphique de $x \mapsto \sage{tanh(x)} $ et de sa dérivée.
 
 \subsection{Calcul d'une primitive de la fonction  $x \mapsto \tanh(x)$.}
 
+\begin{center}
+%\sageplot[width=.4\textwidth]{plot(tanh(x), x, -4, 4)} 
+\sageplot[width=.4\textwidth]{plot(integrate(tanh(x), x) , x, -4, 4)} \\
+La représentation graphique de $x \mapsto \sage{tanh(x)} $ et de sa dérivée.
+\end{center}
+
+
 \begin{align*}
 \int \tanh(x) & = \int \frac{\cosh(x)}{\sinh(x)} \\
 &  =  \int \frac{1}{u(x)} \times du(x), \quad \textrm{en posant } u(x) =  \cosh(x) \; \textrm{et donc } du(x) = \sinh(x) \\
-&  =  \ln|u(x)| \\
-&  =   \ln|\cosh(x)|  \quad \textrm{or } \cosh(x)>0 \; \textrm{sur l'intervalle considéré, donc}
+&  =  \ln|u(x)| = \ln|\cosh(x)|  \quad \textrm{or } \cosh(x)>0 \; \textrm{sur } \R ,  \textrm{ donc}\\
+&  =   \ln\left(\cosh(x)\right) + C^{ste} 
 \end{align*}
 
 
@@ -607,24 +640,20 @@ La représentation graphique de $x \mapsto \sage{tanh(x)} $ et de sa dérivée.
     F(x) = integrate(f(x),x)
 \end{sageblock}
 
-Une primitive de $\sage{f(x)} = \sage{F(x)} $.
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
 
 Le cosinus hyperbolique, noté $\cosh$ est défini sur $\R$ selon l'expression $\frac{\exp(x)+\exp(-x)}{2}$, son domaine de valeurs est $[1, +\infty [$ 
 c'est une fonction paire c'est-à-dire $\cosh(-x)=\cosh(x)$.
 
 
-La fonction $x \mapsto \cosh(x)$ est inversable sur le domaine de définition restreint à $\R^+$, car elle y est bijective, son inverse est notée \og $ \arg\mspace{-1mu}\cosh $\fg et définit la fonction \og\emph{argument cosinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
+La fonction $x \mapsto \cosh(x)$ est inversible sur le domaine de définition restreint à $\R^+$, car elle y est bijective, son inverse est notée \og $ \arg\mspace{-1mu}\cosh $\fg et définit la fonction \og\emph{argument cosinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
 
 
 \begin{center}
@@ -682,10 +711,10 @@ Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\c
 
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$.}
 
-La fonction $x \mapsto \sinh(x)$ est inversable sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\mspace{-1mu}\sinh $\fg et définit la fonction \og\emph{argument sinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\sinh(x)$.
+La fonction $x \mapsto \sinh(x)$ est inversible sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\mspace{-1mu}\sinh $\fg et définit la fonction \og\emph{argument sinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\sinh(x)$.
 
 
 \begin{center}
@@ -740,36 +769,10 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\sinh(x)$, de sa dérivée et de sa primitive.
 \end{center}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \arg\mspace{-1mu}\tanh(x)$.}
 
-La fonction $x \mapsto \tanh(x)$ est inversable sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\mspace{-1mu}\tanh $\fg et définit la fonction \og\emph{argument tangente hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\tanh(x)$.
+La fonction $x \mapsto \tanh(x)$ est inversible sur son domaine de définition $\R$, car elle y est bijective, son inverse est notée \og$ \arg\mspace{-1mu}\tanh $\fg et définit la fonction \og\emph{argument tangente hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\tanh(x)$.
 
 
 \begin{center}
@@ -828,9 +831,10 @@ Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\t
 \end{center}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Récapitulation de nos travaux et de leurs résultats}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dérivées, fonctions, primitives des fonctions trigonométriques}
 
 \begin{align*}
@@ -841,7 +845,7 @@ x \mapsto 1 + \tan\nolimits^2(x) \hspace{2cm} & x \mapsto \tan(x) \hspace{2cm} &
 \end{align*}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dérivées, fonctions, primitives des fonctions trigonométriques inverses}
 
 \begin{align*}
@@ -852,7 +856,7 @@ x \mapsto \frac{1}{ 1 + x^2} \hspace{1.5cm} & x \mapsto \arctan(x) \hspace{1.5cm
 \end{align*}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dérivées, fonctions, primitives des fonctions trigonométriques hyperboliques}
 
 \begin{align*}
@@ -864,7 +868,7 @@ x \mapsto 1 - \tanh\nolimits^2(x) \hspace{2cm} & x \mapsto \tanh(x) \hspace{2cm}
 
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Dérivées, fonctions, primitives des fonctions trigonométriques hyperboliques inverses}
 
 \begin{align*}
@@ -875,28 +879,12 @@ x \mapsto \frac{1}{ 1 - x^2} \hspace{1.5cm} & x \mapsto \arg\mspace{-1mu}\tanh(x
 \end{align*}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \chapter{Calcul de quelques primitives.}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \ln(x) $.}
 
 \begin{align*}
@@ -945,16 +933,7 @@ Le graphe de $\sage{f(x)} $.
 \end{center}
 
 
-
-
-
-
-
 On peut maintenant entreprendre le calcul d'une primitive de la  fonction  $x \mapsto \ln(x) $.
-
-
-
-
 
 
 \subsection{Calcul d"une primitive de la fonction  $x \mapsto \ln(x) $.}
@@ -981,14 +960,14 @@ Finalement $\int \ln(x) \, dx = x \times \ln(x) -x + C^{ste} $
 
 Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{La fonction  $x \mapsto \exp(x) $.}
 
 \begin{align*}
 \int \exp(x) = \exp(x) + C^{ste}.
 \end{align*}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 - 1} } $. }
 
 
@@ -1120,10 +1099,10 @@ Nous avons montré l'égalité $\arg\mspace{-1mu}\sinh\nolimits(x) = \ln(x + \sq
 
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ x + 1} } $. }
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Calcul d'une primitive de $  x \longmapsto  \frac{dx}{\sqrt{x^2+ \alpha^2} } $. }
 
 \subsection{Vérification avec Sage}

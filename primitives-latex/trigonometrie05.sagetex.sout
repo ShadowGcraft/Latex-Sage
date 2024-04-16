@@ -17,15 +17,15 @@
 \newlabel{@sageinline7}{{%
 \log\left(\sec\left(x\right)\right)}{}{}{}{}}
 \newlabel{@sageinline8}{{%
-\arccos\left(x\right)}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline9}{{%
--\frac{1}{\sqrt{-x^{2} + 1}}}{}{}{}{}}
+-\tanh\left(x\right)^{2} + 1}{}{}{}{}}
 \newlabel{@sageinline10}{{%
-\arccos\left(x\right)}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline11}{{%
-\arccos\left(x\right)}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline12}{{%
-x \arccos\left(x\right) - \sqrt{-x^{2} + 1}}{}{}{}{}}
+\log\left(\cosh\left(x\right)\right)}{}{}{}{}}
 \newlabel{@sageinline13}{{%
 \arcsin\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline14}{{%
@@ -49,49 +49,55 @@ x \arctan\left(x\right) - \frac{1}{2} \, \log\left(x^{2} + 1\right)}{}{}{}{}}
 \newlabel{@sageinline23}{{%
 \cosh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline24}{{%
-\sinh\left(x\right)}{}{}{}{}}
+\cosh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline25}{{%
 \sinh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline26}{{%
-\cosh\left(x\right)}{}{}{}{}}
+\sinh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline27}{{%
-\tanh\left(x\right)}{}{}{}{}}
+\sinh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline28}{{%
-\tanh\left(x\right)}{}{}{}{}}
+\cosh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline29}{{%
-\log\left(\cosh\left(x\right)\right)}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline30}{{%
-\operatorname{arcosh}\left(x\right)}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline31}{{%
-\frac{1}{\sqrt{x + 1} \sqrt{x - 1}}}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline32}{{%
-\operatorname{arcosh}\left(x\right)}{}{}{}{}}
+\log\left(\cosh\left(x\right)\right)}{}{}{}{}}
 \newlabel{@sageinline33}{{%
-x \operatorname{arcosh}\left(x\right) - \sqrt{x^{2} - 1}}{}{}{}{}}
+\operatorname{arcosh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline34}{{%
-\operatorname{arsinh}\left(x\right)}{}{}{}{}}
+\frac{1}{\sqrt{x + 1} \sqrt{x - 1}}}{}{}{}{}}
 \newlabel{@sageinline35}{{%
-\frac{1}{\sqrt{x^{2} + 1}}}{}{}{}{}}
+\operatorname{arcosh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline36}{{%
-\operatorname{arsinh}\left(x\right)}{}{}{}{}}
+x \operatorname{arcosh}\left(x\right) - \sqrt{x^{2} - 1}}{}{}{}{}}
 \newlabel{@sageinline37}{{%
-x \operatorname{arsinh}\left(x\right) - \sqrt{x^{2} + 1}}{}{}{}{}}
+\operatorname{arsinh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline38}{{%
-\operatorname{artanh}\left(x\right)}{}{}{}{}}
+\frac{1}{\sqrt{x^{2} + 1}}}{}{}{}{}}
 \newlabel{@sageinline39}{{%
--\frac{1}{x^{2} - 1}}{}{}{}{}}
+\operatorname{arsinh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline40}{{%
-\operatorname{artanh}\left(x\right)}{}{}{}{}}
+x \operatorname{arsinh}\left(x\right) - \sqrt{x^{2} + 1}}{}{}{}{}}
 \newlabel{@sageinline41}{{%
-x \operatorname{artanh}\left(x\right) + \frac{1}{2} \, \log\left(-x^{2} + 1\right)}{}{}{}{}}
+\operatorname{artanh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline42}{{%
-\log\left(x\right)}{}{}{}{}}
+-\frac{1}{x^{2} - 1}}{}{}{}{}}
 \newlabel{@sageinline43}{{%
-\frac{1}{x}}{}{}{}{}}
+\operatorname{artanh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline44}{{%
-\log\left(x\right)}{}{}{}{}}
+x \operatorname{artanh}\left(x\right) + \frac{1}{2} \, \log\left(-x^{2} + 1\right)}{}{}{}{}}
 \newlabel{@sageinline45}{{%
 \log\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline46}{{%
+\frac{1}{x}}{}{}{}{}}
+\newlabel{@sageinline47}{{%
+\log\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline48}{{%
+\log\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline49}{{%
 x \log\left(x\right) - x}{}{}{}{}}
-%63ac16c97401088677ff6d6a1e18f934% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+%3c24c7580d149718f8da44d0f05b79d8% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

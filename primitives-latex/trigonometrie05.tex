@@ -502,6 +502,13 @@ nous obtenons $(\cosh)^2 + (i . \sinh)^2= (\cosh)^2 - (\sinh)^2 = 1$ et pour $\c
 
 \section{La fonction  $x \mapsto \cosh(x)$.}
 
+
+\begin{center}
+\sageplot[width=.4\textwidth]{plot(cosh(x), x, -4, 4)}
+\sageplot[width=.4\textwidth]{plot(diff(cosh(x),x), x, -4, 4)} \\
+La représentation graphique de $x \mapsto \sage{cosh(x)} $ et de sa dérivée. 
+\end{center}
+
 \subsection{Dérivée de la fonction $x \mapsto \cosh(x)$.}
 \begin{align*}
 \cosh(x)' & = \left( \frac{\exp(x)+\exp(-x)}{2} \right)' \\ 
@@ -520,6 +527,13 @@ $\int \cosh(x) dx = \int \frac{\exp(x)+ \exp(-x)}{2} dx = \frac{1}{2} \times \in
 
 
 \section{La fonction  $x \mapsto \sinh(x)$.}
+
+
+\begin{center}
+\sageplot[width=.4\textwidth]{plot(sinh(x), x, -5, 5)}
+\sageplot[width=.4\textwidth]{plot(diff(sinh(x), x), x, -5, 5)} \\
+La représentation graphique de $x \mapsto \sage{sinh(x)} $ et de sa dérivée. 
+\end{center}
 
 
 \subsection{Dérivée de la fonction $x \mapsto \sinh(x)$.}
@@ -551,18 +565,16 @@ $\int \sinh(x) dx = \int \frac{\exp(x)- \exp(-x)}{2} dx = \frac{1}{2} \times \in
 
 Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
-Le graphe de $\sage{f(x)} $.
-
-
-\begin{center}
-\sageplot[width=.5\textwidth]{plot(f(x), x, -5, 5)} \\
-%\sageplot{plot(g(x), x, -1, 1)}
-\end{center}
-
-
 
 
 \section{La fonction  $x \mapsto \tanh(x)$.}
+
+
+\begin{center}
+\sageplot[width=.4\textwidth]{plot(tanh(x), x, -5, 5)} 
+\sageplot[width=.4\textwidth]{plot(diff(tanh(x), x) , x, -5, 5)} \\
+La représentation graphique de $x \mapsto \sage{tanh(x)} $ et de sa dérivée.
+\end{center}
 
 \subsection{Dérivée de la fonction $x \mapsto \tanh(x)$.}
 
@@ -581,9 +593,9 @@ Le graphe de $\sage{f(x)} $.
 
 \begin{align*}
 \int \tanh(x) & = \int \frac{\cosh(x)}{\sinh(x)} \\
-&  =  \int \frac{1}{u(x)} \times du(x), u(x) =  \cosh(x), du(x) = \sinh(x) \\
-&  =  \ln(u(x)) \\
-& =   \ln(\cosh(x))
+&  =  \int \frac{1}{u(x)} \times du(x), \quad \textrm{en posant } u(x) =  \cosh(x) \; \textrm{et donc } du(x) = \sinh(x) \\
+&  =  \ln|u(x)| \\
+&  =   \ln|\cosh(x)|  \quad \textrm{or } \cosh(x)>0 \; \textrm{sur l'intervalle considéré, donc}
 \end{align*}
 
 
@@ -597,13 +609,7 @@ Le graphe de $\sage{f(x)} $.
 
 Une primitive de $\sage{f(x)} = \sage{F(x)} $.
 
-Le graphe de $\sage{f(x)} $.
 
-
-\begin{center}
-\sageplot[width=.5\textwidth]{plot(f(x), x, -5, 5)} \\
-%\sageplot{plot(g(x), x, -1, 1)}
-\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

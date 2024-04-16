@@ -47,49 +47,51 @@ x \arcsin\left(x\right) + \sqrt{-x^{2} + 1}}{}{}{}{}}
 \newlabel{@sageinline22}{{%
 x \arctan\left(x\right) - \frac{1}{2} \, \log\left(x^{2} + 1\right)}{}{}{}{}}
 \newlabel{@sageinline23}{{%
-\sinh\left(x\right)}{}{}{}{}}
-\newlabel{@sageinline24}{{%
 \cosh\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline24}{{%
+\sinh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline25}{{%
 \sinh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline26}{{%
-\tanh\left(x\right)}{}{}{}{}}
+\cosh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline27}{{%
-\log\left(\cosh\left(x\right)\right)}{}{}{}{}}
+\tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline28}{{%
 \tanh\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline29}{{%
-\operatorname{arcosh}\left(x\right)}{}{}{}{}}
+\log\left(\cosh\left(x\right)\right)}{}{}{}{}}
 \newlabel{@sageinline30}{{%
-\frac{1}{\sqrt{x + 1} \sqrt{x - 1}}}{}{}{}{}}
-\newlabel{@sageinline31}{{%
 \operatorname{arcosh}\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline31}{{%
+\frac{1}{\sqrt{x + 1} \sqrt{x - 1}}}{}{}{}{}}
 \newlabel{@sageinline32}{{%
-x \operatorname{arcosh}\left(x\right) - \sqrt{x^{2} - 1}}{}{}{}{}}
+\operatorname{arcosh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline33}{{%
-\operatorname{arsinh}\left(x\right)}{}{}{}{}}
+x \operatorname{arcosh}\left(x\right) - \sqrt{x^{2} - 1}}{}{}{}{}}
 \newlabel{@sageinline34}{{%
-\frac{1}{\sqrt{x^{2} + 1}}}{}{}{}{}}
-\newlabel{@sageinline35}{{%
 \operatorname{arsinh}\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline35}{{%
+\frac{1}{\sqrt{x^{2} + 1}}}{}{}{}{}}
 \newlabel{@sageinline36}{{%
-x \operatorname{arsinh}\left(x\right) - \sqrt{x^{2} + 1}}{}{}{}{}}
+\operatorname{arsinh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline37}{{%
-\operatorname{artanh}\left(x\right)}{}{}{}{}}
+x \operatorname{arsinh}\left(x\right) - \sqrt{x^{2} + 1}}{}{}{}{}}
 \newlabel{@sageinline38}{{%
--\frac{1}{x^{2} - 1}}{}{}{}{}}
-\newlabel{@sageinline39}{{%
 \operatorname{artanh}\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline39}{{%
+-\frac{1}{x^{2} - 1}}{}{}{}{}}
 \newlabel{@sageinline40}{{%
-x \operatorname{artanh}\left(x\right) + \frac{1}{2} \, \log\left(-x^{2} + 1\right)}{}{}{}{}}
+\operatorname{artanh}\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline41}{{%
-\log\left(x\right)}{}{}{}{}}
+x \operatorname{artanh}\left(x\right) + \frac{1}{2} \, \log\left(-x^{2} + 1\right)}{}{}{}{}}
 \newlabel{@sageinline42}{{%
-\frac{1}{x}}{}{}{}{}}
-\newlabel{@sageinline43}{{%
 \log\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline43}{{%
+\frac{1}{x}}{}{}{}{}}
 \newlabel{@sageinline44}{{%
 \log\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline45}{{%
+\log\left(x\right)}{}{}{}{}}
+\newlabel{@sageinline46}{{%
 x \log\left(x\right) - x}{}{}{}{}}
-%f5ae3b8124a04ec744b16543a305cc87% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+%63ac16c97401088677ff6d6a1e18f934% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

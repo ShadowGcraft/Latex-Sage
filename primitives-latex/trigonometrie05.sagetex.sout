@@ -17,15 +17,15 @@
 \newlabel{@sageinline7}{{%
 \log\left(\sec\left(x\right)\right)}{}{}{}{}}
 \newlabel{@sageinline8}{{%
-\tanh\left(x\right)}{}{}{}{}}
+\arccos\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline9}{{%
--\tanh\left(x\right)^{2} + 1}{}{}{}{}}
+-\frac{1}{\sqrt{-x^{2} + 1}}}{}{}{}{}}
 \newlabel{@sageinline10}{{%
-\tanh\left(x\right)}{}{}{}{}}
+\arccos\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline11}{{%
-\tanh\left(x\right)}{}{}{}{}}
+\arccos\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline12}{{%
-\log\left(\cosh\left(x\right)\right)}{}{}{}{}}
+x \arccos\left(x\right) - \sqrt{-x^{2} + 1}}{}{}{}{}}
 \newlabel{@sageinline13}{{%
 \arcsin\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline14}{{%
@@ -100,4 +100,4 @@ x \operatorname{artanh}\left(x\right) + \frac{1}{2} \, \log\left(-x^{2} + 1\righ
 \log\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline49}{{%
 x \log\left(x\right) - x}{}{}{}{}}
-%3c24c7580d149718f8da44d0f05b79d8% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+%b293132f541c652a2e355851b38cb014% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

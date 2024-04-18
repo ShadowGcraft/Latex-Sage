@@ -53,7 +53,7 @@
        \setcounter{subsubsection}{0}%
 }
 
-\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=2.5cm, bindingoffset=0.cm, headsep=0.cm, headheight=0.cm]{geometry}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=2.cm, bindingoffset=0.cm, headsep=0.cm, headheight=0.cm]{geometry}
 
 %\usepackage{qrcode}
 %\usepackage[draft,forget]{qrcode}
@@ -71,12 +71,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\usepackage[boldsans]{ccfonts}
+
 %\usepackage{concmath}
+
 \usepackage{cmbright}
+
 %\usepackage[euler-digits]{eulervm} 
 
 
-\usepackage{beton,euler}
+%\usepackage{beton,euler}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -135,7 +138,7 @@
 %\bf \Huge
 
 \title{Les primitives et les dérivées.}
-\date{Ce document est destiné à un affichage sur un écran et non pas à une impression sur papier.}
+%\date{Ce document est destiné à un affichage sur un écran et non pas à une impression sur papier.}
 
 
 \author{Louis Herzog} 
@@ -396,7 +399,7 @@ Définissons nos fonctions dans {\texttt{Sage}}
 \end{sageblock}
 Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. On a $\tan(\arctan(x))=x$, par conséquent la dérivée de cette expression s'exprime par $ \tan'(\arctan(x)) \times \arctan\nolimits'(x) = 1$, d'où $\arctan\nolimits'(x) = \frac{1}{\tan'(\arctan(x))} $.
 
-La difficulté est maintenant de déterminer $\tan'(\arctan(x)$, or on sait que pour tout $X \in \R$, on a $ \tan'(x) =1+\tan^2(x) $, d'où $\tan'(\arctan(x)) = 1+x^2$.
+La difficulté est maintenant de déterminer $\tan'(\arctan(x))$, or on sait que pour tout $X \in \R$, on a $ \tan'(X) =1+\tan^2(X) $, avec $X= \arctan(x)$ d'où $\tan'(\arctan(x)) = 1+x^2$.
 
 Finalement, $\arctan\nolimits'(x) = \frac{1}{1+x^2}$.
 \paragraph{On vérifie ce résultat avec Sage.}

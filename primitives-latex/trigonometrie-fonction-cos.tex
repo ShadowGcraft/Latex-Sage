@@ -1,0 +1,328 @@
+% !TEX TS-program = sage 
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% The following lines are standard LaTeX preamble statements.
+
+
+%\documentclass[a4paper,12pt]{smfart}
+
+%\documentclass[a4paper,11pt]{book}
+%\documentclass[a4paper,landscape,20pt]{extarticle} %% landscape ou bien portrait (par défault)
+
+%\documentclass[a4paper,17pt]{extarticle} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
+
+\documentclass[a4paper,12pt]{report}
+%\documentclass[a4paper,landscape,17pt]{extreport} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
+
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%\usepackage{amsmath,amssymb,amsfonts,url,xspace,smfthm}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,url,xspace}
+\usepackage{mathtools}
+\usepackage[mathscr]{eucal}
+%\usepackage{exscale}
+
+\usepackage{diagbox}
+
+\usepackage{fancybox}
+
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% - les theoremes
+\newtheorem{definition}{D\'efinition}
+\newtheorem{theoreme}{Th\'eor\`eme}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemme}{Lemme}
+\newtheorem{corollaire}{Corollaire}
+\newtheorem{propriete}{Propri\'et\'e}
+\newtheorem{axiome}{Axiome}
+\newcommand{\initialisecompteurs}{
+       \setcounter{definition}{0}%
+       \setcounter{theoreme}{0}%
+       \setcounter{proposition}{0}%
+       \setcounter{lemme}{0}%
+       \setcounter{corollaire}{0}%
+       \setcounter{propriete}{0}%
+       \setcounter{axiome}{0}%
+       \setcounter{section}{0}%
+       \setcounter{subsection}{0}%
+       \setcounter{subsubsection}{0}%
+}
+
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=2.cm, bindingoffset=0.cm, headsep=0.cm, headheight=0.cm]{geometry}
+
+%\usepackage{qrcode}
+%\usepackage[draft,forget]{qrcode}
+%\usepackage{rmsmacros} 
+\usepackage{graphicx}
+%\usepackage{hyperref}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage{tabvar}
+\usepackage[tight]{shorttoc}
+\newcommand{\sommaire}{\shorttoc{Sommaire}{1}}
+
+\graphicspath{ {./images/} }
+\everymath{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[boldsans]{ccfonts}
+
+%\usepackage{concmath}
+
+\usepackage{cmbright}
+
+%\usepackage[euler-digits]{eulervm} 
+
+
+%\usepackage{beton,euler}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\eclaire{\mathbb}
+
+\def\R{\ensuremath{\eclaire R}}
+\def\N{\ensuremath{\eclaire N}}
+\def\C{\ensuremath{\eclaire C}}
+\def\Z{\ensuremath{\eclaire Z}}
+\def\Q{\ensuremath{\eclaire Q}}
+
+\def\Id{\ensuremath{\mathrm{Id}}}
+
+%\newcommand{\sh}{\mathop{\mathrm{sh}}\nolimits}
+\renewcommand{\sinh}{\mathop{\mathrm{sh}}}
+\renewcommand{\cosh}{\mathop{\mathrm{ch}}}
+\renewcommand{\tanh}{\mathop{\mathrm{th}}}
+
+\renewcommand{\arg}{\mathop{\mathrm{Arg}}}
+
+\renewcommand{\arcsin}{\mathop{\mathrm{Arc\mspace{2mu}sin}}}
+\renewcommand{\arccos}{\mathop{\mathrm{Arc\mspace{2mu}cos}}}
+\renewcommand{\arctan}{\mathop{\mathrm{Arc\mspace{2mu}tan}}}
+\renewcommand{\Im}{\mathop{\mathfrak{I}\mathrm{m}}}
+\renewcommand{\Re}{\mathop{\mathfrak{R}\mathrm{m}}}
+
+
+%\DeclareMathOperator{\sh}{sh}
+%\DeclareMathOperator{\ch}{ch}
+
+
+\renewcommand{\baselinestretch}{1.5}
+
+
+% Only one command is required to use Sage within the LaTeX source:
+\usepackage{sagetex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\limh}[1]{\lim\limits_{h\to 0} \frac{#1(x+h)-#1(x)}{h}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document} 
+
+%\pagecolor{gray!45}
+
+\setlength{\parindent}{0pt}
+
+
+%\bf \Huge
+
+\title{Les primitives et les dérivées.}
+%\date{Ce document est destiné à un affichage sur un écran et non pas à une impression sur papier.}
+
+
+\author{Louis Herzog} 
+
+\maketitle 
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+%\sommaire
+
+\section{La fonction  $x \mapsto \cos(x)$.}
+Définissons nos fonctions dans {\texttt{Sage}}. Soit
+\begin{sageblock}
+    f(x) = cos(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(cos(x), x, -pi, pi)} \\
+La représentation graphique de $x\mapsto \cos(x)$ sur l'intervalle $[-\pi, \pi]$.
+\end{center}
+La fonction est paire et périodique de période $2 \pi$.
+
+\subsection{Dérivée de la fonction $x \mapsto \cos(x)$.}
+\begin{align*}
+\lim_{h\to 0} \frac{\cos(x+h)-cos(x)}{h}  
+& = \lim_{h\to 0} \frac{\cos(x)\cos(h)-\sin(x)\sin(h)-cos(x)}{h} \\ 
+& = \lim_{h\to 0} \left( \frac{\cos(x)(\cos(h)-1)}{h}-\frac{\sin(x)\sin(h)}{h} \right) \\  
+& =  \cos(x) \times \lim_{h\to 0}\frac{\cos(h)-1}{h}- \sin(x) \times \lim_{h\to 0} \frac{\sin(h)}{h}\\  
+& = -\sin{x}
+\end{align*}
+
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \cos(x)$.}
+Dans la section suivante, on calcule la dérivée de la fonction $x \mapsto \sin(x)$ qui vaut $x \mapsto \cos(x)$, par conséquent une primitive de $x \mapsto \cos(x)$ est égale, à une constante près, à $  \sin(x) + C^{ste} $.
+\paragraph{On vérifie ce résultat avec Sage.}
+Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto \sage{F(x)} + C^{ste} $ définie à une constante près.
+
+
+
+\section{La fonction  $x \mapsto \arccos(x) $.}
+La restriction de la fonction $x \mapsto \cos(x) $ à l'intervalle $[0,\pi]$ est une bijection de $[0,\pi] \rightarrow [-1,1]$ . Il existe donc une fonction réciproque à la fonction $x \mapsto \cos(x) $ que l'on nomme $x \mapsto \arccos(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $]-1,1[$.
+
+\subsection{Calcul de la dérivée de la fonction $x \mapsto \arccos(x) $.}
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = arccos(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+Pour ce faire, il faut utiliser le calcul de la dérivée d'une fonction composée. On a $\cos(\arccos(x))=x$, par conséquent la dérivée de cette expression s'exprime par $ -\sin(\arccos(x) \times \arccos\nolimits'(x) = 1$, d'où $\arccos(x)' = \frac{-1}{\sin(\arccos(x))} $.
+
+La difficulté est maintenant de déterminer $\sin(\arccos(x))$, or on sait que pour tout $X \in \R$, on a $\sin^2(X) + \cos^2(X) = 1$, d'où $\sin(X) = \sqrt{1-\cos^2(X)}$.
+
+En remplaçant $X$ par $\arccos(x)$, 
+on a $\sin(\arccos(x)) = \sqrt{1-\cos^2(\arccos(x))} = \sqrt{1- x^2}$.
+
+Finalement, $\arccos\nolimits'(x) = \frac{-1}{\sin(\arccos(x))} = \frac{-1}{\sqrt{1-\cos^2(\arccos(x))}} =  \frac{-1}{\sqrt{1- x^2}} $.
+\paragraph{On vérifie ce résultat avec Sage.}
+La dérivée de la fonction $\sage{f(x)}$ est la fonction $x \mapsto \sage{g(x)} $, ce que l'on retrouve sous une écriture légèrement modifiée de Sage.
+
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(f(x), x, -1, 1)}
+\sageplot[width=.3\textwidth]{plot(cos(x), x, 0, pi)}\\
+Les représentations graphiques de $x \mapsto \sage{f(x)} $ et de $x\mapsto \cos(x)$.
+\end{center}
+
+On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \mapsto \arccos(x) $.
+
+\subsection{Calcul de la primitive de la fonction  $x \mapsto \arccos(x) $.}
+Je pose que $u(x)$  est égal à la fonction $\arccos(x)$ et $v'(x)$ est égal $dx$  d'où $u'(x)$  est égal à la fonction $ \frac{-1}{\sqrt{1- x^2}} $ et $v(x)$ est égal $x$.
+Alors on a, par une intégration par parties, $\int \arccos(x) \, dx = x \times \arccos(x) -\int \frac{-1}{\sqrt{1- x^2}} \times x \, dx =  x \arccos(x) + \int \frac{x}{\sqrt{1- x^2}} \, dx $.
+\paragraph{Calcul de $\int \frac{x}{\sqrt{1- x^2}} \, dx $.}
+$\int \frac{x}{\sqrt{1- x^2}} \, dx = \frac{-1}{2} \int \frac{d(1-x^2)}{\sqrt{1- x^2}}= -\sqrt{1- x^2} $.
+
+Finalement, $\int \arccos(x) \, dx = x  \arccos(x) - \sqrt{1- x^2} + C^{ste} $ est une primitive de la fonction $x \mapsto \arccos(x) $.
+\paragraph{On vérifie ce résultat avec Sage.}
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{La fonction  $x \mapsto \cosh(x)$.}
+
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = cosh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(f(x), x, -4, 4)}
+\sageplot[width=.3\textwidth]{plot(g(x), x, -4, 4)} \\
+La représentation graphique de $x \mapsto \sage{f(x)} $ et de sa dérivée. 
+\end{center}
+
+\subsection{Dérivée de la fonction $x \mapsto \cosh(x)$.}
+\begin{align*}
+\cosh(x)' & = \left( \frac{\exp(x)+\exp(-x)}{2} \right)' \\ 
+& = \frac{\exp(x)'+\exp(-x)'}{2} \\
+& = \frac{\exp(x)-\exp(-x)}{2} \\
+& = \sinh(x)
+\end{align*}
+
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \cosh(x)$.}
+$\int \cosh(x) dx = \int \frac{\exp(x)+ \exp(-x)}{2} dx = \frac{1}{2} \times \int \exp(x) dx + \frac{1}{2} \times \int \exp(-x) dx = \frac{ \exp(x) - \exp(-x) }{2} = \sinh + C^{ste}$
+\paragraph{On vérifie ce résultat avec Sage.}
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{La fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = arccosh(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+Le cosinus hyperbolique, noté $\cosh$ est défini sur $\R$ selon l'expression $\frac{\exp(x)+\exp(-x)}{2}$, son domaine de valeurs est $[1, +\infty [$ 
+c'est une fonction paire c'est-à-dire $\cosh(-x)=\cosh(x)$.
+
+
+La fonction $x \mapsto \cosh(x)$ est inversible sur le domaine de définition restreint à $\R^+$, car elle y est bijective, son inverse est notée \og $ \arg\mspace{-1mu}\cosh $\fg et définit la fonction \og\emph{argument cosinus hyperbolique}\fg telle que $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(f(x), x, 1, 20)} \\
+La représentation graphique de $x \mapsto \arg\mspace{-1mu}\cosh(x)$.
+\end{center}
+On observe que la fonction est croissante, continue sur $\left[1\,,\,+\infty \right[ $ et dérivable sur l'intervalle ouvert $\left]1\,,\,+\infty \right[ $.
+                                                                                               
+
+\subsection{Dérivée de la fonction $x \mapsto \arg\mspace{-1mu}\cosh(x)$.\label{argcosh}}
+On a la fonction composée $\Id = \cosh \circ \arg\mspace{-1mu}\cosh$ telle que $x\mapsto\cosh\left(\arg\mspace{-1mu}\cosh(x)\right)=x$ dont la dérivée s'écrit alors $1= \arg\mspace{-1mu}\cosh\nolimits' \times \cosh\nolimits'\circ\arg\mspace{-1mu}\cosh$.
+\begin{align*}
+x & =\cosh\left(\arg\mspace{-1mu}\cosh(x)\right)(x) \quad \textrm{en dérivant, on a}\\
+1 & = \arg\mspace{-1mu}\cosh\nolimits'(x) \times \cosh\nolimits'\circ\arg\mspace{-1mu}\cosh(x) \quad \textrm{d'où}\\
+\arg\mspace{-1mu}\cosh\nolimits'(x) & =\frac{1}{ \cosh\nolimits'\circ\arg\mspace{-1mu}\cosh(x)}=\frac{1}{ \sinh\left(\arg\mspace{-1mu}\sinh(x)\right)}\quad \textrm{or, on sait que}\\
+1 & = \cosh\nolimits^2\left(\arg\mspace{-1mu}\cosh(x)\right) - \sinh\nolimits^2\left(\arg\mspace{-1mu}\cosh(x)\right) \quad \textrm{alors}\\
+\sinh\left(\arg\mspace{-1mu}\cosh(x)\right) & = \sqrt{\cosh\nolimits^2\left(\arg\mspace{-1mu}\cosh(x)\right)-1}=\sqrt{x^2-1}\quad \textrm{finalement}\\
+\arg\mspace{-1mu}\cosh\nolimits'(x) & = \frac{1}{ \sqrt{x^2-1}}\quad \textrm{on vérifie ce calcul avec Sage.}
+\end{align*}
+
+
+\paragraph{On vérifie ce résultat avec Sage.}
+La dérivée de $\sage{f(x)} = \sage{g(x)} $.
+
+
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \arg\mspace{-1mu}\cosh(x)$.}
+Pour calculer $\int \arg\mspace{-1mu}\cosh(x) \, dx$, on procède par une intégration par parties en posant $u(x) = \arg\mspace{-1mu}\cosh(x)$ et $v'(x) = dx$, d'où $u'(x) = \frac{1}{ \sqrt{x^2-1}}$ et $ v(x) = x $. \\
+On a donc
+\begin{align*}
+\int \arg\mspace{-1mu}\cosh(x) \, dx & = x \arg\mspace{-1mu}\cosh(x) - \int \frac{x}{ \sqrt{x^2-1}} \, dx \quad \textrm{or}\\
+\int \frac{x}{ \sqrt{x^2-1}} \, dx & = \int \left(\sqrt{x^2-1}\right)' \, dx = \sqrt{x^2-1}  \quad \textrm{d'où}\\
+\int \arg\mspace{-1mu}\cosh(x) \, dx & = x \arg\mspace{-1mu}\cosh(x) - \sqrt{x^2-1} + C^{ste} 
+\end{align*}
+
+
+\paragraph{On vérifie ce résultat avec Sage.}
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(f(x), x, 1, 20)} 
+\sageplot[width=.3\textwidth]{plot(g(x), x, 1, 20)} 
+\sageplot[width=.3\textwidth]{plot(F(x), x, 1, 20)}\\
+Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\cosh(x)$, de sa dérivée et de sa primitive.
+\end{center}
+
+
+
+
+
+
+
+
+\end{document}

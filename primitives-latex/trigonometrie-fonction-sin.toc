@@ -1,0 +1,20 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {0.1}La fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{1}{}%
+\contentsline {subsection}{\numberline {0.1.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{2}{}%
+\contentsline {subsection}{\numberline {0.1.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \sin (x)$.}{2}{}%
+\contentsline {paragraph}{On vérifie ce résultat avec Sage.}{2}{}%
+\contentsline {section}{\numberline {0.2}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{2}{}%
+\contentsline {subsection}{\numberline {0.2.1}Calcul de la dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{2}{}%
+\contentsline {paragraph}{On vérifie ce résultat avec Sage.}{3}{}%
+\contentsline {subsection}{\numberline {0.2.2}Calcul de la primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax sin}}(x) $.}{3}{}%
+\contentsline {paragraph}{Calcul de $\DOTSI \intop \ilimits@ \frac {x}{\sqrt {1- x^2}} \, dx $.}{3}{}%
+\contentsline {paragraph}{On vérifie ce résultat avec Sage.}{3}{}%
+\contentsline {section}{\numberline {0.3}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arc\mskip 2mu\relax tan}}(x) $.}{3}{}%
+\contentsline {subsection}{\numberline {0.3.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {sh}}(x)$.}{4}{}%
+\contentsline {subsection}{\numberline {0.3.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {sh}}(x)$.}{4}{}%
+\contentsline {paragraph}{On vérifie ce résultat avec Sage.}{4}{}%
+\contentsline {section}{\numberline {0.4}La fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{4}{}%
+\contentsline {subsection}{\numberline {0.4.1}Dérivée de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{5}{}%
+\contentsline {paragraph}{On vérifie ce résultat avec Sage.}{5}{}%
+\contentsline {subsection}{\numberline {0.4.2}Calcul d'une primitive de la fonction $x \DOTSB \mapstochar \rightarrow \mathop {\mathrm {Arg}}\mskip -1mu\relax \mathop {\mathrm {sh}}(x)$.}{5}{}%
+\contentsline {paragraph}{On vérifie ce résultat avec Sage.}{5}{}%

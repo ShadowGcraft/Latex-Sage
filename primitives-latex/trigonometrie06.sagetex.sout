@@ -96,4 +96,4 @@ x \operatorname{artanh}\left(x\right) + \frac{1}{2} \, \log\left(-x^{2} + 1\righ
 \log\left(x\right)}{}{}{}{}}
 \newlabel{@sageinline47}{{%
 x \log\left(x\right) - x}{}{}{}{}}
-%c18701cb47750a1bacee95224a5f3322% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+%3acae429238df21fee89f6b99754bd0b% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

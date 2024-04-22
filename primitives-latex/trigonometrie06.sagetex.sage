@@ -490,33 +490,53 @@ try:
 except:
  _st_.goboom(796)
 try:
- _st_.current_tex_line = 808
+ _st_.current_tex_line = 816
  _st_.inline(46, latex(f(x)))
 except:
- _st_.goboom(808)
+ _st_.goboom(816)
 try:
- _st_.current_tex_line = 808
+ _st_.current_tex_line = 816
  _st_.inline(47, latex(F(x)))
 except:
- _st_.goboom(808)
+ _st_.goboom(816)
 try:
- _st_.current_tex_line = 820
+ _st_.current_tex_line = 828
  _st_.plot(28, format='notprovided', _p_=plot(x+sqrt(x^2+1), x, -5, 5))
 except:
- _st_.goboom(820)
+ _st_.goboom(828)
 try:
- _st_.current_tex_line = 821
+ _st_.current_tex_line = 829
  _st_.plot(29, format='notprovided', _p_=plot(diff(x+sqrt(x^2+1),x), x, -5, 5))
 except:
- _st_.goboom(821)
+ _st_.goboom(829)
 try:
- _st_.current_tex_line = 854
+ _st_.current_tex_line = 862
  _st_.plot(30, format='notprovided', _p_=plot(log(x+sqrt(x^2+1)), x, -5, 5))
 except:
- _st_.goboom(854)
+ _st_.goboom(862)
 try:
- _st_.current_tex_line = 856
+ _st_.current_tex_line = 864
  _st_.plot(31, format='notprovided', _p_=plot(arcsinh(x), x, -5, 5))
 except:
- _st_.goboom(856)
+ _st_.goboom(864)
+try:
+ _st_.current_tex_line = 893
+ _st_.plot(32, format='notprovided', _p_=plot(x+sqrt(x^2 - 1), x, -5, 5))
+except:
+ _st_.goboom(893)
+try:
+ _st_.current_tex_line = 894
+ _st_.plot(33, format='notprovided', _p_=plot(diff(x+sqrt(x^2 - 1),x), x, -5, 5))
+except:
+ _st_.goboom(894)
+try:
+ _st_.current_tex_line = 936
+ _st_.plot(34, format='notprovided', _p_=plot(log(x+sqrt(x^2-1)), x, -5, 5))
+except:
+ _st_.goboom(936)
+try:
+ _st_.current_tex_line = 938
+ _st_.plot(35, format='notprovided', _p_=plot(arccosh(x), x, -5, 5))
+except:
+ _st_.goboom(938)
 _st_.endofdoc()

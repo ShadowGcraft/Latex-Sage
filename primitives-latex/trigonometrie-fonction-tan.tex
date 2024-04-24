@@ -1,0 +1,248 @@
+% !TEX TS-program = sage 
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% The following lines are standard LaTeX preamble statements.
+
+
+%\documentclass[a4paper,12pt]{smfart}
+
+%\documentclass[a4paper,11pt]{book}
+%\documentclass[a4paper,landscape,20pt]{extarticle} %% landscape ou bien portrait (par défault)
+
+%\documentclass[a4paper,17pt]{extarticle} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
+
+\documentclass[a4paper,12pt]{report}
+%\documentclass[a4paper,landscape,17pt]{extreport} %% on peut utiliser les tailles: 8pt, 9pt,14pt, 17pt et 20pt
+
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%\usepackage{amsmath,amssymb,amsfonts,url,xspace,smfthm}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,url,xspace}
+\usepackage{mathtools}
+\usepackage[mathscr]{eucal}
+%\usepackage{exscale}
+
+\usepackage{diagbox}
+
+\usepackage{fancybox}
+
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% - les theoremes
+\newtheorem{definition}{D\'efinition}
+\newtheorem{theoreme}{Th\'eor\`eme}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemme}{Lemme}
+\newtheorem{corollaire}{Corollaire}
+\newtheorem{propriete}{Propri\'et\'e}
+\newtheorem{axiome}{Axiome}
+\newcommand{\initialisecompteurs}{
+       \setcounter{definition}{0}%
+       \setcounter{theoreme}{0}%
+       \setcounter{proposition}{0}%
+       \setcounter{lemme}{0}%
+       \setcounter{corollaire}{0}%
+       \setcounter{propriete}{0}%
+       \setcounter{axiome}{0}%
+       \setcounter{section}{0}%
+       \setcounter{subsection}{0}%
+       \setcounter{subsubsection}{0}%
+}
+
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=2.cm, bindingoffset=0.cm, headsep=0.cm, headheight=0.cm]{geometry}
+
+%\usepackage{qrcode}
+%\usepackage[draft,forget]{qrcode}
+%\usepackage{rmsmacros} 
+\usepackage{graphicx}
+%\usepackage{hyperref}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage{tabvar}
+\usepackage[tight]{shorttoc}
+\newcommand{\sommaire}{\shorttoc{Sommaire}{1}}
+
+\graphicspath{ {./images/} }
+\everymath{\displaystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[boldsans]{ccfonts}
+
+%\usepackage{concmath}
+
+\usepackage{cmbright}
+
+%\usepackage[euler-digits]{eulervm} 
+
+
+%\usepackage{beton,euler}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\eclaire{\mathbb}
+
+\def\R{\ensuremath{\eclaire R}}
+\def\N{\ensuremath{\eclaire N}}
+\def\C{\ensuremath{\eclaire C}}
+\def\Z{\ensuremath{\eclaire Z}}
+\def\Q{\ensuremath{\eclaire Q}}
+
+\def\Id{\ensuremath{\mathrm{Id}}}
+
+%\newcommand{\sh}{\mathop{\mathrm{sh}}\nolimits}
+\renewcommand{\sinh}{\mathop{\mathrm{sh}}}
+\renewcommand{\cosh}{\mathop{\mathrm{ch}}}
+\renewcommand{\tanh}{\mathop{\mathrm{th}}}
+
+\renewcommand{\arg}{\mathop{\mathrm{Arg}}}
+
+\renewcommand{\arcsin}{\mathop{\mathrm{Arc\mspace{2mu}sin}}}
+\renewcommand{\arccos}{\mathop{\mathrm{Arc\mspace{2mu}cos}}}
+\renewcommand{\arctan}{\mathop{\mathrm{Arc\mspace{2mu}tan}}}
+\renewcommand{\Im}{\mathop{\mathfrak{I}\mathrm{m}}}
+\renewcommand{\Re}{\mathop{\mathfrak{R}\mathrm{m}}}
+
+
+%\DeclareMathOperator{\sh}{sh}
+%\DeclareMathOperator{\ch}{ch}
+
+
+\renewcommand{\baselinestretch}{1.5}
+
+
+% Only one command is required to use Sage within the LaTeX source:
+\usepackage{sagetex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\limh}[1]{\lim\limits_{h\to 0} \frac{#1(x+h)-#1(x)}{h}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document} 
+
+%\pagecolor{gray!45}
+
+\setlength{\parindent}{0pt}
+
+
+%\bf \Huge
+
+\title{Les primitives et les dérivées.}
+%\date{Ce document est destiné à un affichage sur un écran et non pas à une impression sur papier.}
+
+
+\author{Louis Herzog} 
+
+\maketitle 
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+%\sommaire
+
+
+
+
+
+\section{La fonction  $x \mapsto \tan(x)$.}
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = tan(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(tan(x), x, -1.4, 1.4)} \\
+La représentation graphique de $x\mapsto \tan(x)$ sur l'intervalle ouvert $ \left] -\frac{\pi}{ 2} , \frac{\pi}{ 2} \right[ $.
+\end{center}
+
+La fonction $x \mapsto \tan(x)$ étant périodique de période $\pi$, on choisit de restreindre le domaine de définition à l'intervalle ouvert $ \left] -\frac{\pi}{ 2} , \frac{\pi}{ 2} \right[ $.
+
+\subsection{Dérivée de la fonction $x \mapsto \tan(x)$.}
+\begin{align*}
+\tan(x)' 
+& =  \left(\frac{\sin(x)}{\cos(x)}\right)' \\ 
+& =  \frac{\cos(x) \times \cos(x) - (-\sin(x)) \times \sin(x)}{\cos^2(x)}  \\ 
+& =  \frac{\cos(x) \times \cos(x) + \sin(x)\times \sin(x)}{\cos^2(x)}  \\ 
+& =  \frac{1}{\cos^2(x)} = 1 + \tan^2(x)
+\end{align*}
+\paragraph{On vérifie ce résultat avec Sage.}
+La dérivée de $\sage{f(x)} = \sage{g(x)} $.
+
+
+\subsection{Calcul d'une primitive de la fonction  $x \mapsto \tan(x)$.}
+On a $\tan(x)=\frac{\sin(x)}{\cos(x)}$, alors $\int \tan(x) \, dx =\int \frac{\sin(x)}{\cos(x)}\, dx$.\\
+Je pose $u(x)=\cos(x)$ donc $u'(x)= -\sin(x) \,dx$ et par ce changement de variable on a $\int \tan(x) \, dx = \int \frac{\sin(x)}{\cos(x)}\, dx  = -\int \frac{u'}{u} = -\ln|u|  = \ln\left(\frac{1}{|u|}\right)  = \ln\left(\frac{1}{|\cos(x)|}\right) +C^{ste}$.
+
+Or, on a choisi le domaine de définition de la fonction $x \mapsto \tan(x)$ restreint à l'intervalle ouvert $ \left] -\frac{\pi}{ 2} , \frac{\pi}{ 2} \right[ $, par conséquent $\cos(x)$ est positif sur cet intervalle donc $|\cos(x)| = \cos(x)$.
+
+Finalement, $ \ln\left(\frac{1}{\cos(x)}\right) +C^{ste}$ est une primitive de $x \mapsto \tan(x)$.
+\paragraph{On vérifie ce résultat avec Sage.}
+Une primitive de $\sage{f(x)}$ est la fonction définie à une constante près $x \mapsto \sage{F(x)} + C^{ste} $.
+Sage utilise la fonction $x\mapsto \sec$ qui est la fonction paire $x\mapsto \frac{1}{\cos(x)}$ périodique de période $2\pi$ définie sur $\R-\{ \frac{\pi}{2}+k\pi, k\in\Z\}$. On retrouve bien le résultat précédent.
+
+
+
+
+
+
+
+
+\subsection{Calcul de la dérivée de la fonction $x \mapsto \arctan(x) $.}
+Définissons nos fonctions dans {\texttt{Sage}}
+\begin{sageblock}
+    f(x) = arctan(x)
+    g(x) = diff(f(x),x)
+    F(x) = integrate(f(x),x)
+\end{sageblock}
+Pour ce calcul, il faut utiliser le calcul de la dérivée d'une fonction composée. On a $\tan(\arctan(x))=x$, par conséquent la dérivée de cette expression s'exprime par $ \tan'(\arctan(x)) \times \arctan\nolimits'(x) = 1$, d'où $\arctan\nolimits'(x) = \frac{1}{\tan'(\arctan(x))} $.
+
+La difficulté est maintenant de déterminer $\tan'(\arctan(x))$, or on sait que pour tout $X \in \R$, on a $ \tan'(X) =1+\tan^2(X) $, avec $X= \arctan(x)$ d'où $\tan'(\arctan(x)) = 1+x^2$.
+
+Finalement, $\arctan\nolimits'(x) = \frac{1}{1+x^2}$.
+\paragraph{On vérifie ce résultat avec Sage.}
+La dérivée de $\sage{f(x)} = \sage{g(x)} $.
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(f(x), x, -10, 10)} 
+\sageplot[width=.3\textwidth]{plot(tan(x), x, -1.4, 1.4)}\\
+Les représentations graphiques de $x \mapsto \sage{f(x)} $ et de $x\mapsto \tan(x)$.
+\end{center}
+On peut maintenant entreprendre le calcul de la primitive de la  fonction  $x \mapsto \arctan(x) $.
+
+
+\subsection{Calcul de la primitive de la fonction  $x \mapsto \arctan(x) $.}
+Je pose que $u(x)$  est égal à la fonction $\arctan(x)$ et $v'(x)$ est égal $dx$  d'où $u'(x)$  est égal à la fonction $ \frac{1}{1+ x^2} $ et $v(x)$ est égal $x$.
+Alors on a $\int \arctan(x) \, dx = x \times \arctan(x) -\int \frac{1}{1+x^2} \times x \, dx $.
+
+\paragraph{Calcul de $\int \frac{x}{1+ x^2} \, dx $.}
+$\int \frac{x}{1+ x^2} \, dx = \frac{1}{2} \int \frac{d(1+x^2)}{1+ x^2} = \frac{1}{2} \ln \left| 1+ x^2 \right| $.
+
+D'où $\int \arctan(x) \, dx = x \arctan(x) - \frac{1}{2} \ln \left| 1+ x^2 \right| + C^{ste} $. 
+Finalement, une primitive de la fonction $x \mapsto \arctan(x) $ est une fonction $x \mapsto x \arctan(x) -\ln\left( \sqrt{1+ x^2}\right) + C^{ste} $ ou encore $x \mapsto x \arctan(x) +\ln\left( \frac{1}{\sqrt{1+ x^2}}\right) + C^{ste} $.
+\paragraph{On vérifie ce résultat avec Sage.}
+Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

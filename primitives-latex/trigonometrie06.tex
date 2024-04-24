@@ -232,6 +232,7 @@ Dans la section suivante, on calcule la dérivée de la fonction $x \mapsto \sin
 Une primitive de la fonction $x \mapsto \sage{f(x)}$  est la fonction $x \mapsto \sage{F(x)} + C^{ste} $ définie à une constante près.
 
 
+
 \section{La fonction  $x \mapsto \sin(x)$.}
 Définissons nos fonctions dans {\texttt{Sage}}
 \begin{sageblock}
@@ -260,6 +261,7 @@ La fonction est impaire et périodique de période $2 \pi$.
 Dans la section précédente, on a calculé la dérivée de la fonction $x \mapsto \cos(x)$ qui vaut $x \mapsto -\sin(x)$, par conséquent une primitive de $x \mapsto \sin(x)$ est égale, à une constante près, à $ - \cos(x) + C^{ste} $.
 \paragraph{On vérifie ce résultat avec Sage.}
 Une primitive de $\sage{f(x)}$ est $ \sage{F(x)} + C^{ste} $ définie à une constante près.
+
 
 
 \section{La fonction  $x \mapsto \tan(x)$.}
@@ -299,6 +301,9 @@ Finalement, $ \ln\left(\frac{1}{\cos(x)}\right) +C^{ste}$ est une primitive de $
 \paragraph{On vérifie ce résultat avec Sage.}
 Une primitive de $\sage{f(x)}$ est la fonction définie à une constante près $x \mapsto \sage{F(x)} + C^{ste} $.
 Sage utilise la fonction $x\mapsto \sec$ qui est la fonction paire $x\mapsto \frac{1}{\cos(x)}$ périodique de période $2\pi$ définie sur $\R-\{ \frac{\pi}{2}+k\pi, k\in\Z\}$. On retrouve bien le résultat précédent.
+
+
+
 
 
 \section{La fonction  $x \mapsto \arccos(x) $.}
@@ -388,6 +393,9 @@ Une primitive de la fonction $\sage{f(x)} = \sage{F(x)} + C^{ste}$.
 
 \section{La fonction  $x \mapsto \arctan(x) $.}
 La restriction de la fonction $x \mapsto \tan(x) $ à l'intervalle $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ est une bijection de $\left[-\frac{\pi}{2},\frac{\pi}{2}\right] \rightarrow \R $. Il existe donc une fonction réciproque à la fonction $x \mapsto \tan(x) $ que l'on nomme $x \mapsto \arctan(x) $. C'est également une bijection, elle est continue sur l'intervalle fermé  $ [-1,1]$ et est dérivable sur l'intervalle ouvert $]-1,1[$.
+
+
+
 
 
 \subsection{Calcul de la dérivée de la fonction $x \mapsto \arctan(x) $.}

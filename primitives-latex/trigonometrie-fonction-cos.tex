@@ -149,6 +149,9 @@
 \tableofcontents
 %\sommaire
 
+
+
+
 \section{La fonction  $x \mapsto \cos(x)$.}
 Définissons nos fonctions dans {\texttt{Sage}}. Soit
 \begin{sageblock}
@@ -318,6 +321,74 @@ Une primitive de $\sage{f(x)} = \sage{F(x)} + C^{ste} $.
 Les représentations graphiques respectivement de $x \mapsto \arg\mspace{-1mu}\cosh(x)$, de sa dérivée et de sa primitive.
 \end{center}
 
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Calcul d'une primitive de $ x \longmapsto  \frac{dx}{\sqrt{x^2 - 1} } $. }
+
+
+Je pose $y-x = \sqrt{x^2 - 1} $ avec $y - x = \sqrt{x^2 - 1} \geqslant 0 $, donc $y \geqslant  x$.
+
+Quel est le signe de $y$ c'est-à-dire le signe de $x + \sqrt{x^2 - 1} $?
+
+\begin{center}
+\sageplot[width=.4\textwidth]{plot(x+sqrt(x^2 - 1), x, -5, 5)} 
+\sageplot[width=.4\textwidth]{plot(diff(x+sqrt(x^2 - 1),x), x, -5, 5)} \\
+La représentation graphique de $x + \sqrt{x^2 - 1}$ et de sa dérivée.
+\end{center}
+
+
+
+En élevant au carré, on a 
+\begin{align*}
+(y-x)^2 & = x^2 - 1 \\
+y^2 - 2yx + x^2 & = x^2 - 1 \\
+y^2 - 2yx  & = -1 \quad \textrm{ puis en différentiant chaque variable} \\
+2ydy - 2dy \times x - 2ydx & = 0 \\
+(y-x)dy & = ydx \\
+\frac{dy}{y} & = \frac{dx}{(y-x)} = \frac{dx}{\sqrt{x^2 - 1} } \\
+\int \frac{dy}{y} = \ln|y| + C^{ste} & = \int \frac{dx}{\sqrt{x^2 - 1} } dx \quad \textrm{or} \; y = x + \sqrt{x^2 - 1}  \geqslant 0 \\
+\ln(x + \sqrt{x^2 - 1}) + C^{ste} & = \int \frac{dx}{\sqrt{x^2 - 1} } dx  
+\end{align*}
+Or, nous avons déjà vu en~\ref{argsinh}, page~\pageref{argsinh} que la dérivée de la fonction  $x \mapsto \arg\mspace{-1mu}\sinh(x)$  vaut $ \frac{1}{ \sqrt{x^2 - 1}}$ ce qui implique que $\ln(x + \sqrt{x^2 - 1}) + C^{ste} = \arg\mspace{-1mu}\sinh\nolimits(x) $. Montrons-le !
+
+
+
+
+
+
+
+
+
+
+\subsection{Avons nous $\arg\mspace{-1mu}\cosh\nolimits(x) = \ln(x + \sqrt{x^2 - 1}) $ ?}
+
+Posons $ y = \arg\mspace{-1mu}\cosh\nolimits(x) $, comme $ \arg\mspace{-1mu}\cosh\nolimits $ est la fonction inverse de $\cosh$, on a $\cosh(y) = \frac{\exp(y) + \exp(-y)}{2} = x$ d'où $2x = \exp(y) + \exp(-y) $ et en multipliant par $\exp(y)$, on obtient l'équation du second degré en $\exp(y)$,
+\begin{equation}
+\left(\exp(y) \right)^2 - 2x \exp(y) + 1 = 0, 
+\end{equation}
+dont le discriminant $\Delta$ vaut $4x^2 - 4 \neq 0$, ainsi les solutions s'écrivent $ \exp(y_1) = x + \frac{\sqrt{4x^2 - 4}}{2} = x + \sqrt{x^2-1}$ et $ \exp(y_2) = x - \frac{\sqrt{4x^2 - 4}}{2} = x - \sqrt{x^2-1}$. 
+
+On ne retient que la solution $ \exp(y) = x + \sqrt{x^2-1}$ puisque la fonction exponentielle est toujours positive et que $ \exp(y_2) = x - \sqrt{x^2-1} < 0 $.
+
+Finalement, $y = \arg\mspace{-1mu}\cosh\nolimits(x) = \ln(x + \sqrt{x^2-1})$.
+
+
+\begin{center}
+\sageplot[width=.3\textwidth]{plot(log(x+sqrt(x^2-1)), x, -5, 5)} 
+%\sageplot[width=.3\textwidth]{plot(log(x-sqrt(x^2-1)), x, -5, 0)} 
+\sageplot[width=.3\textwidth]{plot(arccosh(x), x, -5, 5)} \\
+Les représentations graphiques de $\ln(x + \sqrt{x^2-1})$ et de $\arg\mspace{-1mu}\cosh\nolimits(x)$.
+\end{center}
+
+
+Nous avons montré l'égalité $\arg\mspace{-1mu}\cosh\nolimits(x) = \ln(x + \sqrt{x^2-1}) $.
 
 
 
